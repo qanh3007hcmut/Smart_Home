@@ -13,9 +13,9 @@ Home Assistant is an open-source home automation platform that allows you to con
     - Ensure Docker and Docker Compose are installed on your system. Refer to the official Docker documentation for installation instructions: https://docs.docker.com/get-docker/.
 
 2. **Start the Home Assistant Container**:
-    - Run the following command to start the container:
+    - Run the following command from `\SMART_HOME` to start the container:
       ```bash
-      \\docker\\docker-compose up -d
+      docker-compose -f docker/docker-compose.yml up -d 
       ```
     - This will download the Home Assistant image (if not already available) and start the container.
 
@@ -30,5 +30,5 @@ Home Assistant is an open-source home automation platform that allows you to con
 5. **Stop the Home Assistant Container**:
     - Run the following command to start the container:
       ```bash
-      \\docker\\docker-compose stop
+      docker-compose -f docker/docker-compose.yml stop
       ```
