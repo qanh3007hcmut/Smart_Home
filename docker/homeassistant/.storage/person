@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "iot_smart_home",
+        "name": "IOT SMART HOME",
+        "user_id": "7e19a9184c5640aeaeabd21404a1bd48",
+        "device_trackers": []
+      }
+    ]
+  }
+}

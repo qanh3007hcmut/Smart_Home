@@ -1,32 +1,35 @@
 services:
   homeassistant:
     container_name: home-assistant
+    # image: homeassistant/home-assistant:latest
     build:
       context: .
       dockerfile: Dockerfile.ha
     volumes:
-      - ./homeassistant-config:/config
+      - ./homeassistant:/config
     ports:
       - "8123:8123"
     environment:
-      - TZ=Asia/Ho_Chi_Minh  # Thay đổi múi giờ phù hợp
+      - TZ=Asia/Ho_Chi_Minh  # Adjust timezone as needed
     depends_on:
       - mosquitto
     restart: unless-stopped
     networks:
       - iot-network
+
   mosquitto:
     container_name: mosquitto
+    # image: eclipse-mosquitto:latest
     build:
       context: .
       dockerfile: Dockerfile.mosquitto
     ports:
-      - "1883:1883"  # Cổng MQTT mặc định
-      - "9001:9001"  # Cổng WebSocket (tuỳ chọn)
+      - "1883:1883"  # Default MQTT port
+      - "9001:9001"  # WebSocket port (optional)
     volumes:
-      - ./mosquitto-config:/mosquitto/config
-      - ./mosquitto-data:/mosquitto/data
-      - ./mosquitto-log:/mosquitto/log
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
     restart: unless-stopped
     networks:
       - iot-network

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "iot12345",
+        "password": "JDJiJDEyJE5DVmVUVVNPZFJVZ1FIeUs5dE8zaWVydHNsSHRWenYwd2JLTXdsNnB3RnphandWcGVDZm5P"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+2025-03-29 21:32:40.882 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:42.252 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:42.449 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:43.678 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:43.841 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:44.024 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:44.203 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:44.379 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:45.139 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:45.747 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:46.156 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:46.528 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:53.418 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:53.589 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:53.740 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:32:53.902 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2025-03-29 21:33:20.092 ERROR (MainThread) [homeassistant.components.homeassistant_alerts.coordinator] Timeout fetching homeassistant_alerts data

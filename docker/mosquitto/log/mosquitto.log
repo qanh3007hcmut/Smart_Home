@@ -1,0 +1,329 @@
+1743258221: mosquitto version 2.0.21 starting
+1743258221: Config loaded from /mosquitto/config/mosquitto.conf.
+1743258221: Opening ipv4 listen socket on port 1883.
+1743258221: Opening ipv6 listen socket on port 1883.
+1743258221: mosquitto version 2.0.21 running
+1743258228: mosquitto version 2.0.21 terminating
+1743258228: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1743258416: mosquitto version 2.0.21 starting
+1743258416: Config loaded from /mosquitto/config/mosquitto.conf.
+1743258416: Opening ipv4 listen socket on port 1883.
+1743258416: Opening ipv6 listen socket on port 1883.
+1743258416: mosquitto version 2.0.21 running
+1743258705: mosquitto version 2.0.21 terminating
+1743258705: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1743258711: mosquitto version 2.0.21 starting
+1743258711: Config loaded from /mosquitto/config/mosquitto.conf.
+1743258711: Opening ipv4 listen socket on port 1883.
+1743258711: Opening ipv6 listen socket on port 1883.
+1743258711: mosquitto version 2.0.21 running
+1743258826: New connection from 172.19.0.3:60011 on port 1883.
+1743258826: New client connected from 172.19.0.3:60011 as 4UiyWqvFDjADNSKQaJVAEG (p2, c1, k60).
+1743258826: No will message specified.
+1743258826: Sending CONNACK to 4UiyWqvFDjADNSKQaJVAEG (0, 0)
+1743258826: Received DISCONNECT from 4UiyWqvFDjADNSKQaJVAEG
+1743258826: Client 4UiyWqvFDjADNSKQaJVAEG disconnected.
+1743258826: New connection from 172.19.0.3:34401 on port 1883.
+1743258826: New client connected from 172.19.0.3:34401 as 0lGuAZ4W7ISnTz68jJb7yF (p2, c1, k60).
+1743258826: Will message specified (7 bytes) (r0, q0).
+1743258826: 	homeassistant/status
+1743258826: Sending CONNACK to 0lGuAZ4W7ISnTz68jJb7yF (0, 0)
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/alarm_control_panel/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/alarm_control_panel/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/binary_sensor/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/binary_sensor/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/button/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/button/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/camera/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/camera/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/climate/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/climate/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/cover/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/cover/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/device_automation/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/device_automation/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/device_tracker/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/device_tracker/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/event/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/event/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/fan/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/fan/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/humidifier/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/humidifier/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/image/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/image/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/lawn_mower/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/lawn_mower/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/light/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/light/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/lock/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/lock/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/notify/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/notify/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/number/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/number/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/scene/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/scene/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/siren/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/siren/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/select/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/select/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/sensor/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/sensor/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/switch/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/switch/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/tag/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/tag/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/text/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/text/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/update/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/update/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/vacuum/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/vacuum/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/valve/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/valve/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/water_heater/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/water_heater/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/alarm_control_panel/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/alarm_control_panel/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/binary_sensor/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/binary_sensor/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/button/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/button/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/camera/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/camera/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/climate/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/climate/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/cover/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/cover/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/device_automation/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/device_automation/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/device_tracker/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/device_tracker/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/event/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/event/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/fan/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/fan/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/humidifier/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/humidifier/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/image/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/image/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/lawn_mower/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/lawn_mower/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/light/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/light/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/lock/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/lock/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/notify/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/notify/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/number/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/number/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/scene/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/scene/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/siren/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/siren/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/select/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/select/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/sensor/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/sensor/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/switch/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/switch/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/tag/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/tag/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/text/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/text/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/update/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/update/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/vacuum/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/vacuum/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/valve/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/valve/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/water_heater/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/water_heater/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/device/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/device/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	homeassistant/device/+/+/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 homeassistant/device/+/+/config
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	drop_connect/discovery/# (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 drop_connect/discovery/#
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	dsmr/# (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 dsmr/#
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	esphome/discover/# (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 esphome/discover/#
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	fully/deviceInfo/+ (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 fully/deviceInfo/+
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	pglab/discovery/# (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 pglab/discovery/#
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	cloudapp/QBUSMQTTGW/+/state (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 cloudapp/QBUSMQTTGW/+/state
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	tasmota/discovery/# (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 tasmota/discovery/#
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258827: 	cloudapp/QBUSMQTTGW/config (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 cloudapp/QBUSMQTTGW/config
+1743258827: 	cloudapp/QBUSMQTTGW/state (QoS 0)
+1743258827: 0lGuAZ4W7ISnTz68jJb7yF 0 cloudapp/QBUSMQTTGW/state
+1743258827: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258832: Received PUBLISH from 0lGuAZ4W7ISnTz68jJb7yF (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
+1743258842: Received SUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258842: 	abc (QoS 1)
+1743258842: 0lGuAZ4W7ISnTz68jJb7yF 1 abc
+1743258842: Sending SUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258844: Received PUBLISH from 0lGuAZ4W7ISnTz68jJb7yF (d0, q1, r1, m69, 'abc', ... (0 bytes))
+1743258844: Sending PUBLISH to 0lGuAZ4W7ISnTz68jJb7yF (d0, q1, r0, m1, 'abc', ... (0 bytes))
+1743258844: Sending PUBACK to 0lGuAZ4W7ISnTz68jJb7yF (m69, rc0)
+1743258844: Received PUBACK from 0lGuAZ4W7ISnTz68jJb7yF (Mid: 1, RC:0)
+1743258850: Received UNSUBSCRIBE from 0lGuAZ4W7ISnTz68jJb7yF
+1743258850: 	abc
+1743258850: 0lGuAZ4W7ISnTz68jJb7yF abc
+1743258850: Sending UNSUBACK to 0lGuAZ4W7ISnTz68jJb7yF
+1743258886: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743258886: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743258947: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743258947: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743259007: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743259007: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743259067: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743259067: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743259127: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743259127: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743259187: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743259187: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743259247: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743259247: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743259307: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743259307: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743259367: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743259367: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743259427: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
+1743259427: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF

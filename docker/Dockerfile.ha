@@ -1,13 +1,13 @@
 FROM homeassistant/home-assistant:latest
 
-ENV TZ=Asia/Ho_Chi_Minh
-ENV PYTHONUNBUFFERED=1
+# Set environment variables
+ENV TZ=UTC
 
-WORKDIR /homeassistant  
+WORKDIR /config
+RUN chmod -R 777 /config
 
-RUN chmod -R 777 /homeassistant
+# Expose the default Home Assistant port
 EXPOSE 8123
 
-# Chạy Home Assistant
+# Start Home Assistant
 CMD ["/init"]
-
