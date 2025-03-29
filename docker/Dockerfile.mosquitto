@@ -1,0 +1,20 @@
+# Use the official Eclipse Mosquitto image as the base
+FROM eclipse-mosquitto:latest
+
+# Set working directory
+WORKDIR /mosquitto
+
+# Create directories for configuration, data, and logs
+RUN mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && \
+    chown -R mosquitto:mosquitto /mosquitto
+
+# Make sure the permissions are correct
+RUN chmod -R 755 /mosquitto/config && \
+    chmod -R 755 /mosquitto/log && \
+    chmod -R 755 /mosquitto/data
+
+# Expose MQTT ports
+EXPOSE 1883 8883
+
+# Set the entrypoint to run Mosquitto
+ENTRYPOINT ["/usr/sbin/mosquitto", "-c", "/mosquitto/config/mosquitto.conf"]
