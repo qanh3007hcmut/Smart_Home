@@ -13205,3 +13205,2233 @@
 1744135633: Sending PINGRESP to 4Leh3j8MWFyh928N7wuljV
 1744135693: Received PINGREQ from 4Leh3j8MWFyh928N7wuljV
 1744135693: Sending PINGRESP to 4Leh3j8MWFyh928N7wuljV
+1744279161: mosquitto version 2.0.21 starting
+1744279161: Config loaded from /mosquitto/config/mosquitto.conf.
+1744279161: Opening ipv4 listen socket on port 1883.
+1744279161: Opening ipv6 listen socket on port 1883.
+1744279161: mosquitto version 2.0.21 running
+1744279169: New connection from 172.20.0.3:60909 on port 1883.
+1744279169: New client connected from 172.20.0.3:60909 as 1r9l0nzClg9OoB04cleytR (p2, c1, k60).
+1744279169: Will message specified (7 bytes) (r0, q0).
+1744279169: 	homeassistant/status
+1744279169: Sending CONNACK to 1r9l0nzClg9OoB04cleytR (0, 0)
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/alarm_control_panel/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/alarm_control_panel/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/binary_sensor/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/binary_sensor/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/button/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/button/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/camera/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/camera/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/climate/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/climate/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/cover/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/cover/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/device_automation/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/device_automation/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/device_tracker/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/device_tracker/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/event/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/event/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/fan/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/fan/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/humidifier/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/humidifier/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/image/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/image/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/lawn_mower/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/lawn_mower/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/light/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/light/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/lock/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/lock/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/notify/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/notify/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/number/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/number/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/scene/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/scene/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/siren/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/siren/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/select/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/select/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/sensor/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/sensor/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/switch/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/switch/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/tag/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/tag/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/text/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/text/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/update/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/update/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/vacuum/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/vacuum/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/valve/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/valve/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/water_heater/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/water_heater/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/alarm_control_panel/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/alarm_control_panel/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/binary_sensor/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/binary_sensor/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/button/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/button/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/camera/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/camera/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/climate/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/climate/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/cover/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/cover/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/device_automation/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/device_automation/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/device_tracker/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/device_tracker/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/event/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/event/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/fan/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/fan/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/humidifier/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/humidifier/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/image/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/image/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/lawn_mower/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/lawn_mower/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/light/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/light/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/lock/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/lock/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/notify/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/notify/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/number/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/number/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/scene/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/scene/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/siren/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/siren/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/select/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/select/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/sensor/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/sensor/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/switch/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/switch/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/tag/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/tag/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/text/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/text/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/update/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/update/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/vacuum/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/vacuum/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/valve/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/valve/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/water_heater/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/water_heater/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/device/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/device/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	homeassistant/device/+/+/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 homeassistant/device/+/+/config
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	drop_connect/discovery/# (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 drop_connect/discovery/#
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	dsmr/# (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 dsmr/#
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	esphome/discover/# (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 esphome/discover/#
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	fully/deviceInfo/+ (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 fully/deviceInfo/+
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	pglab/discovery/# (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 pglab/discovery/#
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	cloudapp/QBUSMQTTGW/+/state (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 cloudapp/QBUSMQTTGW/+/state
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	tasmota/discovery/# (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 tasmota/discovery/#
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	cloudapp/QBUSMQTTGW/config (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 cloudapp/QBUSMQTTGW/config
+1744279170: 	cloudapp/QBUSMQTTGW/state (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 cloudapp/QBUSMQTTGW/state
+1744279170: 	home/camera/simulated_camera/face (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 home/camera/simulated_camera/face
+1744279170: 	home/door/simulated_door/state (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 home/door/simulated_door/state
+1744279170: 	home/fan/simulated_fan/state (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 home/fan/simulated_fan/state
+1744279170: 	home/sensor/simulated_temperature_sensor/temperature (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 home/sensor/simulated_temperature_sensor/temperature
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279170: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/fan/simulated_fan/state', ... (2 bytes))
+1744279170: Received SUBSCRIBE from 1r9l0nzClg9OoB04cleytR
+1744279170: 	home/fan/simulated_fan/set (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 home/fan/simulated_fan/set
+1744279170: 	home/door/simulated_door/set (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 home/door/simulated_door/set
+1744279170: 	home/camera/simulated_camera/face (QoS 0)
+1744279170: 1r9l0nzClg9OoB04cleytR 0 home/camera/simulated_camera/face
+1744279170: Sending SUBACK to 1r9l0nzClg9OoB04cleytR
+1744279170: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/fan/simulated_fan/set', ... (2 bytes))
+1744279170: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744279170: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/fan/simulated_fan/state', ... (2 bytes))
+1744279170: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (2 bytes))
+1744279170: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279170: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279175: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744279175: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744279175: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279175: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279175: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/fan/simulated_fan/set', ... (3 bytes))
+1744279175: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/fan/simulated_fan/set', ... (3 bytes))
+1744279175: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279175: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279175: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279175: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279175: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r1, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279175: Sending PUBLISH to 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279175: Received PUBLISH from 1r9l0nzClg9OoB04cleytR (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
+1744279229: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279229: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279289: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279289: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279349: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279349: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279409: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279409: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279469: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279469: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279529: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279529: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279589: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279589: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279649: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279649: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279709: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279709: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279770: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279770: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279830: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279830: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279890: Received PINGREQ from 1r9l0nzClg9OoB04cleytR
+1744279890: Sending PINGRESP to 1r9l0nzClg9OoB04cleytR
+1744279939: Client 1r9l0nzClg9OoB04cleytR closed its connection.
+1744279948: New connection from 172.20.0.3:44211 on port 1883.
+1744279948: New client connected from 172.20.0.3:44211 as 3UaKH6KaBw884h46N3i27M (p2, c1, k60).
+1744279948: Will message specified (7 bytes) (r0, q0).
+1744279948: 	homeassistant/status
+1744279948: Sending CONNACK to 3UaKH6KaBw884h46N3i27M (0, 0)
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/alarm_control_panel/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/alarm_control_panel/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/binary_sensor/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/binary_sensor/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/button/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/button/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/camera/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/camera/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/climate/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/climate/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/cover/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/cover/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/device_automation/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device_automation/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/device_tracker/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device_tracker/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/event/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/event/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/fan/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/fan/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/humidifier/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/humidifier/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/image/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/image/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/lawn_mower/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/lawn_mower/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/light/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/light/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/lock/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/lock/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/notify/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/notify/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/number/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/number/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/scene/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/scene/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/siren/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/siren/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/select/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/select/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/sensor/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/sensor/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/switch/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/switch/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/tag/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/tag/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/text/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/text/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/update/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/update/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/vacuum/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/vacuum/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/valve/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/valve/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/water_heater/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/water_heater/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/alarm_control_panel/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/alarm_control_panel/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/binary_sensor/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/binary_sensor/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/button/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/button/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/camera/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/camera/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/climate/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/climate/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/cover/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/cover/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/device_automation/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device_automation/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/device_tracker/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device_tracker/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/event/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/event/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/fan/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/fan/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/humidifier/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/humidifier/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/image/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/image/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/lawn_mower/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/lawn_mower/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279948: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279948: 	homeassistant/light/+/+/config (QoS 0)
+1744279948: 3UaKH6KaBw884h46N3i27M 0 homeassistant/light/+/+/config
+1744279948: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/lock/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/lock/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/notify/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/notify/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/number/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/number/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/scene/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/scene/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/siren/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/siren/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/select/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/select/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/sensor/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/sensor/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/switch/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/switch/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/tag/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/tag/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/text/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/text/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/update/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/update/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/vacuum/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/vacuum/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/valve/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/valve/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/water_heater/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/water_heater/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/device/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	homeassistant/device/+/+/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device/+/+/config
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	drop_connect/discovery/# (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 drop_connect/discovery/#
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	dsmr/# (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 dsmr/#
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	esphome/discover/# (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 esphome/discover/#
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	fully/deviceInfo/+ (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 fully/deviceInfo/+
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	pglab/discovery/# (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 pglab/discovery/#
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	cloudapp/QBUSMQTTGW/+/state (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 cloudapp/QBUSMQTTGW/+/state
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	tasmota/discovery/# (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 tasmota/discovery/#
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	cloudapp/QBUSMQTTGW/config (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 cloudapp/QBUSMQTTGW/config
+1744279949: 	cloudapp/QBUSMQTTGW/state (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 cloudapp/QBUSMQTTGW/state
+1744279949: 	home/camera/simulated_camera/face (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/camera/simulated_camera/face
+1744279949: 	home/door/simulated_door/state (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/door/simulated_door/state
+1744279949: 	home/fan/simulated_fan/state (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/fan/simulated_fan/state
+1744279949: 	home/sensor/simulated_smoke_sensor/smoke (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/sensor/simulated_smoke_sensor/smoke
+1744279949: 	home/sensor/simulated_temperature_sensor/temperature (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/sensor/simulated_temperature_sensor/temperature
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279949: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279949: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744279949: 	home/fan/simulated_fan/set (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/fan/simulated_fan/set
+1744279949: 	home/door/simulated_door/set (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/door/simulated_door/set
+1744279949: 	home/camera/simulated_camera/face (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/camera/simulated_camera/face
+1744279949: 	home/sensor/simulated_smoke_sensor/smoke (QoS 0)
+1744279949: 3UaKH6KaBw884h46N3i27M 0 home/sensor/simulated_smoke_sensor/smoke
+1744279949: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744279949: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/fan/simulated_fan/set', ... (3 bytes))
+1744279949: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744279949: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279949: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279949: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279949: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279954: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744279954: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744279954: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279954: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279954: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/fan/simulated_fan/set', ... (3 bytes))
+1744279954: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/fan/simulated_fan/set', ... (3 bytes))
+1744279954: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279954: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744279954: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279954: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279954: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279954: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744279954: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
+1744280008: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280008: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280068: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280068: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280128: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280128: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280167: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/set', ... (4 bytes))
+1744280167: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/set', ... (4 bytes))
+1744280167: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (4 bytes))
+1744280167: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (4 bytes))
+1744280167: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744280167: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744280167: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744280167: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744280188: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280188: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280193: New connection from 172.20.0.1:38468 on port 1883.
+1744280193: New client connected from 172.20.0.1:38468 as auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (p2, c1, k60).
+1744280193: No will message specified.
+1744280193: Sending CONNACK to auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (0, 0)
+1744280193: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280193: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280198: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280198: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280203: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280203: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280208: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280208: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280213: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280213: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280218: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280218: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280223: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280223: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280226: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744280226: 	home/sensor/simulated_smoke_sensor/smoke (QoS 0)
+1744280226: 3UaKH6KaBw884h46N3i27M 0 home/sensor/simulated_smoke_sensor/smoke
+1744280226: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744280228: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280228: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280233: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280233: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280238: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280238: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280243: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280243: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280248: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280248: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280248: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280248: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280253: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280253: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280253: Received PINGREQ from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671
+1744280253: Sending PINGRESP to auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671
+1744280258: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280258: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280263: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280263: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280268: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280268: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280273: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280273: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280278: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280278: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280283: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280283: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280288: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280288: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280293: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280293: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280298: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280298: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280303: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280303: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280308: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280308: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280308: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280308: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280313: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280313: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280313: Received PINGREQ from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671
+1744280313: Sending PINGRESP to auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671
+1744280318: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280318: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280323: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280323: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280328: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280328: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280333: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280333: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280338: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280338: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280343: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280343: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280348: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280348: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280353: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280353: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280358: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280358: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280363: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280363: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280368: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280368: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280368: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280368: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280372: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744280372: 	home/sensor/simulated_smoke_sensor/smoke (QoS 0)
+1744280372: 3UaKH6KaBw884h46N3i27M 0 home/sensor/simulated_smoke_sensor/smoke
+1744280372: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744280373: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280373: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280373: Received PINGREQ from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671
+1744280373: Sending PINGRESP to auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671
+1744280378: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280378: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280383: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280383: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280388: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280388: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280393: Received PUBLISH from auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280393: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/sensor/simulated_smoke_sensor/smoke', ... (5 bytes))
+1744280395: Client auto-755538C2-23F2-F5FA-60CC-5BD76DC1D671 closed its connection.
+1744280429: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280429: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280489: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280489: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280549: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280549: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280609: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280609: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280669: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280669: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280729: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280729: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280789: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280789: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280849: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280849: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280909: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280909: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744280963: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744280969: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744280969: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281029: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281029: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281089: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281089: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281150: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281150: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281210: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281210: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281270: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281270: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281330: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281330: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281390: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281390: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281450: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281450: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281510: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281510: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281570: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281570: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281630: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281630: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281690: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281690: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281750: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281750: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281810: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281810: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281871: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281871: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281931: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281931: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744281991: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744281991: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282051: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282051: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282111: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282111: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282171: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282171: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282231: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282231: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282291: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282291: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282351: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282351: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282411: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282411: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282471: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282471: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282531: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282531: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282591: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282591: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282652: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282652: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282712: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282712: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282764: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744282772: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282772: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282832: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282832: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282892: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282892: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744282952: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744282952: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283012: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283012: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283072: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283072: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283132: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283132: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283192: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283192: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283252: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283252: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283312: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283312: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283373: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283373: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283433: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283433: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283493: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283493: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283553: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283553: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283613: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283613: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283673: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283673: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283733: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283733: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283793: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283793: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283853: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283853: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283913: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283913: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744283974: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744283974: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284034: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284034: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284094: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284094: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284154: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284154: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284214: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284214: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284274: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284274: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284334: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284334: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284394: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284394: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284454: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284454: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284514: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284514: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284565: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744284574: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284574: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284634: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284634: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284695: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284695: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284755: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284755: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284815: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284815: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284875: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284875: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284935: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284935: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744284995: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744284995: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285055: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285055: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285115: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285115: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285175: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285175: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285235: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285235: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285295: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285295: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285355: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285355: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285415: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285415: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285475: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285475: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285536: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285536: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285596: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285596: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285656: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285656: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285716: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285716: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285776: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285776: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285836: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285836: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285896: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285896: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744285956: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744285956: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286016: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286016: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286076: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286076: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286136: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286136: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286196: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286196: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286256: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286256: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286316: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286316: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286366: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744286377: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286377: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286437: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286437: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286497: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286497: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286557: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286557: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286617: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286617: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286677: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286677: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286737: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286737: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286797: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286797: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286857: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286857: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286917: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286917: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744286977: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744286977: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287037: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287037: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287097: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287097: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287157: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287157: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287218: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287218: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287278: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287278: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287338: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287338: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287398: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287398: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287458: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287458: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287518: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287518: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287578: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287578: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287638: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287638: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287698: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287698: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287758: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287758: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287818: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287818: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287878: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287878: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287938: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287938: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744287998: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744287998: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288058: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288058: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288119: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288119: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288167: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744288179: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288179: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288239: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288239: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288299: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288299: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288359: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288359: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288419: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288419: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288479: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288479: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288539: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288539: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288599: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288599: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288659: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288659: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288719: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288719: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288779: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288779: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288839: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288839: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288899: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288899: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744288960: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744288960: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289020: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289020: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289080: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289080: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289140: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289140: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289200: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289200: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289260: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289260: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289320: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289320: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289380: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289380: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289440: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289440: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289500: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289500: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289560: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289560: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289620: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289620: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289680: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289680: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289740: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289740: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289801: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289801: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289861: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289861: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289921: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289921: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744289968: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744289981: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744289981: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290041: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290041: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290101: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290101: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290161: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290161: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290221: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290221: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290281: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290281: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290341: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290341: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290401: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290401: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290461: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290461: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290521: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290521: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290582: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290582: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290642: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290642: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290702: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290702: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290762: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290762: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290822: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290822: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290882: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290882: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744290942: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744290942: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291002: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291002: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291062: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291062: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291122: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291122: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291182: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291182: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291242: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291242: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291302: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291302: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291363: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291363: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291423: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291423: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291483: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291483: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291543: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291543: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291603: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291603: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291663: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291663: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291723: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291723: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291769: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744291783: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291783: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291843: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291843: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291903: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291903: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744291963: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744291963: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292023: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292023: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292083: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292083: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292143: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292143: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292203: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292203: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292264: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292264: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292324: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292324: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292384: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292384: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292444: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292444: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292504: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292504: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292564: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292564: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292624: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292624: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292684: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292684: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292744: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292744: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292804: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292804: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292864: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292864: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292924: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292924: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744292984: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744292984: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293044: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293044: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293105: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293105: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293165: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293165: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293225: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293225: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293285: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293285: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293345: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293345: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293405: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293405: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293465: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293465: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293525: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293525: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293570: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744293585: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293585: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293645: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293645: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293705: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293705: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293765: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293765: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293825: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293825: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293885: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293885: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744293946: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744293946: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294006: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294006: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294066: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294066: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294126: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294126: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294186: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294186: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294246: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294246: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294306: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294306: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294366: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294366: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294426: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294426: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294486: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294486: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294546: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294546: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294606: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294606: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294667: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294667: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294727: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294727: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294787: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294787: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294847: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294847: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294907: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294907: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744294967: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744294967: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295027: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295027: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295087: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295087: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295147: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295147: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295207: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295207: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295267: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295267: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295327: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295327: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295371: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744295388: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295388: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295448: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295448: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295508: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295508: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295568: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295568: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295628: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295628: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295688: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295688: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295748: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295748: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295808: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295808: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295868: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295868: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295928: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295928: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744295988: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744295988: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296048: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296048: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296108: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296108: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296169: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296169: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296229: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296229: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296289: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296289: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296349: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296349: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296409: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296409: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296469: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296469: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296529: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296529: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296589: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296589: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296649: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296649: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296709: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296709: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296769: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296769: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296829: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296829: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296889: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296889: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744296949: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744296949: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297010: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297010: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297070: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297070: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297130: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297130: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297172: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744297190: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297190: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297250: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297250: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297310: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297310: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297370: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297370: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297430: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297430: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297490: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297490: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297550: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297550: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297610: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297610: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297670: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297670: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297730: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297730: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297790: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297790: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297851: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297851: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297911: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297911: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744297971: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744297971: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298031: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298031: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298091: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298091: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298151: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298151: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298211: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298211: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298271: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298271: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298331: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298331: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298391: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298391: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298451: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298451: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298511: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298511: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298571: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298571: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298631: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298631: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298692: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298692: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298752: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298752: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298812: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298812: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298872: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298872: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298932: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298932: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744298973: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744298992: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744298992: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299052: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299052: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299112: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299112: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299172: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299172: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299232: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299232: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299292: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299292: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299352: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299352: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299412: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299412: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299473: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299473: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299533: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299533: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299593: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299593: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299653: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299653: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299713: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299713: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299773: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299773: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299833: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299833: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299893: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299893: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744299953: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744299953: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300013: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300013: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300073: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300073: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300133: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300133: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300193: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300193: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300253: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300253: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300314: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300314: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300374: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300374: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300434: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300434: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300494: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300494: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300554: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300554: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300614: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300614: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300674: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300674: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300734: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300734: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300774: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744300794: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300794: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300854: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300854: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300914: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300914: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744300974: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744300974: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301035: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301035: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301095: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301095: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301155: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301155: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301215: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301215: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301275: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301275: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301335: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301335: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301395: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301395: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301455: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301455: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301515: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301515: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301575: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301575: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301635: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301635: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301695: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301695: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301755: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301755: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301816: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301816: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301876: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301876: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301936: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301936: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744301996: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744301996: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302056: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302056: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302116: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302116: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302176: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302176: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302236: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302236: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302296: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302296: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302356: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302356: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302416: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302416: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302476: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302476: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302536: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302536: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302575: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744302597: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302597: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302657: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302657: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302717: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302717: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302777: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302777: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302837: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302837: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302897: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302897: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744302957: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744302957: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303017: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303017: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303077: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303077: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303137: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303137: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303197: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303197: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303257: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303257: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303317: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303317: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303377: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303377: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303438: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303438: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303498: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303498: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303558: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303558: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303618: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303618: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303678: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303678: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303738: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303738: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303798: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303798: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303858: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303858: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303919: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303919: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744303979: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744303979: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304039: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304039: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304099: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304099: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304159: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304159: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304219: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304219: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304279: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304279: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304339: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304339: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304376: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744304399: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304399: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304459: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304459: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304519: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304519: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304579: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304579: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304639: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304639: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304700: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304700: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304760: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304760: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304820: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304820: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304880: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304880: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744304940: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744304940: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305000: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305000: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305060: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305060: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305120: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305120: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305180: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305180: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305240: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305240: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305300: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305300: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305360: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305360: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305420: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305420: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305480: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305480: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305541: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305541: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305601: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305601: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305661: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305661: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305721: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305721: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305781: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305781: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305841: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305841: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305901: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305901: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744305961: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744305961: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306021: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306021: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306081: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306081: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306141: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306141: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306177: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744306201: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306201: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306261: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306261: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306321: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306321: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306382: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306382: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306442: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306442: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306502: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306502: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306562: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306562: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306622: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306622: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306682: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306682: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306742: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306742: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306802: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306802: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306862: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306862: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306922: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306922: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744306982: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744306982: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307043: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307043: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307103: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307103: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307163: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307163: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307223: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307223: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307283: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307283: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307344: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307344: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307404: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307404: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307464: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307464: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307524: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307524: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307584: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307584: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307644: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307644: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307704: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307704: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307764: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307764: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307824: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307824: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307885: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307885: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307945: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744307945: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744307978: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744308005: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308005: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308065: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308065: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308125: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308125: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308185: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308185: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308246: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308246: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308306: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308306: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308366: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308366: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308426: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308426: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308486: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308486: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744308546: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744308546: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337233: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744337233: Client 3UaKH6KaBw884h46N3i27M has exceeded timeout, disconnecting.
+1744337347: New connection from 172.20.0.3:36721 on port 1883.
+1744337347: New client connected from 172.20.0.3:36721 as 3UaKH6KaBw884h46N3i27M (p2, c1, k60).
+1744337347: Will message specified (7 bytes) (r0, q0).
+1744337347: 	homeassistant/status
+1744337347: Sending CONNACK to 3UaKH6KaBw884h46N3i27M (0, 0)
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/alarm_control_panel/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/alarm_control_panel/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/binary_sensor/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/binary_sensor/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/button/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/button/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/camera/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/camera/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/climate/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/climate/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/cover/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/cover/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/device_automation/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device_automation/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/device_tracker/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device_tracker/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/event/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/event/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/fan/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/fan/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/humidifier/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/humidifier/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/image/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/image/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/lawn_mower/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/lawn_mower/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/light/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/light/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/lock/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/lock/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/notify/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/notify/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/number/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/number/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/scene/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/scene/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/siren/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/siren/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/select/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/select/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/sensor/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/sensor/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/switch/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/switch/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/tag/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/tag/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/text/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/text/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/update/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/update/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/vacuum/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/vacuum/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/valve/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/valve/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/water_heater/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/water_heater/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/alarm_control_panel/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/alarm_control_panel/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/binary_sensor/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/binary_sensor/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/button/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/button/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/camera/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/camera/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/climate/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/climate/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/cover/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/cover/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/device_automation/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device_automation/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/device_tracker/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device_tracker/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/event/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/event/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/fan/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/fan/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/humidifier/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/humidifier/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/image/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/image/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/lawn_mower/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/lawn_mower/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/light/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/light/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/lock/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/lock/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/notify/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/notify/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/number/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/number/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/scene/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/scene/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/siren/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/siren/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/select/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/select/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/sensor/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/sensor/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/switch/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/switch/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/tag/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/tag/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/text/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/text/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/update/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/update/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/vacuum/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/vacuum/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/valve/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/valve/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/water_heater/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/water_heater/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/device/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	homeassistant/device/+/+/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 homeassistant/device/+/+/config
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	drop_connect/discovery/# (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 drop_connect/discovery/#
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	dsmr/# (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 dsmr/#
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	esphome/discover/# (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 esphome/discover/#
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	fully/deviceInfo/+ (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 fully/deviceInfo/+
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	pglab/discovery/# (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 pglab/discovery/#
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	cloudapp/QBUSMQTTGW/+/state (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 cloudapp/QBUSMQTTGW/+/state
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	tasmota/discovery/# (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 tasmota/discovery/#
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Received SUBSCRIBE from 3UaKH6KaBw884h46N3i27M
+1744337349: 	cloudapp/QBUSMQTTGW/config (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 cloudapp/QBUSMQTTGW/config
+1744337349: 	cloudapp/QBUSMQTTGW/state (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 cloudapp/QBUSMQTTGW/state
+1744337349: 	home/camera/simulated_camera/face (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 home/camera/simulated_camera/face
+1744337349: 	home/door/simulated_door/set (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 home/door/simulated_door/set
+1744337349: 	home/door/simulated_door/state (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 home/door/simulated_door/state
+1744337349: 	home/fan/simulated_fan/set (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 home/fan/simulated_fan/set
+1744337349: 	home/fan/simulated_fan/state (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 home/fan/simulated_fan/state
+1744337349: 	home/sensor/simulated_smoke_sensor/smoke (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 home/sensor/simulated_smoke_sensor/smoke
+1744337349: 	home/sensor/simulated_temperature_sensor/temperature (QoS 0)
+1744337349: 3UaKH6KaBw884h46N3i27M 0 home/sensor/simulated_temperature_sensor/temperature
+1744337349: Sending SUBACK to 3UaKH6KaBw884h46N3i27M
+1744337349: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/set', ... (6 bytes))
+1744337349: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744337349: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/fan/simulated_fan/set', ... (3 bytes))
+1744337349: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744337353: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744337353: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/door/simulated_door/state', ... (6 bytes))
+1744337354: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r1, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744337354: Sending PUBLISH to 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'home/fan/simulated_fan/state', ... (3 bytes))
+1744337354: Received PUBLISH from 3UaKH6KaBw884h46N3i27M (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
+1744337402: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337402: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337462: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337462: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337521: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337521: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337581: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337581: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337642: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337642: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337702: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337702: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337762: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337762: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337822: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337822: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337882: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337882: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744337942: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744337942: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338002: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338002: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338062: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338062: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338122: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338122: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338183: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338183: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338243: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338243: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338303: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338303: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338363: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338363: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338424: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338424: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338484: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338484: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338544: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338544: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338604: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338604: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338664: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338664: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338724: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338724: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338784: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338784: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338844: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338844: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338904: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338904: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744338964: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744338964: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339024: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339024: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339034: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744339085: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339085: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339145: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339145: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339205: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339205: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339265: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339265: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339325: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339325: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339385: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339385: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339445: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339445: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339505: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339505: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339565: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339565: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339626: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339626: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339686: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339686: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339746: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339746: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339806: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339806: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339866: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339866: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339926: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339926: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744339986: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744339986: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340046: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340046: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340106: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340106: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340166: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340166: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340226: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340226: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340286: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340286: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340346: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340346: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340407: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340407: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340467: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340467: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340527: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340527: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340587: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340587: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340647: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340647: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340707: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340707: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340767: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340767: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340827: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340827: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340835: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744340887: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340887: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744340947: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744340947: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341007: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341007: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341067: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341067: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341127: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341127: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341187: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341187: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341248: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341248: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341308: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341308: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341368: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341368: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341428: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341428: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341488: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341488: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341548: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341548: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341608: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341608: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341668: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341668: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341728: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341728: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341788: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341788: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341848: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341848: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341908: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341908: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744341968: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744341968: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342028: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342028: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342089: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342089: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342149: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342149: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342209: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342209: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342269: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342269: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342329: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342329: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342389: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342389: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342449: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342449: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342509: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342509: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342569: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342569: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342629: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342629: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342636: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1744342689: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342689: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342749: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342749: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342809: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342809: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342870: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342870: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342930: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342930: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744342990: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744342990: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744343050: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744343050: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744343110: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744343110: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744343170: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744343170: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744343230: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744343230: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744343290: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744343290: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744343350: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744343350: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744343410: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744343410: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
+1744343470: Received PINGREQ from 3UaKH6KaBw884h46N3i27M
+1744343470: Sending PINGRESP to 3UaKH6KaBw884h46N3i27M
