@@ -327,3 +327,284 @@
 1743259367: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
 1743259427: Received PINGREQ from 0lGuAZ4W7ISnTz68jJb7yF
 1743259427: Sending PINGRESP to 0lGuAZ4W7ISnTz68jJb7yF
+1743752686: mosquitto version 2.0.21 starting
+1743752686: Config loaded from /mosquitto/config/mosquitto.conf.
+1743752686: Opening ipv4 listen socket on port 1883.
+1743752686: Opening ipv6 listen socket on port 1883.
+1743752686: mosquitto version 2.0.21 running
+1743752693: New connection from 172.20.0.3:33327 on port 1883.
+1743752693: New client connected from 172.20.0.3:33327 as 0ZXrSWEtB3nRUV9ralVUIU (p2, c1, k60).
+1743752693: Will message specified (7 bytes) (r0, q0).
+1743752693: 	homeassistant/status
+1743752693: Sending CONNACK to 0ZXrSWEtB3nRUV9ralVUIU (0, 0)
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/alarm_control_panel/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/alarm_control_panel/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/binary_sensor/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/binary_sensor/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/button/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/button/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/camera/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/camera/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/climate/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/climate/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/cover/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/cover/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/device_automation/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/device_automation/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/device_tracker/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/device_tracker/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/event/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/event/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/fan/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/fan/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/humidifier/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/humidifier/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/image/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/image/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/lawn_mower/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/lawn_mower/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/light/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/light/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/lock/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/lock/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/notify/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/notify/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/number/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/number/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/scene/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/scene/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/siren/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/siren/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/select/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/select/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/sensor/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/sensor/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/switch/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/switch/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/tag/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/tag/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/text/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/text/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/update/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/update/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/vacuum/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/vacuum/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/valve/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/valve/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/water_heater/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/water_heater/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/alarm_control_panel/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/alarm_control_panel/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/binary_sensor/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/binary_sensor/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/button/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/button/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/camera/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/camera/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/climate/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/climate/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/cover/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/cover/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/device_automation/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/device_automation/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/device_tracker/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/device_tracker/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/event/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/event/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/fan/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/fan/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/humidifier/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/humidifier/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/image/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/image/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/lawn_mower/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/lawn_mower/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/light/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/light/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/lock/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/lock/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/notify/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/notify/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/number/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/number/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/scene/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/scene/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/siren/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/siren/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/select/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/select/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/sensor/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/sensor/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/switch/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/switch/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/tag/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/tag/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/text/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/text/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/update/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/update/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/vacuum/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/vacuum/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/valve/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/valve/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/water_heater/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/water_heater/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/device/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/device/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	homeassistant/device/+/+/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 homeassistant/device/+/+/config
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	drop_connect/discovery/# (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 drop_connect/discovery/#
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	dsmr/# (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 dsmr/#
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	esphome/discover/# (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 esphome/discover/#
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	fully/deviceInfo/+ (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 fully/deviceInfo/+
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	pglab/discovery/# (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 pglab/discovery/#
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	cloudapp/QBUSMQTTGW/+/state (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 cloudapp/QBUSMQTTGW/+/state
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	tasmota/discovery/# (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 tasmota/discovery/#
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: Received SUBSCRIBE from 0ZXrSWEtB3nRUV9ralVUIU
+1743752694: 	cloudapp/QBUSMQTTGW/config (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 cloudapp/QBUSMQTTGW/config
+1743752694: 	cloudapp/QBUSMQTTGW/state (QoS 0)
+1743752694: 0ZXrSWEtB3nRUV9ralVUIU 0 cloudapp/QBUSMQTTGW/state
+1743752694: Sending SUBACK to 0ZXrSWEtB3nRUV9ralVUIU
+1743752699: Received PUBLISH from 0ZXrSWEtB3nRUV9ralVUIU (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
+1743752753: Received PINGREQ from 0ZXrSWEtB3nRUV9ralVUIU
+1743752753: Sending PINGRESP to 0ZXrSWEtB3nRUV9ralVUIU
+1743752814: Received PINGREQ from 0ZXrSWEtB3nRUV9ralVUIU
+1743752814: Sending PINGRESP to 0ZXrSWEtB3nRUV9ralVUIU
