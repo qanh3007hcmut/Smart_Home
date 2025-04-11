@@ -3,6 +3,27 @@
   "minor_version": 2,
   "key": "repairs.issue_registry",
   "data": {
-    "issues": []
+    "issues": [
+      {
+        "created": "2025-04-10T10:16:33.170077+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": true,
+        "issue_id": "automation.notify_when_smoke_is_detected_service_not_found_notify.notify",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": null,
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "service": "notify.notify",
+          "entity_id": "automation.notify_when_smoke_is_detected",
+          "name": "Notify when smoke is detected",
+          "edit": "/config/automation/edit/None"
+        }
+      }
+    ]
   }
 }

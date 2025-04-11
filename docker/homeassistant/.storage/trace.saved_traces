@@ -2,5 +2,677 @@
   "version": 1,
   "minor_version": 1,
   "key": "trace.saved_traces",
-  "data": {}
+  "data": {
+    "automation.None": [
+      {
+        "extended_dict": {
+          "last_step": "action/4",
+          "run_id": "540820a9d9be3e9379e7e31e103e9ebb",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:30.189019+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "Home Assistant starting",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-10T09:59:30.189061+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.set_door_and_fan_state_to_closed_and_off_on_startup",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-04-06T13:26:52.807932+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Set door and fan state to CLOSED and OFF on startup"
+                    },
+                    "last_changed": "2025-04-10T09:59:29.256797+00:00",
+                    "last_reported": "2025-04-10T09:59:29.256797+00:00",
+                    "last_updated": "2025-04-10T09:59:29.256797+00:00",
+                    "context": {
+                      "id": "01JRFJ7T78A8N10CZFQA8QWT5M",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "homeassistant",
+                    "event": "start",
+                    "description": "Home Assistant starting"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-10T09:59:30.189223+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JRFJ7V4C5A7BTJ4FFQA42V2Q",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "delay": 5.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2025-04-10T09:59:35.192310+00:00",
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.simulated_door"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/2": [
+              {
+                "path": "action/2",
+                "timestamp": "2025-04-10T09:59:35.193102+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "home/door/simulated_door/state",
+                      "payload": "CLOSED"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/3": [
+              {
+                "path": "action/3",
+                "timestamp": "2025-04-10T09:59:35.193387+00:00",
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.simulated_fan"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/4": [
+              {
+                "path": "action/4",
+                "timestamp": "2025-04-10T09:59:35.194424+00:00",
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "home/fan/simulated_fan/state",
+                      "payload": "OFF"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Set door and fan state to CLOSED and OFF on startup",
+            "trigger": [
+              {
+                "platform": "homeassistant",
+                "event": "start"
+              }
+            ],
+            "action": [
+              {
+                "delay": "00:00:05"
+              },
+              {
+                "target": {
+                  "entity_id": "switch.simulated_door"
+                },
+                "action": "switch.turn_off"
+              },
+              {
+                "data": {
+                  "topic": "home/door/simulated_door/state",
+                  "payload": "CLOSED"
+                },
+                "action": "mqtt.publish"
+              },
+              {
+                "target": {
+                  "entity_id": "switch.simulated_fan"
+                },
+                "action": "switch.turn_off"
+              },
+              {
+                "data": {
+                  "topic": "home/fan/simulated_fan/state",
+                  "payload": "OFF"
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JRFJ7V4C5A7BTJ4FFQA42V2Q",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/4",
+          "run_id": "540820a9d9be3e9379e7e31e103e9ebb",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:30.189019+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "Home Assistant starting"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "ee32e0b84062b216e11e214fafb73f91",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:30.693893+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "mqtt topic home/fan/simulated_fan/set",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-10T09:59:30.693929+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.sync_simulated_fan_state_with_command",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-04-08T08:59:19.922661+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Sync simulated fan state with command"
+                    },
+                    "last_changed": "2025-04-10T09:59:29.256633+00:00",
+                    "last_reported": "2025-04-10T09:59:29.256633+00:00",
+                    "last_updated": "2025-04-10T09:59:29.256633+00:00",
+                    "context": {
+                      "id": "01JRFJ7T78STFC3SH3TQG429FF",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "home/fan/simulated_fan/set",
+                    "payload": "ON",
+                    "qos": 0,
+                    "description": "mqtt topic home/fan/simulated_fan/set"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-10T09:59:30.694084+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JRFJ7VM579WKDB9CK1073W6W",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "home/fan/simulated_fan/state",
+                      "payload": "ON",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Sync simulated fan state with command",
+            "trigger": [
+              {
+                "platform": "mqtt",
+                "topic": "home/fan/simulated_fan/set"
+              }
+            ],
+            "action": [
+              {
+                "data_template": {
+                  "topic": "home/fan/simulated_fan/state",
+                  "payload": "{{ trigger.payload }}",
+                  "retain": true
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JRFJ7VM579WKDB9CK1073W6W",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "ee32e0b84062b216e11e214fafb73f91",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:30.693893+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "mqtt topic home/fan/simulated_fan/set"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "26c158706b0adba96df3b9f79f201ca8",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:30.695436+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "mqtt topic home/door/simulated_door/set",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-10T09:59:30.695453+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.sync_simulated_door_state_with_command",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-04-08T08:59:18.287348+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Sync simulated door state with command"
+                    },
+                    "last_changed": "2025-04-10T09:59:29.256731+00:00",
+                    "last_reported": "2025-04-10T09:59:29.256731+00:00",
+                    "last_updated": "2025-04-10T09:59:29.256731+00:00",
+                    "context": {
+                      "id": "01JRFJ7T78EA7GRNDKXSR420H1",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "home/door/simulated_door/set",
+                    "payload": "CLOSED",
+                    "qos": 0,
+                    "description": "mqtt topic home/door/simulated_door/set"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-10T09:59:30.695550+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JRFJ7VM72EKM6DPXYQJ7K45V",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "home/door/simulated_door/state",
+                      "payload": "CLOSED",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Sync simulated door state with command",
+            "trigger": [
+              {
+                "platform": "mqtt",
+                "topic": "home/door/simulated_door/set"
+              }
+            ],
+            "action": [
+              {
+                "data_template": {
+                  "topic": "home/door/simulated_door/state",
+                  "payload": "{{ trigger.payload }}",
+                  "retain": true
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JRFJ7VM72EKM6DPXYQJ7K45V",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "26c158706b0adba96df3b9f79f201ca8",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:30.695436+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "mqtt topic home/door/simulated_door/set"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "4d3db484502e7ed3951ef401942ad779",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:35.193880+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "mqtt topic home/door/simulated_door/set",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-10T09:59:35.193922+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.sync_simulated_door_state_with_command",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-04-10T09:59:30.695489+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Sync simulated door state with command"
+                    },
+                    "last_changed": "2025-04-10T09:59:29.256731+00:00",
+                    "last_reported": "2025-04-10T09:59:30.696099+00:00",
+                    "last_updated": "2025-04-10T09:59:30.696099+00:00",
+                    "context": {
+                      "id": "01JRFJ7VM72EKM6DPXYQJ7K45V",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "home/door/simulated_door/set",
+                    "payload": "CLOSED",
+                    "qos": 0,
+                    "description": "mqtt topic home/door/simulated_door/set"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-10T09:59:35.194012+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JRFJ800S5JFTM2677NTYZEPG",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "home/door/simulated_door/state",
+                      "payload": "CLOSED",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Sync simulated door state with command",
+            "trigger": [
+              {
+                "platform": "mqtt",
+                "topic": "home/door/simulated_door/set"
+              }
+            ],
+            "action": [
+              {
+                "data_template": {
+                  "topic": "home/door/simulated_door/state",
+                  "payload": "{{ trigger.payload }}",
+                  "retain": true
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JRFJ800S5JFTM2677NTYZEPG",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "4d3db484502e7ed3951ef401942ad779",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:35.193880+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "mqtt topic home/door/simulated_door/set"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "0ea97b5a9b88c69af762dcb42d7ee1a3",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:35.194649+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "mqtt topic home/fan/simulated_fan/set",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-10T09:59:35.194676+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.sync_simulated_fan_state_with_command",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-04-10T09:59:30.693996+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Sync simulated fan state with command"
+                    },
+                    "last_changed": "2025-04-10T09:59:29.256633+00:00",
+                    "last_reported": "2025-04-10T09:59:30.696047+00:00",
+                    "last_updated": "2025-04-10T09:59:30.696047+00:00",
+                    "context": {
+                      "id": "01JRFJ7VM579WKDB9CK1073W6W",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "home/fan/simulated_fan/set",
+                    "payload": "OFF",
+                    "qos": 0,
+                    "description": "mqtt topic home/fan/simulated_fan/set"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-10T09:59:35.194734+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JRFJ800TX37X84VWZB4XAN81",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "home/fan/simulated_fan/state",
+                      "payload": "OFF",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Sync simulated fan state with command",
+            "trigger": [
+              {
+                "platform": "mqtt",
+                "topic": "home/fan/simulated_fan/set"
+              }
+            ],
+            "action": [
+              {
+                "data_template": {
+                  "topic": "home/fan/simulated_fan/state",
+                  "payload": "{{ trigger.payload }}",
+                  "retain": true
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JRFJ800TX37X84VWZB4XAN81",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "0ea97b5a9b88c69af762dcb42d7ee1a3",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-04-10T09:59:35.194649+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "mqtt topic home/fan/simulated_fan/set"
+        }
+      }
+    ]
+  }
 }

@@ -1,1 +1,110 @@
-[]
+- alias: "Sync simulated fan state with command"
+  trigger:
+    - platform: mqtt
+      topic: "home/fan/simulated_fan/set"
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: "home/fan/simulated_fan/state"
+        payload: "{{ trigger.payload }}"
+        retain: true
+
+- alias: "Sync simulated door state with command"
+  trigger:
+    - platform: mqtt
+      topic: "home/door/simulated_door/set"
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: "home/door/simulated_door/state"
+        payload: "{{ trigger.payload }}"
+        retain: true
+
+- alias: "Set door and fan state to CLOSED and OFF on startup"
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - delay: '00:00:05'  # Add a 5-second delay to ensure MQTT broker is ready
+    - service: switch.turn_off
+      target:
+        entity_id: switch.simulated_door
+    - service: mqtt.publish
+      data:
+        topic: "home/door/simulated_door/state"
+        payload: "CLOSED"
+    - service: switch.turn_off
+      target:
+        entity_id: switch.simulated_fan
+    - service: mqtt.publish
+      data:
+        topic: "home/fan/simulated_fan/state"
+        payload: "OFF"
+        
+- alias: "Turn on fan when temperature is above 25°C"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.temperature_sensor
+      above: 25
+  action:
+    - service: switch.turn_on
+      target:
+        entity_id: switch.simulated_fan
+
+- alias: "Turn off fan when temperature is below 25°C"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.temperature_sensor
+      below: 25
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.simulated_fan
+        
+- alias: "Open door when familiar face is detected"
+  trigger:
+    - platform: mqtt
+      topic: "home/camera/simulated_camera/face"
+      payload: "familiar"
+  action:
+    - service: switch.turn_on
+      target:
+        entity_id: switch.simulated_door
+
+- alias: "Close door when unfamiliar or no face is detected"
+  trigger:
+    - platform: mqtt
+      topic: "home/camera/simulated_camera/face"
+  condition:
+    condition: or
+    conditions:
+      - condition: template
+        value_template: "{{ trigger.payload == 'unfamiliar' }}"
+      - condition: template
+        value_template: "{{ trigger.payload == 'none' }}"
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.simulated_door
+
+- alias: "Notify when smoke is detected"
+  trigger:
+    - platform: mqtt
+      topic: "home/sensor/simulated_smoke_sensor/smoke"
+      payload: "smoke"
+  action:
+    - service: persistent_notification.create
+      data:
+        title: "Fall Detected!"
+        message: "Smoke detected! Please check immediately."
+
+- alias: "Notify when a fall is detected"
+  trigger:
+    - platform: mqtt
+      topic: "home/camera/simulated_fall_camera/fall"
+      payload: "fall_detected"
+  action:
+    - service: persistent_notification.create
+      data:
+        title: "Fall Detected!"
+        message: "A fall has been detected by the indoor camera. Please check immediately."

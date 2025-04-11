@@ -1,11 +1,56 @@
+mqtt:
+  - sensor:
+      name: "Temperature Sensor"
+      unique_id: "temperature_sensor"
+      state_topic: "home/sensor/simulated_temperature_sensor/temperature"
+      unit_of_measurement: "°C"
+      value_template: "{{ value }}"
+      qos: 0
 
-# Loads default set of integrations. Do not remove.
-default_config:
+  - switch:
+      name: "Fan"
+      unique_id: "simulated_fan"
+      state_topic: "home/fan/simulated_fan/state"
+      command_topic: "home/fan/simulated_fan/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      optimistic: false
+      qos: 0
+      retain: true
+      
+  - sensor:
+      name: "Camera Face Detector"
+      unique_id: "camera_face_detection"
+      state_topic: "home/camera/simulated_camera/face"
+      value_template: "{{ value }}"
+      qos: 0
 
-# Load frontend themes from the themes folder
-frontend:
-  themes: !include_dir_merge_named themes
+  - switch:
+      name: "Door"
+      unique_id: "simulated_door"
+      state_topic: "home/door/simulated_door/state"
+      command_topic: "home/door/simulated_door/set"
+      payload_on: "OPEN"
+      payload_off: "CLOSED"
+      optimistic: false
+      qos: 0
+      retain: true
+    
+  - sensor:
+      name: "Smoke Sensor"
+      unique_id: "smoke_sensor"
+      state_topic: "home/sensor/simulated_smoke_sensor/smoke"
+      value_template: "{{ value }}"
+      qos: 0
 
+  - sensor:
+      name: "Fall Detection Camera"
+      unique_id: "fall_detection_camera"
+      state_topic: "home/camera/simulated_fall_camera/fall"
+      value_template: "{{ value }}"
+      qos: 0
+
+# group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
