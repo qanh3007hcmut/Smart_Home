@@ -4,19 +4,98 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.iot_smart_home","state":"unknown","attributes":{"editable":true,"id":"iot_smart_home","device_trackers":[],"source":"person.iot_smart_home","user_id":"7e19a9184c5640aeaeabd21404a1bd48","friendly_name":"IOT SMART HOME"},"last_changed":"2025-03-29T14:31:58.468051+00:00","last_reported":"2025-03-29T14:31:58.468051+00:00","last_updated":"2025-03-29T14:31:58.468051+00:00","context":{"id":"01JQH52484B8J2GMQCAMW0FRJB","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.iot_smart_home","state":"unknown","attributes":{"editable":true,"id":"iot_smart_home","device_trackers":[],"user_id":"7e19a9184c5640aeaeabd21404a1bd48","friendly_name":"IOT SMART HOME"},"last_changed":"2025-04-10T10:12:27.165121+00:00","last_reported":"2025-04-10T10:12:28.801295+00:00","last_updated":"2025-04-10T10:12:28.801295+00:00","context":{"id":"01JRFJZKG12DRW7ZD7R7NRJEHR","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-03-29T14:32:49.670266+00:00"
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-03-29T14:32:00.660431+00:00","last_reported":"2025-03-29T14:32:00.660431+00:00","last_updated":"2025-03-29T14:32:00.660431+00:00","context":{"id":"01JQH526CMFV5AFGH779D96T26","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-04-10T10:12:27.874070+00:00","last_reported":"2025-04-10T10:12:27.874070+00:00","last_updated":"2025-04-10T10:12:27.874070+00:00","context":{"id":"01JRFJZJK2B2EKD85AFDJ4GCJF","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-03-29T14:32:49.670266+00:00"
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-03-29T14:32:01.232197+00:00","last_reported":"2025-03-29T14:32:01.232197+00:00","last_updated":"2025-03-29T14:32:01.232197+00:00","context":{"id":"01JQH526YGYQYGEW4GJRSVXB9E","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.sync_simulated_fan_state_with_command","state":"on","attributes":{"last_triggered":"2025-04-11T04:34:12.974338+00:00","mode":"single","current":0,"friendly_name":"Sync simulated fan state with command"},"last_changed":"2025-04-10T10:12:28.330081+00:00","last_reported":"2025-04-11T04:34:13.666806+00:00","last_updated":"2025-04-11T04:34:13.666806+00:00","context":{"id":"01JRHJ0Y2CDG7QGZAK13JY6QKW","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-03-29T14:32:49.670266+00:00"
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.sync_simulated_door_state_with_command","state":"on","attributes":{"last_triggered":"2025-04-11T04:34:02.544551+00:00","mode":"single","current":0,"friendly_name":"Sync simulated door state with command"},"last_changed":"2025-04-10T10:12:28.330383+00:00","last_reported":"2025-04-11T04:34:13.599651+00:00","last_updated":"2025-04-11T04:34:13.599651+00:00","context":{"id":"01JRHJ0YYZ43E872KXYPWKA3M1","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.set_door_and_fan_state_to_closed_and_off_on_startup","state":"on","attributes":{"last_triggered":"2025-04-10T10:12:29.240028+00:00","mode":"single","current":0,"friendly_name":"Set door and fan state to CLOSED and OFF on startup"},"last_changed":"2025-04-10T10:12:28.330522+00:00","last_reported":"2025-04-10T10:12:34.256607+00:00","last_updated":"2025-04-10T10:12:34.256607+00:00","context":{"id":"01JRFJZRTGADEVRP3T42SYDV7N","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.turn_on_fan_when_temperature_is_above_25degc","state":"on","attributes":{"last_triggered":"2025-04-08T08:58:44.792116+00:00","mode":"single","current":0,"friendly_name":"Turn on fan when temperature is above 25°C"},"last_changed":"2025-04-10T10:12:28.330712+00:00","last_reported":"2025-04-10T10:12:28.330712+00:00","last_updated":"2025-04-10T10:12:28.330712+00:00","context":{"id":"01JRFJZK1ACJS4Y7EC6KV5ZYN1","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.turn_off_fan_when_temperature_is_below_25degc","state":"on","attributes":{"last_triggered":"2025-04-07T14:56:14.665612+00:00","mode":"single","current":0,"friendly_name":"Turn off fan when temperature is below 25°C"},"last_changed":"2025-04-10T10:12:28.330829+00:00","last_reported":"2025-04-10T10:12:28.330829+00:00","last_updated":"2025-04-10T10:12:28.330829+00:00","context":{"id":"01JRFJZK1A0XFT3HXTA65RNC91","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.open_door_when_familiar_face_is_detected","state":"on","attributes":{"last_triggered":"2025-04-07T14:56:31.791278+00:00","mode":"single","current":0,"friendly_name":"Open door when familiar face is detected"},"last_changed":"2025-04-10T10:12:28.330945+00:00","last_reported":"2025-04-10T10:12:28.330945+00:00","last_updated":"2025-04-10T10:12:28.330945+00:00","context":{"id":"01JRFJZK1A9ZWPZG2PA93ZR0PT","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.close_door_when_unfamiliar_or_no_face_is_detected","state":"on","attributes":{"last_triggered":"2025-04-07T14:56:41.791001+00:00","mode":"single","current":0,"friendly_name":"Close door when unfamiliar or no face is detected"},"last_changed":"2025-04-10T10:12:28.331167+00:00","last_reported":"2025-04-10T10:12:28.331167+00:00","last_updated":"2025-04-10T10:12:28.331167+00:00","context":{"id":"01JRFJZK1B2XQMNTGRC3BJZ5BH","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature_sensor","state":"unknown","attributes":{"unit_of_measurement":"°C","friendly_name":"Temperature Sensor"},"last_changed":"2025-04-11T04:33:54.295288+00:00","last_reported":"2025-04-11T04:33:54.295288+00:00","last_updated":"2025-04-11T04:33:54.295288+00:00","context":{"id":"01JRHJ0C3QTJTRC3QBZJB3APSH","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.camera_face_detector","state":"unknown","attributes":{"friendly_name":"Camera Face Detector"},"last_changed":"2025-04-11T04:33:54.295513+00:00","last_reported":"2025-04-11T04:33:54.295513+00:00","last_updated":"2025-04-11T04:33:54.295513+00:00","context":{"id":"01JRHJ0C3Q3PVMJYKVTRCQQ3TW","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.smoke_sensor","state":"clear","attributes":{"friendly_name":"Smoke Sensor"},"last_changed":"2025-04-11T04:33:54.459415+00:00","last_reported":"2025-04-11T04:33:54.459415+00:00","last_updated":"2025-04-11T04:33:54.459415+00:00","context":{"id":"01JRHJ0C8V72EBAJ4H4WK2J58Q","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "clear",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.simulated_fan","state":"off","attributes":{"friendly_name":"Fan"},"last_changed":"2025-04-11T04:33:54.459951+00:00","last_reported":"2025-04-11T04:33:54.459951+00:00","last_updated":"2025-04-11T04:33:54.459951+00:00","context":{"id":"01JRHJ0C8VGEZRPA5QA3HPW0EE","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.simulated_door","state":"off","attributes":{"friendly_name":"Door"},"last_changed":"2025-04-11T04:33:54.460090+00:00","last_reported":"2025-04-11T04:33:54.460090+00:00","last_updated":"2025-04-11T04:33:54.460090+00:00","context":{"id":"01JRHJ0C8W01CC3EGH9M0Q55ZN","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.notify_when_smoke_is_detected","state":"on","attributes":{"last_triggered":"2025-04-10T10:19:48.234732+00:00","mode":"single","current":0,"friendly_name":"Notify when smoke is detected"},"last_changed":"2025-04-10T10:19:32.180951+00:00","last_reported":"2025-04-10T10:19:48.235734+00:00","last_updated":"2025-04-10T10:19:48.235734+00:00","context":{"id":"01JRFKD0MAPAHW2THWYBHM1X8F","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-11T17:43:37.654605+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.door","state":"on","attributes":{"friendly_name":"Door"},"last_changed":"2025-04-06T13:23:17.744413+00:00","last_reported":"2025-04-06T13:23:17.744413+00:00","last_updated":"2025-04-06T13:23:17.744413+00:00","context":{"id":"01JR5MA43GHRWKBASS16MZN8KS","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-06T13:24:27.544490+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.set_device_default_state_on_startup","state":"on","attributes":{"last_triggered":"2025-04-06T10:53:53.534469+00:00","mode":"single","current":0,"friendly_name":"Set device default state on startup"},"last_changed":"2025-04-06T10:53:52.397817+00:00","last_reported":"2025-04-06T10:53:53.561064+00:00","last_updated":"2025-04-06T10:53:53.561064+00:00","context":{"id":"01JR5BRHZYDGDDCPZB3D3YEENF","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-06T11:02:07.679686+00:00"
     }
   ]
 }
