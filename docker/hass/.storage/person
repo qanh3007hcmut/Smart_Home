@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "localhost",
+        "name": "localhost",
+        "user_id": "9e94dd3fca87425695fd42f6424a91e5",
+        "device_trackers": []
+      }
+    ]
+  }
+}
