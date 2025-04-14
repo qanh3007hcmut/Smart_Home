@@ -14,6 +14,59 @@ import numpy as np
 import cv2
 import collections
 from sklearn.svm import SVC
+import paho.mqtt.client as mqtt
+
+
+class FaceDetectionManager:
+    _instance = None
+    
+    def __init__(self):
+        self.latest_result = "none"
+        self.is_running = False
+        # Initialize MQTT client
+        self.client = mqtt.Client()
+        self.client.on_connect = lambda client, userdata, flags, rc: print(f"FDM connected with result code {rc}")
+        try:
+            self.client.connect("localhost", 1883, 60)
+            self.client.loop_start()
+        except Exception as e:
+            print(f"Could not connect to MQTT broker: {e}")
+    
+    @classmethod
+    def get_instance(cls):
+        if cls._instance is None:
+            cls._instance = FaceDetectionManager()
+            print(f"Created new instance: {id(cls._instance)}")
+        else:
+            print(f"Returning existing instance: {id(cls._instance)}")
+        return cls._instance
+    
+    def update_result(self, name, probability):
+        if probability > 0.5:
+            if name == "Dwayne Johnson":
+                result = "familiar"
+            else:
+                result = "unfamiliar"
+        else:
+            result = "unfamiliar"
+        self.latest_result = result
+        # Publish result directly to MQTT
+        self.client.publish("home/face_detection/status", result)
+    
+    def get_current_result(self):
+        if not self.is_running:
+            return "none"
+        print(f"Current result: {self.latest_result}")
+        return self.latest_result
+    
+    def start(self):
+        self.is_running = True
+    
+    def stop(self):
+        self.is_running = False
+        self.client.publish("home/face_detection/status", "none")
+        self.client.loop_stop()
+        self.client.disconnect()
 
 
 def main():
@@ -63,77 +116,88 @@ def main():
             # Lay hinh anh tu file video
             cap = cv2.VideoCapture(VIDEO_PATH)
 
-            while (cap.isOpened()):
-                # Doc tung frame
-                ret, frame = cap.read()
-                
-                if not ret:
-                    break
+            # Add this line after initialization but before the video capture loop
+            face_manager = FaceDetectionManager.get_instance()
+            face_manager.start()
+            
+            try:
+                while (cap.isOpened()):
+                    # Doc tung frame
+                    ret, frame = cap.read()
+                    
+                    if not ret:
+                        break
 
-                # Phat hien khuon mat, tra ve vi tri trong bounding_boxes
-                bounding_boxes, _ = align.detect_face.detect_face(frame, MINSIZE, pnet, rnet, onet, THRESHOLD, FACTOR)
+                    # Phat hien khuon mat, tra ve vi tri trong bounding_boxes
+                    bounding_boxes, _ = align.detect_face.detect_face(frame, MINSIZE, pnet, rnet, onet, THRESHOLD, FACTOR)
 
-                faces_found = bounding_boxes.shape[0]
-                try:
-                    # Neu co it nhat 1 khuon mat trong frame
-                    if faces_found > 0:
-                        det = bounding_boxes[:, 0:4]
-                        bb = np.zeros((faces_found, 4), dtype=np.int32)
-                        for i in range(faces_found):
-                            bb[i][0] = det[i][0]
-                            bb[i][1] = det[i][1]
-                            bb[i][2] = det[i][2]
-                            bb[i][3] = det[i][3]
+                    faces_found = bounding_boxes.shape[0]
+                    try:
+                        # Neu co it nhat 1 khuon mat trong frame
+                        if faces_found > 0:
+                            det = bounding_boxes[:, 0:4]
+                            bb = np.zeros((faces_found, 4), dtype=np.int32)
+                            for i in range(faces_found):
+                                bb[i][0] = det[i][0]
+                                bb[i][1] = det[i][1]
+                                bb[i][2] = det[i][2]
+                                bb[i][3] = det[i][3]
 
-                            # Cat phan khuon mat tim duoc
-                            cropped = frame[bb[i][1]:bb[i][3], bb[i][0]:bb[i][2], :]
-                            scaled = cv2.resize(cropped, (INPUT_IMAGE_SIZE, INPUT_IMAGE_SIZE),
-                                                interpolation=cv2.INTER_CUBIC)
-                            scaled = facenet.prewhiten(scaled)
-                            scaled_reshape = scaled.reshape(-1, INPUT_IMAGE_SIZE, INPUT_IMAGE_SIZE, 3)
-                            feed_dict = {images_placeholder: scaled_reshape, phase_train_placeholder: False}
-                            emb_array = sess.run(embeddings, feed_dict=feed_dict)
-                            
-                            # Dua vao model de classifier
-                            predictions = model.predict_proba(emb_array)
-                            best_class_indices = np.argmax(predictions, axis=1)
-                            best_class_probabilities = predictions[
-                                np.arange(len(best_class_indices)), best_class_indices]
-                            
-                            # Lay ra ten va ty le % cua class co ty le cao nhat
-                            best_name = class_names[best_class_indices[0]]
-                            print("Name: {}, Probability: {}".format(best_name, best_class_probabilities))
-
-                            # Ve khung mau xanh quanh khuon mat
-                            cv2.rectangle(frame, (bb[i][0], bb[i][1]), (bb[i][2], bb[i][3]), (0, 255, 0), 2)
-                            text_x = bb[i][0]
-                            text_y = bb[i][3] + 20
-
-                            # Neu ty le nhan dang > 0.5 thi hien thi ten
-                            if best_class_probabilities > 0.5:
-                                name = class_names[best_class_indices[0]]
-                            else:
-                                # Con neu <=0.5 thi hien thi Unknow
-                                name = "Unknown"
+                                # Cat phan khuon mat tim duoc
+                                cropped = frame[bb[i][1]:bb[i][3], bb[i][0]:bb[i][2], :]
+                                scaled = cv2.resize(cropped, (INPUT_IMAGE_SIZE, INPUT_IMAGE_SIZE),
+                                                    interpolation=cv2.INTER_CUBIC)
+                                scaled = facenet.prewhiten(scaled)
+                                scaled_reshape = scaled.reshape(-1, INPUT_IMAGE_SIZE, INPUT_IMAGE_SIZE, 3)
+                                feed_dict = {images_placeholder: scaled_reshape, phase_train_placeholder: False}
+                                emb_array = sess.run(embeddings, feed_dict=feed_dict)
                                 
-                            # Viet text len tren frame    
-                            cv2.putText(frame, name, (text_x, text_y), cv2.FONT_HERSHEY_COMPLEX_SMALL,
-                                        1, (255, 255, 255), thickness=1, lineType=2)
-                            cv2.putText(frame, str(round(best_class_probabilities[0], 3)), (text_x, text_y + 17),
-                                        cv2.FONT_HERSHEY_COMPLEX_SMALL,
-                                        1, (255, 255, 255), thickness=1, lineType=2)
-                            person_detected[best_name] += 1
-                except Exception as e:
-                    print(f"Error processing face: {e}")
-                    pass
+                                # Dua vao model de classifier
+                                predictions = model.predict_proba(emb_array)
+                                best_class_indices = np.argmax(predictions, axis=1)
+                                best_class_probabilities = predictions[
+                                    np.arange(len(best_class_indices)), best_class_indices]
+                                
+                                # Lay ra ten va ty le % cua class co ty le cao nhat
+                                best_name = class_names[best_class_indices[0]]
+                                print("Name: {}, Probability: {}".format(best_name, best_class_probabilities))
 
-                # Hien thi frame len man hinh
-                cv2.imshow('Face Recognition', frame)
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
+                                # Ve khung mau xanh quanh khuon mat
+                                cv2.rectangle(frame, (bb[i][0], bb[i][1]), (bb[i][2], bb[i][3]), (0, 255, 0), 2)
+                                text_x = bb[i][0]
+                                text_y = bb[i][3] + 20
 
-            cap.release()
-            cv2.destroyAllWindows()
+                                # Neu ty le nhan dang > 0.5 thi hien thi ten
+                                if best_class_probabilities > 0.5:
+                                    name = class_names[best_class_indices[0]]
+                                else:
+                                    # Con neu <=0.5 thi hien thi Unknow
+                                    name = "Unknown"
+                                    
+                                # Viet text len tren frame    
+                                cv2.putText(frame, name, (text_x, text_y), cv2.FONT_HERSHEY_COMPLEX_SMALL,
+                                            1, (255, 255, 255), thickness=1, lineType=2)
+                                cv2.putText(frame, str(round(best_class_probabilities[0], 3)), (text_x, text_y + 17),
+                                            cv2.FONT_HERSHEY_COMPLEX_SMALL,
+                                            1, (255, 255, 255), thickness=1, lineType=2)
+                                person_detected[best_name] += 1
+                                
+                                # After the existing probability calculation
+                                face_manager.update_result(best_name, best_class_probabilities[0])
+                        else:
+                            face_manager.latest_result = "none"
+                    except Exception as e:
+                        print(f"Error processing face: {e}")
+                        pass
+
+                    # Hien thi frame len man hinh
+                    cv2.imshow('Face Recognition', frame)
+                    if cv2.waitKey(1) & 0xFF == ord('q'):
+                        break
+            finally:
+                face_manager.stop()
+                cap.release()
+                cv2.destroyAllWindows()
 
 
 if __name__ == "__main__":
