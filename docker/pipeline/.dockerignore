@@ -1,0 +1,14 @@
+# Loại trừ thư mục .git
+.git/
+
+# Loại trừ thư mục cache của Python
+__pycache__/
+
+# Loại trừ file init.py
+__init__.py
+
+# Loại trừ file Dockerfile nếu bạn không muốn nó xuất hiện trong image
+Dockerfile
+
+# Loại trừ các file môi trường như .env
+.env

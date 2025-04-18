@@ -1,0 +1,80 @@
+sensors:
+  - type: "temperature"
+    state_topic: "home/sensor/temperature"
+    unit: "\u00B0C"
+    value_range: [18.0, 32.0]
+    precision: 2
+    modes:
+      good: [18.0, 24.0]
+      moderate: [25.0, 30.0]
+      unhealthy: [31.0, 35.0]
+      hazardous: [36.0, 45.0]
+    active_modes: []
+
+  - type: humidity
+    state_topic: home/sensor/humidity
+    unit: "%"
+    precision: 1
+    modes:
+      good: [40, 60]
+      moderate: [[30, 40], [60, 70]]
+      unhealthy: [[20, 30], [70, 80]]
+      hazardous: [[0, 20], [80, 100]]
+    active_modes: [good, moderate]
+
+  - type: gas_concentration
+    state_topic: home/sensor/gas_concentration
+    unit: "ppm"
+    precision: 0
+    modes:
+      good: [0, 200]
+      moderate: [200, 400]
+      unhealthy: [400, 1000]
+      hazardous: [1000, 10000]
+    active_modes: [good, moderate]
+
+  - type: pm2.5
+    state_topic: home/sensor/pm25
+    unit: "\u00b5g/m\u00b3" #µg/m³
+    precision: 1
+    modes:
+      good: [[0, 12]]
+      moderate: [[12.1, 35.4]]
+      unhealthy: [[35.5, 55.4]]
+      hazardous: [[55.5, 200]]
+    active_modes: [good, moderate]
+
+  - type: pm10
+    state_topic: home/sensor/pm10
+    unit: "\u00b5g/m\u00b3" #µg/m³
+    precision: 1
+    modes:
+      good: [[0, 54]]
+      moderate: [[55, 154]]
+      unhealthy: [[155, 254]]
+      hazardous: [[255, 500]]
+    active_modes: [good, moderate]
+
+  - type: co2
+    state_topic: home/sensor/co2
+    unit: 'ppm'
+    precision: 1
+    modes:
+      good: [[0, 400]]
+      moderate: [[400, 1000]]
+      unhealthy: [[1000, 3000]]
+      hazardous: [[3000, 10000]]
+    active_modes: [good, moderate]
+  
+  - type: co
+    state_topic: home/sensor/co
+    unit: 'ppm'
+    precision: 1
+    modes:
+      good: [[0, 5]]
+      moderate: [[5, 15]]
+      unhealthy: [[15, 50]]
+      hazardous: [[50, 300]]
+    active_modes: [good, moderate]
+
+

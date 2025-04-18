@@ -1,0 +1,5 @@
+binary_sensors:
+  - type: "door"
+    state_topic: "home/door/main/state"
+    payload_on: "locked"
+    payload_off: "unlocked"

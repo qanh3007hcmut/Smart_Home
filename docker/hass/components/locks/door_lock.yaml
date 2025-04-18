@@ -1,0 +1,16 @@
+- name: Front Door Lock
+  code_format: "^\\d{4}$"
+  command_topic: "home/door/front/lock/set"
+  command_template: '{ "action": "{{ value }}", "code":"{{ code }}" }'
+  payload_lock: "LOCK"
+  payload_unlock: "UNLOCK"
+  payload_open: "OPEN"
+  
+  state_topic: "home/door/front/lock/state"
+  state_locked: "LOCKED"
+  state_unlocked: "UNLOCKED"
+  state_locking: "LOCKING"
+  state_unlocking: "UNLOCKING"
+  optimistic: false
+  qos: 1
+  retain: true

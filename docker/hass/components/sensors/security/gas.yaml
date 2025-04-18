@@ -1,0 +1,7 @@
+- name: "Gas Sensor"
+  # device_class: "gas"
+  suggested_display_precision: 0
+  unique_id: "gas_concentration_1"
+  state_topic: "home/sensor/gas_concentration"
+  unit_of_measurement: "ppm"
+  value_template: "{{ value | float }}"

@@ -7,7 +7,132 @@
       "views": [
         {
           "title": "Home",
-          "sections": []
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "tile",
+                  "entity": "lock.front_door_lock",
+                  "features_position": "bottom",
+                  "vertical": true,
+                  "name": "Front Door",
+                  "show_entity_picture": true,
+                  "icon": "mdi:door",
+                  "hide_state": false,
+                  "state_content": "last_changed",
+                  "features": [
+                    {
+                      "type": "lock-commands"
+                    },
+                    {
+                      "type": "lock-open-door"
+                    }
+                  ],
+                  "grid_options": {
+                    "rows": 4,
+                    "columns": 4
+                  }
+                },
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "entity": "sensor.temperature",
+                  "detail": 1,
+                  "hours_to_show": 24,
+                  "grid_options": {
+                    "columns": 8,
+                    "rows": 2
+                  }
+                },
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.humid_sensor_2",
+                  "name": "Humidity",
+                  "grid_options": {
+                    "columns": 8,
+                    "rows": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.humid_sensor_2",
+                  "name": "Humidity",
+                  "unit": "%",
+                  "needle": true,
+                  "severity": {
+                    "green": 40,
+                    "yellow": 70,
+                    "red": 80
+                  }
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pm2_5_sensor_2",
+                  "name": "PM 2.5",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 200,
+                  "needle": true,
+                  "severity": {
+                    "green": 12,
+                    "yellow": 35.5,
+                    "red": 55.5
+                  }
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pm10_sensor_2",
+                  "name": "PM 10",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 500,
+                  "needle": true,
+                  "severity": {
+                    "green": 55,
+                    "yellow": 155,
+                    "red": 255
+                  }
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.co2_sensor",
+                  "name": "CO2",
+                  "unit": "ppm",
+                  "min": 0,
+                  "max": 10000,
+                  "needle": true,
+                  "severity": {
+                    "green": 400,
+                    "yellow": 1000,
+                    "red": 3000
+                  }
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "New section"
+                }
+              ]
+            }
+          ],
+          "badges": [
+            {
+              "type": "entity",
+              "entity": "lock.front_door_lock"
+            }
+          ]
         }
       ]
     }

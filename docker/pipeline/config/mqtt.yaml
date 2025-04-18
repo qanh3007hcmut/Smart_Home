@@ -1,0 +1,4 @@
+broker: "mosquitto"
+port: 1883
+interval: 5
+use_json: False

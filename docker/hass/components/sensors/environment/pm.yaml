@@ -1,0 +1,13 @@
+- name: "PM2.5 Sensor"
+  state_topic: "home/sensor/pm25"
+  unique_id: "PM2.5"
+  unit_of_measurement: "µg/m³"
+  value_template: "{{ value | float }}"
+  device_class: "pm25"
+
+- name: "PM10 Sensor"
+  state_topic: "home/sensor/pm10"
+  unique_id: "PM10"
+  unit_of_measurement: "µg/m³"
+  value_template: "{{ value | float }}"
+  device_class: "pm10"  

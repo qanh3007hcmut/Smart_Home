@@ -11,6 +11,32 @@
         },
         "problemMatcher": [],
         "detail": "Tự động khởi động Docker Compose với build"
+      },
+      {
+        "label": "Rebuild Services",
+        "type": "shell",
+        "command": "docker compose -f docker/docker-compose.yml down; docker compose -f docker/docker-compose.yml up -d --build",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "detail": "Auto rebuild"
+      },
+      {
+        "label": "Docker Compose Down",
+        "type": "shell",
+        "command": "docker compose -f docker/docker-compose.yml down",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "detail": "Turn Container Off"
       }
     ]
   }

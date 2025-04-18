@@ -1,0 +1,14 @@
+locks:
+  - type: frontdoor
+    command_topic: "home/door/front/lock/set"
+    payload_lock: "LOCK"
+    payload_unlock: "UNLOCK"
+    payload_open: "OPEN"
+    
+    state_topic: "home/door/front/lock/state"
+    state_locked: "LOCKED"
+    state_unlocked: "UNLOCKED"
+    state_locking: "LOCKING"
+    state_unlocking: "UNLOCKING"
+
+    code: 0000 #password for door lock

@@ -1,0 +1,15 @@
+- name: "CO2 Sensor"
+  device_class: "carbon_dioxide"
+  suggested_display_precision: 1
+  state_topic: "home/sensor/co2"
+  unique_id: "CO2_sensor_1"
+  unit_of_measurement: "ppm"  # parts per million
+  value_template: "{{ value | float }}"
+
+- name: "CO Sensor"
+  state_topic: "home/sensor/co"
+  device_class: "carbon_monoxide"
+  suggested_display_precision: 1
+  unique_id: "CO_sensor_1"
+  unit_of_measurement: "ppm"  # parts per million
+  value_template: "{{ value | float }}"

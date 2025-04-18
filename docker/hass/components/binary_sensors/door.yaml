@@ -1,0 +1,7 @@
+- name: "Main Door"
+  unique_id: "main_door"
+  state_topic: "home/door/main/state"
+  payload_on: "locked"
+  payload_off: "unlocked"
+  device_class: door
+  qos: 1

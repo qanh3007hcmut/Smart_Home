@@ -4,35 +4,136 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.localhost","state":"unknown","attributes":{"editable":true,"id":"localhost","device_trackers":[],"source":"person.localhost","user_id":"9e94dd3fca87425695fd42f6424a91e5","friendly_name":"localhost"},"last_changed":"2025-04-13T14:19:07.073819+00:00","last_reported":"2025-04-13T14:19:07.073819+00:00","last_updated":"2025-04-13T14:19:07.073819+00:00","context":{"id":"01JRQR9BY1V14AKKGMQPEA1FY0","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.localhost","state":"unknown","attributes":{"editable":true,"id":"localhost","device_trackers":[],"user_id":"9e94dd3fca87425695fd42f6424a91e5","friendly_name":"localhost"},"last_changed":"2025-04-18T13:20:00.230565+00:00","last_reported":"2025-04-18T13:20:07.147880+00:00","last_updated":"2025-04-18T13:20:07.147880+00:00","context":{"id":"01JS4GWXZBZHE5JQRC9NEQVXCT","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-13T14:19:12.853304+00:00"
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-04-13T14:19:08.822942+00:00","last_reported":"2025-04-13T14:19:08.822942+00:00","last_updated":"2025-04-13T14:19:08.822942+00:00","context":{"id":"01JRQR9DMPZMJ2GS7W9APY0X5S","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-04-18T13:20:02.654994+00:00","last_reported":"2025-04-18T13:20:02.654994+00:00","last_updated":"2025-04-18T13:20:02.654994+00:00","context":{"id":"01JS4GWSJYCXW9GVHJA5JYF889","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-13T14:19:12.853304+00:00"
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-04-13T14:19:09.205216+00:00","last_reported":"2025-04-13T14:19:09.205216+00:00","last_updated":"2025-04-13T14:19:09.205216+00:00","context":{"id":"01JRQR9E0N7MARJ3Y0P0SM0870","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-04-18T13:20:03.145614+00:00","last_reported":"2025-04-18T13:20:03.145614+00:00","last_updated":"2025-04-18T13:20:03.145614+00:00","context":{"id":"01JS4GWT29E79NVHPKHZ1RSD1G","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-13T14:19:12.853304+00:00"
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
     },
     {
-      "state": {"entity_id":"sensor.temperature_sensor_temp_1","state":"unknown","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Temperature Sensor temp_1"},"last_changed":"2025-04-13T14:19:09.631112+00:00","last_reported":"2025-04-13T14:19:09.631112+00:00","last_updated":"2025-04-13T14:19:09.631112+00:00","context":{"id":"01JRQR9EDZCGP58NMQN8DB7BRH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.humid_sensor_2","state":"58.2","attributes":{"unit_of_measurement":"%","device_class":"humidity","friendly_name":"Humid Sensor"},"last_changed":"2025-04-18T13:35:55.144972+00:00","last_reported":"2025-04-18T13:35:55.144972+00:00","last_updated":"2025-04-18T13:35:55.144972+00:00","context":{"id":"01JS4HSVR8K873R981NVE92TE8","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": null,
+        "native_value": "58.2",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.pm2_5_sensor_2","state":"1.0","attributes":{"unit_of_measurement":"µg/m³","device_class":"pm25","friendly_name":"PM2.5 Sensor"},"last_changed":"2025-04-18T13:35:55.146500+00:00","last_reported":"2025-04-18T13:35:55.146500+00:00","last_updated":"2025-04-18T13:35:55.146500+00:00","context":{"id":"01JS4HSVRAEVX9SYJZ7WC7WF6W","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "1.0",
+        "native_unit_of_measurement": "µg/m³"
+      },
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.pm10_sensor_2","state":"20.1","attributes":{"unit_of_measurement":"µg/m³","device_class":"pm10","friendly_name":"PM10 Sensor"},"last_changed":"2025-04-18T13:35:55.147740+00:00","last_reported":"2025-04-18T13:35:55.147740+00:00","last_updated":"2025-04-18T13:35:55.147740+00:00","context":{"id":"01JS4HSVRBQX8FHSKCXZK8JQG4","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "20.1",
+        "native_unit_of_measurement": "µg/m³"
+      },
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature","state":"29.55","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Temperature"},"last_changed":"2025-04-18T13:35:55.143972+00:00","last_reported":"2025-04-18T13:35:55.143972+00:00","last_updated":"2025-04-18T13:35:55.143972+00:00","context":{"id":"01JS4HSVR7RHAHAGHCD9QSDQJT","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "29.55",
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2025-04-13T14:19:12.853304+00:00"
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
     },
     {
-      "state": {"entity_id":"sensor.temperature_sensor","state":"unknown","attributes":{"unit_of_measurement":"°C","friendly_name":"Temperature Sensor"},"last_changed":"2025-04-13T14:19:09.631179+00:00","last_reported":"2025-04-13T14:19:09.631179+00:00","last_updated":"2025-04-13T14:19:09.631179+00:00","context":{"id":"01JRQR9EDZEW4K5X1SPQS61G27","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.gas_sensor_1","state":"43.0","attributes":{"unit_of_measurement":"ppm","icon":"mdi:meter-gas-outline","friendly_name":"Gas Sensor"},"last_changed":"2025-04-18T13:35:55.146057+00:00","last_reported":"2025-04-18T13:35:55.146057+00:00","last_updated":"2025-04-18T13:35:55.146057+00:00","context":{"id":"01JS4HSVRAT6S1PAQG3B4WVF8C","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": null,
+        "native_value": "43.0",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.co2_sensor","state":"290.0","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"CO2 Sensor"},"last_changed":"2025-04-18T13:35:55.148136+00:00","last_reported":"2025-04-18T13:35:55.148136+00:00","last_updated":"2025-04-18T13:35:55.148136+00:00","context":{"id":"01JS4HSVRCDV89ETZMV7CDD8NW","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "290.0",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.co_sensor","state":"13.4","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_monoxide","friendly_name":"CO Sensor"},"last_changed":"2025-04-18T13:35:55.149004+00:00","last_reported":"2025-04-18T13:35:55.149004+00:00","last_updated":"2025-04-18T13:35:55.149004+00:00","context":{"id":"01JS4HSVRDG1R6XFE5ZWX2XRXM","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "13.4",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2025-04-18T13:35:56.422214+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.main_door","state":"off","attributes":{"device_class":"door","friendly_name":"Main Door"},"last_changed":"2025-04-18T06:30:58.534115+00:00","last_reported":"2025-04-18T06:30:58.534115+00:00","last_updated":"2025-04-18T06:30:58.534115+00:00","context":{"id":"01JS3SFRQ6T3T21Q2K6PFCATZB","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-18T09:41:50.376309+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.humid_sensor","state":"59.4","attributes":{"unit_of_measurement":"%","device_class":"humidity","friendly_name":"Humid Sensor"},"last_changed":"2025-04-16T13:37:27.792326+00:00","last_reported":"2025-04-16T13:37:27.792326+00:00","last_updated":"2025-04-16T13:37:27.792326+00:00","context":{"id":"01JRZD387G6AY095DDER0C2QRH","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "59.4",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-04-16T13:37:28.933605+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.pm2_5_sensor","state":"5.1","attributes":{"unit_of_measurement":"µg/m³","device_class":"pm25","friendly_name":"PM2.5 Sensor"},"last_changed":"2025-04-16T13:37:27.793057+00:00","last_reported":"2025-04-16T13:37:27.793057+00:00","last_updated":"2025-04-16T13:37:27.793057+00:00","context":{"id":"01JRZD387HT8SWE1DW1JD20EB7","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "5.1",
+        "native_unit_of_measurement": "µg/m³"
+      },
+      "last_seen": "2025-04-16T13:37:28.933605+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.pm10_sensor","state":"21.7","attributes":{"unit_of_measurement":"µg/m³","device_class":"pm10","friendly_name":"PM10 Sensor"},"last_changed":"2025-04-16T13:37:27.793183+00:00","last_reported":"2025-04-16T13:37:27.793183+00:00","last_updated":"2025-04-16T13:37:27.793183+00:00","context":{"id":"01JRZD387HDAJM7HJFCXJHQHP1","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "21.7",
+        "native_unit_of_measurement": "µg/m³"
+      },
+      "last_seen": "2025-04-16T13:37:28.933605+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature_sensor","state":"33.11","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Temperature Sensor"},"last_changed":"2025-04-16T13:37:27.791989+00:00","last_reported":"2025-04-16T13:37:27.791989+00:00","last_updated":"2025-04-16T13:37:27.791989+00:00","context":{"id":"01JRZD387FGNNH4EZG8CE2STTH","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "33.11",
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2025-04-13T14:19:12.853304+00:00"
+      "last_seen": "2025-04-16T13:37:28.933605+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.gas_sensor_2","state":"252.0","attributes":{"unit_of_measurement":"ppm","friendly_name":"Gas Sensor"},"last_changed":"2025-04-16T13:30:17.669215+00:00","last_reported":"2025-04-16T13:30:17.669215+00:00","last_updated":"2025-04-16T13:30:17.669215+00:00","context":{"id":"01JRZCP465VP2954HWJWKPHHQA","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "252.0",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2025-04-16T13:30:22.231578+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.gas_sensor","state":"98.82","attributes":{"unit_of_measurement":"%CCF","device_class":"gas","friendly_name":"Gas Sensor"},"last_changed":"2025-04-16T13:13:33.061930+00:00","last_reported":"2025-04-16T13:13:33.061930+00:00","last_updated":"2025-04-16T13:13:33.061930+00:00","context":{"id":"01JRZBQF459NWP83NKS3AAYP1F","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "98.82",
+        "native_unit_of_measurement": "%CCF"
+      },
+      "last_seen": "2025-04-16T13:13:36.311066+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature_sensor_temp_1","state":"30.34","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Temperature Sensor temp_1"},"last_changed":"2025-04-16T02:00:54.019887+00:00","last_reported":"2025-04-16T02:00:54.019887+00:00","last_updated":"2025-04-16T02:00:54.019887+00:00","context":{"id":"01JRY57T03N3T705HRGDYMPAD3","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "30.34",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2025-04-16T02:00:55.910593+00:00"
     },
     {
       "state": {"entity_id":"sensor.temperature_sensor_temp1","state":"21.29","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Temperature Sensor temp1"},"last_changed":"2025-04-13T14:07:20.607113+00:00","last_reported":"2025-04-13T14:07:20.607113+00:00","last_updated":"2025-04-13T14:07:20.607113+00:00","context":{"id":"01JRQQKT0Z37HP8QG7Q7S0E47A","parent_id":null,"user_id":null}},
