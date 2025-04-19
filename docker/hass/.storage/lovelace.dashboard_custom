@@ -86,7 +86,12 @@
                     "yellow": 35.5,
                     "red": 55.5
                   }
-                },
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
                 {
                   "type": "gauge",
                   "entity": "sensor.pm10_sensor_2",
@@ -114,15 +119,6 @@
                     "yellow": 1000,
                     "red": 3000
                   }
-                }
-              ]
-            },
-            {
-              "type": "grid",
-              "cards": [
-                {
-                  "type": "heading",
-                  "heading": "New section"
                 }
               ]
             }
