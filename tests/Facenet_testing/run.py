@@ -25,13 +25,20 @@ def process_task(task, filename = None):
         subprocess.run(command, check=True)
     
     def test(filename : str):
-        if not filename: 
+        if filename == "live":
+            command = [
+                "python3", "src/face_rec.py",
+                "--path", "0",  # 0 is the default camera device
+                "--live"
+            ]
+        elif not filename: 
             print("No file input")
             return
-        command = [
-            "python3", "src/face_rec.py",
-            "--path", f"video/{filename}.mp4",
-        ]
+        else:
+            command = [
+                "python3", "src/face_rec.py",
+                "--path", f"video/{filename}.mp4",
+            ]
         subprocess.run(command, check=True)
     
     match task:

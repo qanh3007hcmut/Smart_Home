@@ -25,3 +25,7 @@ After showing ```Saved classifier model to file "Models/facemodel.pkl"```, it me
 ```bash
 python3 run.py --task test sample
 ```
+- If want the video recorded live from laptop camera
+```bash
+python3 run.py --task test live
+```

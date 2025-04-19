@@ -16,6 +16,7 @@ import collections
 from sklearn.svm import SVC
 import paho.mqtt.client as mqtt
 from ultralytics import YOLO
+from datetime import datetime
 
 
 class FaceDetectionManager:
@@ -73,6 +74,7 @@ class FaceDetectionManager:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', help='Path of the video you want to test on.', default=0)
+    parser.add_argument('--live', action='store_true', help='Use live camera feed')
     args = parser.parse_args()
     
     # Load YOLO model instead of MTCNN
@@ -101,8 +103,33 @@ def main():
             embeddings = graph.get_tensor_by_name("embeddings:0")
             phase_train_placeholder = graph.get_tensor_by_name("phase_train:0")
             
-            # Initialize video capture
+            # Initialize video capture and recording
+            if args.live:
+                print("Starting live camera feed...")
+                VIDEO_PATH = 0  # Use default camera
+                # Set up video recording
+
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                output_path = os.path.join('video', f'live_recording_{timestamp}.mp4')
+                os.makedirs('video', exist_ok=True)  # Create video directory if it doesn't exist
+            else:
+                VIDEO_PATH = args.path
+                output_path = None
+
             cap = cv2.VideoCapture(VIDEO_PATH)
+            if not cap.isOpened():
+                print("Error: Could not open video source")
+                return
+
+            # Initialize video writer for live recording
+            out = None
+            if args.live:
+                frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+                frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+                fps = 20.0  # Standard video recording rate
+                fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+                out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
+
             face_manager = FaceDetectionManager.get_instance()
             face_manager.start()
             
@@ -147,26 +174,34 @@ def main():
                             ]
                             
                             best_name = class_names[best_class_indices[0]]
-                            print("Name: {}, Probability: {}".format(best_name, best_class_probabilities))
+                            display_name = "unknown" if best_class_probabilities[0] < 0.5 else best_name
+                            print("Name: {}, Probability: {}".format(display_name, best_class_probabilities))
                             
                             # Update result via manager
                             face_manager.update_result(best_name, best_class_probabilities[0])
                             
                             # Draw bounding box and name
                             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-                            cv2.putText(frame, f"{best_name}: {best_class_probabilities[0]:.2f}",
+                            cv2.putText(frame, f"{display_name}: {best_class_probabilities[0]:.2f}",
                                     (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
                     
                     else:
                         face_manager.latest_result = "none"
                         
+                    # Save frame if recording
+                    if out is not None:
+                        out.write(frame)
+
                     cv2.imshow('Face Recognition', frame)
                     if cv2.waitKey(1) & 0xFF == ord('q'):
+                        print(f"Recording saved to: {output_path}" if args.live else "Video processing complete")
                         break
                         
             finally:
                 face_manager.stop()
                 cap.release()
+                if out is not None:
+                    out.release()
                 cv2.destroyAllWindows()
 
 

@@ -4,101 +4,101 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.iot_smart_home","state":"unknown","attributes":{"editable":true,"id":"iot_smart_home","device_trackers":[],"user_id":"7e19a9184c5640aeaeabd21404a1bd48","friendly_name":"IOT SMART HOME"},"last_changed":"2025-04-14T03:21:35.842383+00:00","last_reported":"2025-04-14T03:21:37.106781+00:00","last_updated":"2025-04-14T03:21:37.106781+00:00","context":{"id":"01JRS525JJ57N2BNT9FCPNP7R6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.iot_smart_home","state":"unknown","attributes":{"editable":true,"id":"iot_smart_home","device_trackers":[],"source":"person.iot_smart_home","user_id":"7e19a9184c5640aeaeabd21404a1bd48","friendly_name":"IOT SMART HOME"},"last_changed":"2025-04-19T13:58:17.146160+00:00","last_reported":"2025-04-19T13:58:17.146160+00:00","last_updated":"2025-04-19T13:58:17.146160+00:00","context":{"id":"01JS75FH9TRFEPSFKW226NRGXN","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-04-14T03:21:36.110058+00:00","last_reported":"2025-04-14T03:21:36.110058+00:00","last_updated":"2025-04-14T03:21:36.110058+00:00","context":{"id":"01JRS524KEEA7GRNDKXSR420H1","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-04-19T13:58:17.418308+00:00","last_reported":"2025-04-19T13:58:17.418308+00:00","last_updated":"2025-04-19T13:58:17.418308+00:00","context":{"id":"01JS75FHJAN80GEXTY2FHC25SA","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.sync_simulated_fan_state_with_command","state":"on","attributes":{"last_triggered":"2025-04-14T03:21:42.120363+00:00","mode":"single","current":0,"friendly_name":"Sync simulated fan state with command"},"last_changed":"2025-04-14T03:21:36.391832+00:00","last_reported":"2025-04-14T03:21:42.120854+00:00","last_updated":"2025-04-14T03:21:42.120854+00:00","context":{"id":"01JRS52AF8MW0VRESRX89DDJC4","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.sync_simulated_fan_state_with_command","state":"on","attributes":{"last_triggered":"2025-04-18T14:35:01.469785+00:00","mode":"single","current":0,"friendly_name":"Sync simulated fan state with command"},"last_changed":"2025-04-19T13:58:17.952515+00:00","last_reported":"2025-04-19T13:58:17.952515+00:00","last_updated":"2025-04-19T13:58:17.952515+00:00","context":{"id":"01JS75FJ301MRTGM7FPY1361FE","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.sync_simulated_door_state_with_command","state":"on","attributes":{"last_triggered":"2025-04-14T03:21:42.119109+00:00","mode":"single","current":0,"friendly_name":"Sync simulated door state with command"},"last_changed":"2025-04-14T03:21:36.391967+00:00","last_reported":"2025-04-14T03:21:42.119766+00:00","last_updated":"2025-04-14T03:21:42.119766+00:00","context":{"id":"01JRS52AF7Q4WKRF2PNYJ0PHA7","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.sync_simulated_door_state_with_command","state":"on","attributes":{"last_triggered":"2025-04-18T14:35:01.430358+00:00","mode":"single","current":0,"friendly_name":"Sync simulated door state with command"},"last_changed":"2025-04-19T13:58:17.952617+00:00","last_reported":"2025-04-19T13:58:17.952617+00:00","last_updated":"2025-04-19T13:58:17.952617+00:00","context":{"id":"01JS75FJ30D98NK8K3JGKGX80M","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_door_and_fan_state_to_closed_and_off_on_startup","state":"on","attributes":{"last_triggered":"2025-04-14T03:21:37.114632+00:00","mode":"single","current":0,"friendly_name":"Set door and fan state to CLOSED and OFF on startup"},"last_changed":"2025-04-14T03:21:36.392037+00:00","last_reported":"2025-04-14T03:21:42.118865+00:00","last_updated":"2025-04-14T03:21:42.118865+00:00","context":{"id":"01JRS52AF6CNP2ZN72BHG8YR33","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.set_door_and_fan_state_to_closed_and_off_on_startup","state":"on","attributes":{"last_triggered":"2025-04-18T09:25:50.699447+00:00","mode":"single","current":0,"friendly_name":"Set door and fan state to CLOSED and OFF on startup"},"last_changed":"2025-04-19T13:58:17.952681+00:00","last_reported":"2025-04-19T13:58:17.952681+00:00","last_updated":"2025-04-19T13:58:17.952681+00:00","context":{"id":"01JS75FJ30MB3H5C29B5GDVHWQ","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.turn_on_fan_when_temperature_is_above_25degc","state":"on","attributes":{"last_triggered":"2025-04-08T08:58:44.792116+00:00","mode":"single","current":0,"friendly_name":"Turn on fan when temperature is above 25°C"},"last_changed":"2025-04-14T03:21:36.392247+00:00","last_reported":"2025-04-14T03:21:36.392247+00:00","last_updated":"2025-04-14T03:21:36.392247+00:00","context":{"id":"01JRS524W8T6HDMNRA70BPXW70","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.turn_on_fan_when_temperature_is_above_25degc","state":"on","attributes":{"last_triggered":"2025-04-08T08:58:44.792116+00:00","mode":"single","current":0,"friendly_name":"Turn on fan when temperature is above 25°C"},"last_changed":"2025-04-19T13:58:17.953349+00:00","last_reported":"2025-04-19T13:58:17.953349+00:00","last_updated":"2025-04-19T13:58:17.953349+00:00","context":{"id":"01JS75FJ316MKSXCTCYTYG02GS","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.turn_off_fan_when_temperature_is_below_25degc","state":"on","attributes":{"last_triggered":"2025-04-07T14:56:14.665612+00:00","mode":"single","current":0,"friendly_name":"Turn off fan when temperature is below 25°C"},"last_changed":"2025-04-14T03:21:36.392329+00:00","last_reported":"2025-04-14T03:21:36.392329+00:00","last_updated":"2025-04-14T03:21:36.392329+00:00","context":{"id":"01JRS524W8Q0RZRZAFBSB920NQ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.turn_off_fan_when_temperature_is_below_25degc","state":"on","attributes":{"last_triggered":"2025-04-07T14:56:14.665612+00:00","mode":"single","current":0,"friendly_name":"Turn off fan when temperature is below 25°C"},"last_changed":"2025-04-19T13:58:17.953437+00:00","last_reported":"2025-04-19T13:58:17.953437+00:00","last_updated":"2025-04-19T13:58:17.953437+00:00","context":{"id":"01JS75FJ314G7T410NTTRCM6T6","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.open_door_when_familiar_face_is_detected","state":"on","attributes":{"last_triggered":"2025-04-14T02:37:43.046789+00:00","mode":"single","current":0,"friendly_name":"Open door when familiar face is detected"},"last_changed":"2025-04-14T03:21:36.392432+00:00","last_reported":"2025-04-14T03:21:36.392432+00:00","last_updated":"2025-04-14T03:21:36.392432+00:00","context":{"id":"01JRS524W8QQS7Y6M6CEKJ2Y3Q","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.open_door_when_familiar_face_is_detected","state":"on","attributes":{"last_triggered":"2025-04-18T03:12:04.061697+00:00","mode":"single","current":0,"friendly_name":"Open door when familiar face is detected"},"last_changed":"2025-04-19T13:58:17.953489+00:00","last_reported":"2025-04-19T13:58:17.953489+00:00","last_updated":"2025-04-19T13:58:17.953489+00:00","context":{"id":"01JS75FJ317QM4PP7DDP5BRJT7","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.close_door_when_unfamiliar_or_no_face_is_detected","state":"on","attributes":{"last_triggered":"2025-04-14T02:38:09.182969+00:00","mode":"single","current":0,"friendly_name":"Close door when unfamiliar or no face is detected"},"last_changed":"2025-04-14T03:21:36.392503+00:00","last_reported":"2025-04-14T03:21:36.392503+00:00","last_updated":"2025-04-14T03:21:36.392503+00:00","context":{"id":"01JRS524W8AS6M6CPM8B9KHD3D","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.close_door_when_unfamiliar_or_no_face_is_detected","state":"on","attributes":{"last_triggered":"2025-04-18T03:12:20.317597+00:00","mode":"single","current":0,"friendly_name":"Close door when unfamiliar or no face is detected"},"last_changed":"2025-04-19T13:58:17.953541+00:00","last_reported":"2025-04-19T13:58:17.953541+00:00","last_updated":"2025-04-19T13:58:17.953541+00:00","context":{"id":"01JS75FJ31BHHC5K7EXFE9DC6M","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.notify_when_smoke_is_detected","state":"on","attributes":{"last_triggered":"2025-04-10T10:19:48.234732+00:00","mode":"single","current":0,"friendly_name":"Notify when smoke is detected"},"last_changed":"2025-04-14T03:21:36.392562+00:00","last_reported":"2025-04-14T03:21:36.392562+00:00","last_updated":"2025-04-14T03:21:36.392562+00:00","context":{"id":"01JRS524W83WZ1JVZRY1278B49","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.notify_when_smoke_is_detected","state":"on","attributes":{"last_triggered":"2025-04-10T10:19:48.234732+00:00","mode":"single","current":0,"friendly_name":"Notify when smoke is detected"},"last_changed":"2025-04-19T13:58:17.953592+00:00","last_reported":"2025-04-19T13:58:17.953592+00:00","last_updated":"2025-04-19T13:58:17.953592+00:00","context":{"id":"01JS75FJ313TKE2ACC49R3PKZJ","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"automation.notify_when_a_fall_is_detected","state":"on","attributes":{"last_triggered":null,"mode":"single","current":0,"friendly_name":"Notify when a fall is detected"},"last_changed":"2025-04-14T03:21:36.392618+00:00","last_reported":"2025-04-14T03:21:36.392618+00:00","last_updated":"2025-04-14T03:21:36.392618+00:00","context":{"id":"01JRS524W80E0P31QFR4EFTMDC","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.notify_when_a_fall_is_detected","state":"on","attributes":{"last_triggered":null,"mode":"single","current":0,"friendly_name":"Notify when a fall is detected"},"last_changed":"2025-04-19T13:58:17.953642+00:00","last_reported":"2025-04-19T13:58:17.953642+00:00","last_updated":"2025-04-19T13:58:17.953642+00:00","context":{"id":"01JS75FJ310CEY2RKZ1HN0N6PA","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"sensor.temperature_sensor","state":"unknown","attributes":{"unit_of_measurement":"°C","friendly_name":"Temperature Sensor"},"last_changed":"2025-04-14T03:21:36.412934+00:00","last_reported":"2025-04-14T03:21:36.412934+00:00","last_updated":"2025-04-14T03:21:36.412934+00:00","context":{"id":"01JRS524WW0XFT3HXTA65RNC91","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.simulated_fan","state":"unknown","attributes":{"friendly_name":"Fan"},"last_changed":"2025-04-19T13:58:17.963670+00:00","last_reported":"2025-04-19T13:58:17.963670+00:00","last_updated":"2025-04-19T13:58:17.963670+00:00","context":{"id":"01JS75FJ3BK7YYZ195QN1JSDHZ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.simulated_door","state":"unknown","attributes":{"friendly_name":"Door"},"last_changed":"2025-04-19T13:58:17.963711+00:00","last_reported":"2025-04-19T13:58:17.963711+00:00","last_updated":"2025-04-19T13:58:17.963711+00:00","context":{"id":"01JS75FJ3B16M6ZWKCTJ8RSGBG","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature_sensor","state":"unknown","attributes":{"unit_of_measurement":"°C","friendly_name":"Temperature Sensor"},"last_changed":"2025-04-19T13:58:17.963770+00:00","last_reported":"2025-04-19T13:58:17.963770+00:00","last_updated":"2025-04-19T13:58:17.963770+00:00","context":{"id":"01JS75FJ3B5HWWABJQ4397RQKG","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": null,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"sensor.camera_face_detector","state":"unknown","attributes":{"friendly_name":"Camera Face Detector"},"last_changed":"2025-04-14T03:21:36.412986+00:00","last_reported":"2025-04-14T03:21:36.412986+00:00","last_updated":"2025-04-14T03:21:36.412986+00:00","context":{"id":"01JRS524WW9ZWPZG2PA93ZR0PT","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.camera_face_detector","state":"unknown","attributes":{"friendly_name":"Camera Face Detector"},"last_changed":"2025-04-19T13:58:17.963793+00:00","last_reported":"2025-04-19T13:58:17.963793+00:00","last_updated":"2025-04-19T13:58:17.963793+00:00","context":{"id":"01JS75FJ3BZ9HK6CANWP3V205N","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": null,
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"sensor.smoke_sensor","state":"unknown","attributes":{"friendly_name":"Smoke Sensor"},"last_changed":"2025-04-14T03:21:36.413008+00:00","last_reported":"2025-04-14T03:21:36.413008+00:00","last_updated":"2025-04-14T03:21:36.413008+00:00","context":{"id":"01JRS524WX2XQMNTGRC3BJZ5BH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.smoke_sensor","state":"unknown","attributes":{"friendly_name":"Smoke Sensor"},"last_changed":"2025-04-19T13:58:17.963810+00:00","last_reported":"2025-04-19T13:58:17.963810+00:00","last_updated":"2025-04-19T13:58:17.963810+00:00","context":{"id":"01JS75FJ3B9DGE6FB79865M32C","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": null,
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     },
     {
-      "state": {"entity_id":"sensor.fall_detection_camera","state":"unknown","attributes":{"friendly_name":"Fall Detection Camera"},"last_changed":"2025-04-14T03:21:36.413026+00:00","last_reported":"2025-04-14T03:21:36.413026+00:00","last_updated":"2025-04-14T03:21:36.413026+00:00","context":{"id":"01JRS524WX7NB81X6Q6F9WQTCW","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.fall_detection_camera","state":"unknown","attributes":{"friendly_name":"Fall Detection Camera"},"last_changed":"2025-04-19T13:58:17.963826+00:00","last_reported":"2025-04-19T13:58:17.963826+00:00","last_updated":"2025-04-19T13:58:17.963826+00:00","context":{"id":"01JS75FJ3BYGE4FTFD032E7QV5","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": null,
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
-    },
-    {
-      "state": {"entity_id":"switch.simulated_fan","state":"off","attributes":{"friendly_name":"Fan"},"last_changed":"2025-04-14T03:21:37.017104+00:00","last_reported":"2025-04-14T03:21:37.017104+00:00","last_updated":"2025-04-14T03:21:37.017104+00:00","context":{"id":"01JRS525FSDGDDCPZB3D3YEENF","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
-    },
-    {
-      "state": {"entity_id":"switch.simulated_door","state":"off","attributes":{"friendly_name":"Door"},"last_changed":"2025-04-14T03:21:37.016827+00:00","last_reported":"2025-04-14T03:21:37.016827+00:00","last_updated":"2025-04-14T03:21:37.016827+00:00","context":{"id":"01JRS525FRFZXJQWECG2TP9MWV","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-04-14T03:22:04.450802+00:00"
+      "last_seen": "2025-04-19T13:58:18.283868+00:00"
     }
   ]
 }
