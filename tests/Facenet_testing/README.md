@@ -29,3 +29,4 @@ python3 run.py --task test sample
 ```bash
 python3 run.py --task test live
 ```
+- When exit the camera it will automatically saved into the video folder. You must exit the record by pressing Q in the video recording tab or else the video file will be corrupted and can't be opened
