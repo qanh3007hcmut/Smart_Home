@@ -1,1 +1,98 @@
-[]
+- id: '1745157257921'
+  alias: Turn on cooling mode
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - sensor.temperature
+    above: 30
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions:
+  - condition: state
+    state: home
+    entity_id: device_tracker.member
+  actions:
+  - action: climate.set_hvac_mode
+    metadata: {}
+    data:
+      hvac_mode: cool
+    target:
+      entity_id: climate.living_room_conditioner
+  - action: climate.set_preset_mode
+    metadata: {}
+    data:
+      preset_mode: home
+    target:
+      entity_id: climate.living_room_conditioner
+  - action: climate.set_temperature
+    metadata: {}
+    data:
+      temperature: 16
+      hvac_mode: cool
+    target:
+      entity_id: climate.living_room_conditioner
+  mode: single
+- id: '1745158517325'
+  alias: Turn off devices while no one home
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - device_tracker.member
+    from: home
+    to: not_home
+  conditions: []
+  actions:
+  - action: light.turn_off
+    metadata: {}
+    data:
+      transition: 2
+    target:
+      entity_id: light.living_room_light
+  - action: climate.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: climate.living_room_conditioner
+  mode: single
+- id: '1745158830677'
+  alias: Get Home member
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - device_tracker.member
+    to: home
+    from:
+  conditions:
+  - condition: numeric_state
+    entity_id: sensor.temperature
+    above: 30
+  actions:
+  - action: light.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: light.living_room_light
+  - action: climate.set_hvac_mode
+    metadata: {}
+    data:
+      hvac_mode: cool
+    target:
+      entity_id: climate.living_room_conditioner
+  - action: lock.lock
+    metadata: {}
+    data:
+      code: '0000'
+    target:
+      entity_id: lock.front_door_lock
+  - action: light.turn_on
+    metadata: {}
+    data:
+      brightness_pct: 55
+    target:
+      entity_id: light.living_room_light
+  mode: single

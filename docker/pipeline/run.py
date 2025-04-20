@@ -3,7 +3,7 @@ from typing import Dict, List
 
 from core.factory import *
 from utils.mqtt_client import MQTTClient
-from utils.helpers import load_config
+from utils.helpers import load_config, initialzize_entities
 
 config = load_config() 
 mqtt = MQTTClient(config["mqtt"]["broker"], config["mqtt"]["port"])
@@ -11,18 +11,21 @@ mqtt = MQTTClient(config["mqtt"]["broker"], config["mqtt"]["port"])
 factory: Dict[str, Factory] = {
     'sensor' : SensorFactory(),
     'binary_sensor' : BinarySensorFactory(),
-    'lock' : LockFactory()
+    'lock' : LockFactory(),
+    'light' : LightFactory(),
+    'hvac' : HVACFactory()
 }
 
 sensors : List[SensorConfig] = [factory['sensor'].create(sensor_conf) for sensor_conf in config["sensor"]] 
 binary_sensors : List[BinarySensorConfig] = [factory['binary_sensor'].create(bin_sensor_conf) for bin_sensor_conf in config["binary_sensor"]] 
 locks : List[LockConfig] = [factory['lock'].create(lock_conf) for lock_conf in config["lock"]] 
-
+lights : List[LightConfig] = [factory['light'].create(light_conf) for light_conf in config["light"]] 
+hvacs: List[HVACConfig] = [factory['hvac'].create(hvac_conf) for hvac_conf in config["hvac"]] 
+ini_entities = [locks, lights, hvacs]
 def run():
     mqtt.connect()
-    # Initialize state for binary sensor
-    # [ele.publish_state(mqtt, on=False) for ele in binary_sensors]
-    [ele.subscribe_command(mqtt) for ele in locks]
+
+    initialzize_entities(mqtt, ini_entities)
     try:    
         while True:
             [ele.publish_state(mqtt) for ele in sensors]

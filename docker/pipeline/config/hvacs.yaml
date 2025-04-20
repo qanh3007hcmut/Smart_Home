@@ -1,0 +1,20 @@
+hvacs:
+- type: Living Room Conditioner
+  
+  mode_command_topic: "home/livingroom/hvac/mode/set"
+  mode_state_topic:   "home/livingroom/hvac/mode/state"
+
+  temperature_command_topic: "home/livingroom/hvac/temperature/set"
+  temperature_state_topic:   "home/livingroom/hvac/temperature/state"
+
+  fan_mode_command_topic: "home/livingroom/hvac/mode/fan/set"
+  fan_mode_state_topic:   "home/livingroom/hvac/mode/fan/state"
+
+  swing_mode_command_topic: "home/livingroom/hvac/mode/swing/set"
+  swing_mode_state_topic:   "home/livingroom/hvac/mode/swing/state"
+
+  swing_horizontal_mode_command_topic: "home/livingroom/hvac/mode/swing/horizontal/set"
+  swing_horizontal_mode_state_topic:   "home/livingroom/hvac/mode/swing/horizontal/state"
+
+  preset_mode_command_topic: "home/livingroom/hvac/mode/preset/set"
+  preset_mode_state_topic:   "home/livingroom/hvac/mode/preset/state"

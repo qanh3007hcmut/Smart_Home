@@ -9,7 +9,7 @@ sensors:
       moderate: [25.0, 30.0]
       unhealthy: [31.0, 35.0]
       hazardous: [36.0, 45.0]
-    active_modes: []
+    active_modes: [unhealthy, hazardous]
 
   - type: humidity
     state_topic: home/sensor/humidity
@@ -77,4 +77,16 @@ sensors:
       hazardous: [[50, 300]]
     active_modes: [good, moderate]
 
+  - type: light
+    state_topic: home/sensor/light
+    unit: 'lx'
+    precision: 0
+    modes:
+      dark: [[0, 20]]
+      sleep: [[20, 100]]
+      good: [[100, 500]]
+      moderate: [[500, 1000]]
+      unhealthy: [[1000, 5000]]
+      hazardous: [[5000, 10000]]
+    active_modes: [good, moderate]
 

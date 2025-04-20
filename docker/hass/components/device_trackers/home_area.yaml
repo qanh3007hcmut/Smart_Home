@@ -1,0 +1,5 @@
+- name: "member"
+  unique_id: "member_1"
+  state_topic: "home/location/member/1"
+  qos: 1
+  source_type: router

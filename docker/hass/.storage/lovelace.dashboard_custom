@@ -49,11 +49,26 @@
                   "graph": "line",
                   "type": "sensor",
                   "detail": 1,
-                  "entity": "sensor.humid_sensor_2",
+                  "entity": "sensor.humid_sensor",
                   "name": "Humidity",
                   "grid_options": {
                     "columns": 8,
                     "rows": 2
+                  }
+                },
+                {
+                  "type": "light",
+                  "entity": "light.living_room_light",
+                  "tap_action": {
+                    "action": "toggle"
+                  }
+                },
+                {
+                  "type": "thermostat",
+                  "entity": "climate.living_room_conditioner",
+                  "show_current_as_primary": true,
+                  "grid_options": {
+                    "rows": 4
                   }
                 }
               ]
@@ -63,7 +78,7 @@
               "cards": [
                 {
                   "type": "gauge",
-                  "entity": "sensor.humid_sensor_2",
+                  "entity": "sensor.humid_sensor",
                   "name": "Humidity",
                   "unit": "%",
                   "needle": true,
@@ -75,7 +90,7 @@
                 },
                 {
                   "type": "gauge",
-                  "entity": "sensor.pm2_5_sensor_2",
+                  "entity": "sensor.pm2_5_sensor",
                   "name": "PM 2.5",
                   "unit": "µg/m³",
                   "min": 0,
@@ -94,7 +109,7 @@
               "cards": [
                 {
                   "type": "gauge",
-                  "entity": "sensor.pm10_sensor_2",
+                  "entity": "sensor.pm10_sensor",
                   "name": "PM 10",
                   "unit": "µg/m³",
                   "min": 0,
@@ -119,6 +134,18 @@
                     "yellow": 1000,
                     "red": 3000
                   }
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "entity",
+                  "entity": "device_tracker.member",
+                  "state_color": true,
+                  "icon": "mdi:account",
+                  "name": "Member 1"
                 }
               ]
             }

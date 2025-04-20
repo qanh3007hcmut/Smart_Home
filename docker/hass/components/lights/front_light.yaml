@@ -1,0 +1,13 @@
+- name: "Living Room Light"
+  unique_id: "living_room_light"
+  
+  schema: json
+  state_topic: "home/livingroom/light/state"
+  command_topic: "home/livingroom/light/set"
+
+  brightness: true
+  brightness_scale: 100
+
+  qos: 1
+  retain: true
+  optimistic: false

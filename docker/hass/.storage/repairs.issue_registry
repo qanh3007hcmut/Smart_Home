@@ -38,6 +38,48 @@
         "domain": "mqtt",
         "is_persistent": false,
         "issue_id": "-0x14c9ab1d7fbb31f"
+      },
+      {
+        "created": "2025-04-18T14:31:28.730331+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "-0x267f500cc307ec4"
+      },
+      {
+        "created": "2025-04-18T15:07:22.067422+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "0x45ef931eb15a6048"
+      },
+      {
+        "created": "2025-04-20T01:09:58.973956+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "0x5864fa8e1b31dc29"
+      },
+      {
+        "created": "2025-04-20T01:12:06.490797+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "-0x5ce64fc2b14f303"
+      },
+      {
+        "created": "2025-04-20T03:28:41.377483+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "0x7003fce73c8ec665"
+      },
+      {
+        "created": "2025-04-20T03:43:48.003396+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "0xde64ea4d619cd88"
       }
     ]
   }

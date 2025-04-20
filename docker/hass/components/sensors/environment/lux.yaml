@@ -1,0 +1,7 @@
+- name: "Light Sensor"
+  device_class: "illuminance"
+  suggested_display_precision: 0
+  unique_id: "light_sensor"
+  state_topic: "home/sensor/light"
+  unit_of_measurement: "lx"
+  value_template: "{{ value | float }}"

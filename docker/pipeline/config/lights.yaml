@@ -1,0 +1,6 @@
+lights:
+  - type: "light"
+    
+    state_topic: "home/livingroom/light/state"
+    command_topic: "home/livingroom/light/set"
+    brightness_scale: 100

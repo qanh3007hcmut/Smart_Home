@@ -57,3 +57,43 @@ class LockFactory(Factory):
             pin_code = component['code']
         )
         return lock
+
+class LightFactory(Factory):
+    LIGHT_MAP = {
+            
+        }
+    
+    def create(self, component : dict) -> LightConfig:
+        _type = component['type']
+        cls = self.LIGHT_MAP.get(_type, LightConfig)
+        light = cls(
+            _type = component['type'],
+            command_topic = component['command_topic'],
+            state_topic = component['state_topic'], 
+        )
+        return light
+    
+class HVACFactory(Factory):
+    HVAC_MAP = {}
+    
+    def create(self, component : dict) -> HVACConfig:
+        _type = component['type']
+        cls = self.HVAC_MAP.get(_type, HVACConfig)
+        light = cls(
+            _type = component['type'],
+            mode_command_topic = component['mode_command_topic'], 
+            temperature_command_topic = component['temperature_command_topic'],
+            fan_mode_command_topic = component['fan_mode_command_topic'],
+            swing_mode_command_topic = component['swing_mode_command_topic'],
+            swing_horizontal_mode_command_topic = component['swing_horizontal_mode_command_topic'],
+            preset_mode_command_topic = component['preset_mode_command_topic'],
+            
+            mode_state_topic = component['mode_state_topic'],
+            temperature_state_topic = component['temperature_state_topic'],
+            fan_mode_state_topic = component['fan_mode_state_topic'],
+            swing_mode_state_topic = component['swing_mode_state_topic'],
+            swing_horizontal_mode_state_topic = component['swing_horizontal_mode_state_topic'],
+            preset_mode_state_topic = component['preset_mode_state_topic']
+        )
+        return light
+    
