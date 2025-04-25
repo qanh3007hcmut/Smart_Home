@@ -16,3 +16,4 @@
 2025-04-24 12:10:01.219 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
 2025-04-24 16:24:26.919 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
 2025-04-25 07:27:03.792 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-04-25 18:37:40.016 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.

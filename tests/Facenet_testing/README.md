@@ -30,3 +30,21 @@ python3 run.py --task test sample
 python3 run.py --task test live
 ```
 - When exit the camera it will automatically saved into the video folder. You must exit the record by pressing Q in the video recording tab or else the video file will be corrupted and can't be opened
+
+### 4. Event Detection Camera
+- Run the following cmd with ```sample``` is name of mp4 video test in ```Facenet_testing\video```. This will enable fall detection and motion detection
+```bash
+python3 run_events.py --task test_fall sample
+```
+- To only detect motion in a video:
+```bash
+python3 run_events.py --task test_motion sample
+```
+- To run fall detection using your webcam:
+```bash
+python3 run_events.py --task test_fall live
+```
+- To run motion detection only using your webcam:
+```bash
+python3 run_events.py --task test_motion live
+```
