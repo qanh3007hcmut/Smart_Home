@@ -14,9 +14,9 @@ import numpy as np
 import cv2
 import collections
 from sklearn.svm import SVC
-import paho.mqtt.client as mqtt
 from ultralytics import YOLO
 from datetime import datetime
+import time
 
 
 class FaceDetectionManager:
@@ -25,14 +25,6 @@ class FaceDetectionManager:
     def __init__(self):
         self.latest_result = "none"
         self.is_running = False
-        # Initialize MQTT client
-        self.client = mqtt.Client()
-        self.client.on_connect = lambda client, userdata, flags, rc: print(f"FDM connected with result code {rc}")
-        try:
-            self.client.connect("localhost", 1883, 60)
-            self.client.loop_start()
-        except Exception as e:
-            print(f"Could not connect to MQTT broker: {e}")
     
     @classmethod
     def get_instance(cls):
@@ -52,8 +44,6 @@ class FaceDetectionManager:
         else:
             result = "unfamiliar"
         self.latest_result = result
-        # Publish result directly to MQTT
-        self.client.publish("home/face_detection/status", result)
     
     def get_current_result(self):
         if not self.is_running:
@@ -66,9 +56,136 @@ class FaceDetectionManager:
     
     def stop(self):
         self.is_running = False
-        self.client.publish("home/face_detection/status", "none")
-        self.client.loop_stop()
-        self.client.disconnect()
+
+
+# New class for face capture functionality, completely separate from MQTT
+class FaceCaptureSystem:
+    def __init__(self):
+        self.face_trackers = {}  # Track multiple faces
+        self.face_capture_dir = "captured_faces"
+        os.makedirs(self.face_capture_dir, exist_ok=True)
+        
+    def track_face(self, face_id, face_img, face_info, timestamp):
+        """
+        Track a face for 3 seconds to determine if it should be saved
+        """
+        current_time = time.time()
+        
+        if face_id not in self.face_trackers:
+            # New face detected, start tracking
+            self.face_trackers[face_id] = {
+                'start_time': current_time,
+                'frames': 1,
+                'present_frames': 1,  # Frames where face is present
+                'best_image': face_img.copy(),  # Store best quality image
+                'info': face_info,
+                'saved': False
+            }
+            print(f"New face tracker created: {face_id}")
+        else:
+            # Update existing face tracker
+            tracker = self.face_trackers[face_id]
+            tracker['frames'] += 1
+            tracker['present_frames'] += 1
+            
+            # Keep the best quality image (largest face area)
+            current_area = (face_info['x2'] - face_info['x1']) * (face_info['y2'] - face_info['y1'])
+            existing_area = (tracker['info']['x2'] - tracker['info']['x1']) * (tracker['info']['y2'] - tracker['info']['y1'])
+            
+            if current_area > existing_area:
+                tracker['best_image'] = face_img.copy()
+                tracker['info'] = face_info
+            
+            # Check if 3 seconds have passed
+            if current_time - tracker['start_time'] >= 3.0:
+                # Calculate presence ratio
+                presence_ratio = tracker['present_frames'] / tracker['frames']
+                
+                # Save the face if it appeared most of the time and hasn't been saved yet
+                if presence_ratio > 0.8 and not tracker['saved']:  # If present more than 60% of the time
+                    self.save_face(face_id, tracker['best_image'], tracker['info']['display_name'], timestamp)
+                    tracker['saved'] = True
+                    print(f"Face {face_id} saved with presence ratio {presence_ratio:.2f}")
+                    
+        return self.face_trackers[face_id] if face_id in self.face_trackers else None
+    
+    def save_face(self, face_id, face_img, name, timestamp):
+        """
+        Save the face image to disk
+        """
+        # Create filename with timestamp and face ID
+        filename = f"{self.face_capture_dir}/{timestamp}_{name}_{face_id}.jpg"
+        cv2.imwrite(filename, face_img)
+        print(f"Saved face to {filename}")
+    
+    # Replace the existing update_trackers method with this improved version:
+    def update_trackers(self):
+        """
+        Update all face trackers, without affecting frame counts
+        Only check for expired trackers
+        """
+        current_time = time.time()
+        
+        # List for trackers to remove
+        to_remove = []
+        
+        for face_id, tracker in self.face_trackers.items():
+            
+            # Remove trackers that are too old (more than 5 seconds since start)
+            if current_time - tracker['start_time'] > 5.0:
+                to_remove.append(face_id)
+                
+                # Debug print
+                ratio = tracker['present_frames'] / tracker['frames']
+                print(f"Face {face_id} expired. Final ratio: {ratio:.2f} ({tracker['present_frames']}/{tracker['frames']})")
+                
+                # Save face if it appeared most of the time but wasn't saved yet
+                if not tracker['saved'] and ratio > 0.8:
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    self.save_face(face_id, tracker['best_image'], tracker['info']['display_name'], timestamp)
+        
+        # Remove old trackers
+        for face_id in to_remove:
+            self.face_trackers.pop(face_id, None)
+
+    def find_matching_face_id(self, x1, y1, x2, y2):
+        """Find if this face matches any existing tracked face"""
+        # Face center
+        center_x = (x1 + x2) / 2
+        center_y = (y1 + y2) / 2
+        
+        # Check against existing faces
+        for face_id, tracker in self.face_trackers.items():
+            info = tracker['info']
+            existing_center_x = (info['x1'] + info['x2']) / 2
+            existing_center_y = (info['y1'] + info['y2']) / 2
+            
+            # Calculate distance between centers
+            distance = ((center_x - existing_center_x)**2 + 
+                       (center_y - existing_center_y)**2)**0.5
+            
+            # If centers are close, it's likely the same face
+            if distance < 50:  # 50-pixel threshold
+                return face_id
+        
+        # No match found, generate new ID
+        return f"face_{int(time.time()*1000)}"
+
+    # Add this new method to FaceCaptureSystem class:
+    def mark_faces_absent(self, detected_face_ids):
+        """
+        Mark faces as absent if they weren't detected in this frame
+        """
+        # Get all tracked faces
+        all_face_ids = set(self.face_trackers.keys())
+        
+        # Find faces that were not detected in this frame
+        absent_face_ids = all_face_ids - set(detected_face_ids)
+        
+        # Update frame count for absent faces
+        for face_id in absent_face_ids:
+            if face_id in self.face_trackers:
+                self.face_trackers[face_id]['frames'] += 1
 
 
 def main():
@@ -89,6 +206,9 @@ def main():
     # Load classifier and facenet model
     with open(CLASSIFIER_PATH, 'rb') as file:
         model, class_names = pickle.load(file)
+    
+    # Initialize face capture system (separate from MQTT)
+    face_capture = FaceCaptureSystem()
     
     graph = tf.Graph()
     with graph.as_default():
@@ -138,13 +258,21 @@ def main():
                     ret, frame = cap.read()
                     if not ret:
                         break
+                    
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    
+                    # Update all face trackers
+                    face_capture.update_trackers()
                         
                     # Use YOLO instead of MTCNN
                     results = yolo_model(frame, verbose=False)[0]
                     boxes = results.boxes
                     
+                    # Collect IDs of faces detected in current frame
+                    detected_face_ids = []
+                    
                     if len(boxes) > 0:
-                        for box in boxes:
+                        for i, box in enumerate(boxes):
                             # Get coordinates
                             x1, y1, x2, y2 = map(int, box.xyxy[0])
                             
@@ -174,19 +302,51 @@ def main():
                             ]
                             
                             best_name = class_names[best_class_indices[0]]
-                            display_name = "unknown" if best_class_probabilities[0] < 0.5 else best_name
-                            print("Name: {}, Probability: {}".format(display_name, best_class_probabilities))
+                            confidence = best_class_probabilities[0]
+                            display_name = "unknown" if confidence < 0.5 else best_name
+                            print("Name: {}, Probability: {:.2f}".format(display_name, confidence))
                             
                             # Update result via manager
-                            face_manager.update_result(best_name, best_class_probabilities[0])
+                            face_manager.update_result(best_name, confidence)
                             
                             # Draw bounding box and name
                             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-                            cv2.putText(frame, f"{display_name}: {best_class_probabilities[0]:.2f}",
+                            cv2.putText(frame, f"{display_name}: {confidence:.2f}",
                                     (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+                            
+                            # Generate a face_id based on position and size
+                            face_id = face_capture.find_matching_face_id(x1, y1, x2, y2)
+                            detected_face_ids.append(face_id)
+                            
+                            # Track face for capturing 
+                            face_info = {
+                                'x1': x1,
+                                'y1': y1,
+                                'x2': x2,
+                                'y2': y2,
+                                'display_name': display_name,
+                                'confidence': confidence
+                            }
+                            tracker = face_capture.track_face(face_id, face, face_info, timestamp)
+                            
+                            # Show timer if tracking
+                            if tracker:
+                                elapsed_time = time.time() - tracker['start_time']
+                                if elapsed_time < 3.0:
+                                    # Draw timer
+                                    timer_text = f"Timer: {3.0 - elapsed_time:.1f}s"
+                                    cv2.putText(frame, timer_text, (x1, y2+20), 
+                                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+                                elif not tracker['saved'] and tracker['present_frames'] / tracker['frames'] > 0.6:
+                                    # Visual indicator that face will be saved
+                                    cv2.putText(frame, "Saving...", (x1, y2+20), 
+                                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
                     
                     else:
                         face_manager.latest_result = "none"
+                    
+                    # Mark faces as absent if they weren't detected in this frame
+                    face_capture.mark_faces_absent(detected_face_ids)
                         
                     # Save frame if recording
                     if out is not None:
