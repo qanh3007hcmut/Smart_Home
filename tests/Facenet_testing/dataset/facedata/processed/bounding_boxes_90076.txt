@@ -1,0 +1,12 @@
+dataset/facedata/processed\unknown\1 (100).png 25 51 211 308
+dataset/facedata/processed\unknown\download (3).png 21 20 172 211
+dataset/facedata/processed\unknown\images.png 97 0 191 107
+dataset/facedata/processed\unknown\images (2).png 61 17 172 159
+dataset/facedata/processed\unknown\images (4).png 92 25 185 142
+dataset/facedata/processed\unknown\download (2).png 84 0 176 115
+dataset/facedata/processed\unknown\images (1).png 87 24 187 142
+dataset/facedata/processed\unknown\download.png 25 0 177 166
+dataset/facedata/processed\unknown\images (3).png 99 12 175 104
+dataset/facedata/processed\unknown\1 (10).png 296 70 852 798
+dataset/facedata/processed\unknown\download (1).png 50 0 221 183
+dataset/facedata/processed\unknown\1 (104).png 685 66 1456 1075

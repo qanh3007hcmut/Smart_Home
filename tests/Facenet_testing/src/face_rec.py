@@ -14,126 +14,355 @@ import numpy as np
 import cv2
 import collections
 from sklearn.svm import SVC
+from ultralytics import YOLO
+from datetime import datetime
+import time
+
+
+class FaceDetectionManager:
+    _instance = None
+    
+    def __init__(self):
+        self.latest_result = "none"
+        self.is_running = False
+    
+    @classmethod
+    def get_instance(cls):
+        if cls._instance is None:
+            cls._instance = FaceDetectionManager()
+            print(f"Created new instance: {id(cls._instance)}")
+        else:
+            print(f"Returning existing instance: {id(cls._instance)}")
+        return cls._instance
+    
+    def update_result(self, name, probability):
+        if probability > 0.5:
+            if name == "Dwayne Johnson":
+                result = "familiar"
+            else:
+                result = "unfamiliar"
+        else:
+            result = "unfamiliar"
+        self.latest_result = result
+    
+    def get_current_result(self):
+        if not self.is_running:
+            return "none"
+        print(f"Current result: {self.latest_result}")
+        return self.latest_result
+    
+    def start(self):
+        self.is_running = True
+    
+    def stop(self):
+        self.is_running = False
+
+
+# New class for face capture functionality, completely separate from MQTT
+class FaceCaptureSystem:
+    def __init__(self):
+        self.face_trackers = {}  # Track multiple faces
+        self.face_capture_dir = "captured_faces"
+        os.makedirs(self.face_capture_dir, exist_ok=True)
+        
+    def track_face(self, face_id, face_img, face_info, timestamp):
+        """
+        Track a face for 3 seconds to determine if it should be saved
+        """
+        current_time = time.time()
+        
+        if face_id not in self.face_trackers:
+            # New face detected, start tracking
+            self.face_trackers[face_id] = {
+                'start_time': current_time,
+                'frames': 1,
+                'present_frames': 1,  # Frames where face is present
+                'best_image': face_img.copy(),  # Store best quality image
+                'info': face_info,
+                'saved': False
+            }
+            print(f"New face tracker created: {face_id}")
+        else:
+            # Update existing face tracker
+            tracker = self.face_trackers[face_id]
+            tracker['frames'] += 1
+            tracker['present_frames'] += 1
+            
+            # Keep the best quality image (largest face area)
+            current_area = (face_info['x2'] - face_info['x1']) * (face_info['y2'] - face_info['y1'])
+            existing_area = (tracker['info']['x2'] - tracker['info']['x1']) * (tracker['info']['y2'] - tracker['info']['y1'])
+            
+            if current_area > existing_area:
+                tracker['best_image'] = face_img.copy()
+                tracker['info'] = face_info
+            
+            # Check if 3 seconds have passed
+            if current_time - tracker['start_time'] >= 3.0:
+                # Calculate presence ratio
+                presence_ratio = tracker['present_frames'] / tracker['frames']
+                
+                # Save the face if it appeared most of the time and hasn't been saved yet
+                if presence_ratio > 0.8 and not tracker['saved']:  # If present more than 60% of the time
+                    self.save_face(face_id, tracker['best_image'], tracker['info']['display_name'], timestamp)
+                    tracker['saved'] = True
+                    print(f"Face {face_id} saved with presence ratio {presence_ratio:.2f}")
+                    
+        return self.face_trackers[face_id] if face_id in self.face_trackers else None
+    
+    def save_face(self, face_id, face_img, name, timestamp):
+        """
+        Save the face image to disk
+        """
+        # Create filename with timestamp and face ID
+        filename = f"{self.face_capture_dir}/{timestamp}_{name}_{face_id}.jpg"
+        cv2.imwrite(filename, face_img)
+        print(f"Saved face to {filename}")
+    
+    # Replace the existing update_trackers method with this improved version:
+    def update_trackers(self):
+        """
+        Update all face trackers, without affecting frame counts
+        Only check for expired trackers
+        """
+        current_time = time.time()
+        
+        # List for trackers to remove
+        to_remove = []
+        
+        for face_id, tracker in self.face_trackers.items():
+            
+            # Remove trackers that are too old (more than 5 seconds since start)
+            if current_time - tracker['start_time'] > 5.0:
+                to_remove.append(face_id)
+                
+                # Debug print
+                ratio = tracker['present_frames'] / tracker['frames']
+                print(f"Face {face_id} expired. Final ratio: {ratio:.2f} ({tracker['present_frames']}/{tracker['frames']})")
+                
+                # Save face if it appeared most of the time but wasn't saved yet
+                if not tracker['saved'] and ratio > 0.8:
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    self.save_face(face_id, tracker['best_image'], tracker['info']['display_name'], timestamp)
+        
+        # Remove old trackers
+        for face_id in to_remove:
+            self.face_trackers.pop(face_id, None)
+
+    def find_matching_face_id(self, x1, y1, x2, y2):
+        """Find if this face matches any existing tracked face"""
+        # Face center
+        center_x = (x1 + x2) / 2
+        center_y = (y1 + y2) / 2
+        
+        # Check against existing faces
+        for face_id, tracker in self.face_trackers.items():
+            info = tracker['info']
+            existing_center_x = (info['x1'] + info['x2']) / 2
+            existing_center_y = (info['y1'] + info['y2']) / 2
+            
+            # Calculate distance between centers
+            distance = ((center_x - existing_center_x)**2 + 
+                       (center_y - existing_center_y)**2)**0.5
+            
+            # If centers are close, it's likely the same face
+            if distance < 50:  # 50-pixel threshold
+                return face_id
+        
+        # No match found, generate new ID
+        return f"face_{int(time.time()*1000)}"
+
+    # Add this new method to FaceCaptureSystem class:
+    def mark_faces_absent(self, detected_face_ids):
+        """
+        Mark faces as absent if they weren't detected in this frame
+        """
+        # Get all tracked faces
+        all_face_ids = set(self.face_trackers.keys())
+        
+        # Find faces that were not detected in this frame
+        absent_face_ids = all_face_ids - set(detected_face_ids)
+        
+        # Update frame count for absent faces
+        for face_id in absent_face_ids:
+            if face_id in self.face_trackers:
+                self.face_trackers[face_id]['frames'] += 1
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', help='Path of the video you want to test on.', default=0)
+    parser.add_argument('--live', action='store_true', help='Use live camera feed')
     args = parser.parse_args()
     
-    # Cai dat cac tham so can thiet
-    MINSIZE = 20
-    THRESHOLD = [0.6, 0.7, 0.7]
-    FACTOR = 0.709
-    IMAGE_SIZE = 182
+    # Load YOLO model instead of MTCNN
+    yolo_model = YOLO('Models/yolov8_face.pt')
+    
+    # Existing parameters
     INPUT_IMAGE_SIZE = 160
     CLASSIFIER_PATH = 'Models/facemodel.pkl'
     VIDEO_PATH = args.path
     FACENET_MODEL_PATH = 'Models/20180402-114759.pb'
 
-    # Load model da train de nhan dien khuon mat - thuc chat la classifier
+    # Load classifier and facenet model
     with open(CLASSIFIER_PATH, 'rb') as file:
         model, class_names = pickle.load(file)
-    print("Custom Classifier, Successfully loaded")
-
-    # Load the TensorFlow model
+    
+    # Initialize face capture system (separate from MQTT)
+    face_capture = FaceCaptureSystem()
+    
     graph = tf.Graph()
     with graph.as_default():
-        # Cai dat GPU neu co
         gpu_options = tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=0.6)
-        sess = tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options, log_device_placement=False))
-
+        sess = tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options))
+        
         with sess.as_default():
-            # Load model MTCNN phat hien khuon mat
-            print('Loading feature extraction model')
             facenet.load_model(FACENET_MODEL_PATH)
-
-            # Lay tensor input va output - Fixed to use the graph instance
+            
+            # Get Facenet tensors
             images_placeholder = graph.get_tensor_by_name("input:0")
             embeddings = graph.get_tensor_by_name("embeddings:0")
             phase_train_placeholder = graph.get_tensor_by_name("phase_train:0")
-            embedding_size = embeddings.get_shape()[1]
+            
+            # Initialize video capture and recording
+            if args.live:
+                print("Starting live camera feed...")
+                VIDEO_PATH = 0  # Use default camera
+                # Set up video recording
 
-            # Cai dat cac mang con
-            pnet, rnet, onet = align.detect_face.create_mtcnn(sess, "src/align")
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                output_path = os.path.join('video', f'live_recording_{timestamp}.mp4')
+                os.makedirs('video', exist_ok=True)  # Create video directory if it doesn't exist
+            else:
+                VIDEO_PATH = args.path
+                output_path = None
 
-            people_detected = set()
-            person_detected = collections.Counter()
-
-            # Lay hinh anh tu file video
             cap = cv2.VideoCapture(VIDEO_PATH)
+            if not cap.isOpened():
+                print("Error: Could not open video source")
+                return
 
-            while (cap.isOpened()):
-                # Doc tung frame
-                ret, frame = cap.read()
-                
-                if not ret:
-                    break
+            # Initialize video writer for live recording
+            out = None
+            if args.live:
+                frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+                frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+                fps = 20.0  # Standard video recording rate
+                fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+                out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
 
-                # Phat hien khuon mat, tra ve vi tri trong bounding_boxes
-                bounding_boxes, _ = align.detect_face.detect_face(frame, MINSIZE, pnet, rnet, onet, THRESHOLD, FACTOR)
-
-                faces_found = bounding_boxes.shape[0]
-                try:
-                    # Neu co it nhat 1 khuon mat trong frame
-                    if faces_found > 0:
-                        det = bounding_boxes[:, 0:4]
-                        bb = np.zeros((faces_found, 4), dtype=np.int32)
-                        for i in range(faces_found):
-                            bb[i][0] = det[i][0]
-                            bb[i][1] = det[i][1]
-                            bb[i][2] = det[i][2]
-                            bb[i][3] = det[i][3]
-
-                            # Cat phan khuon mat tim duoc
-                            cropped = frame[bb[i][1]:bb[i][3], bb[i][0]:bb[i][2], :]
-                            scaled = cv2.resize(cropped, (INPUT_IMAGE_SIZE, INPUT_IMAGE_SIZE),
-                                                interpolation=cv2.INTER_CUBIC)
+            face_manager = FaceDetectionManager.get_instance()
+            face_manager.start()
+            
+            try:
+                while cap.isOpened():
+                    ret, frame = cap.read()
+                    if not ret:
+                        break
+                    
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    
+                    # Update all face trackers
+                    face_capture.update_trackers()
+                        
+                    # Use YOLO instead of MTCNN
+                    results = yolo_model(frame, verbose=False)[0]
+                    boxes = results.boxes
+                    
+                    # Collect IDs of faces detected in current frame
+                    detected_face_ids = []
+                    
+                    if len(boxes) > 0:
+                        for i, box in enumerate(boxes):
+                            # Get coordinates
+                            x1, y1, x2, y2 = map(int, box.xyxy[0])
+                            
+                            # Extract and process face
+                            face = frame[y1:y2, x1:x2]
+                            if face.size == 0:
+                                continue
+                                
+                            # Resize and preprocess
+                            scaled = cv2.resize(face, (INPUT_IMAGE_SIZE, INPUT_IMAGE_SIZE),
+                                            interpolation=cv2.INTER_CUBIC)
                             scaled = facenet.prewhiten(scaled)
                             scaled_reshape = scaled.reshape(-1, INPUT_IMAGE_SIZE, INPUT_IMAGE_SIZE, 3)
-                            feed_dict = {images_placeholder: scaled_reshape, phase_train_placeholder: False}
+                            
+                            # Get face embedding
+                            feed_dict = {
+                                images_placeholder: scaled_reshape,
+                                phase_train_placeholder: False
+                            }
                             emb_array = sess.run(embeddings, feed_dict=feed_dict)
                             
-                            # Dua vao model de classifier
+                            # Predict identity
                             predictions = model.predict_proba(emb_array)
                             best_class_indices = np.argmax(predictions, axis=1)
                             best_class_probabilities = predictions[
-                                np.arange(len(best_class_indices)), best_class_indices]
+                                np.arange(len(best_class_indices)), best_class_indices
+                            ]
                             
-                            # Lay ra ten va ty le % cua class co ty le cao nhat
                             best_name = class_names[best_class_indices[0]]
-                            print("Name: {}, Probability: {}".format(best_name, best_class_probabilities))
+                            confidence = best_class_probabilities[0]
+                            display_name = "unknown" if confidence < 0.5 else best_name
+                            print("Name: {}, Probability: {:.2f}".format(display_name, confidence))
+                            
+                            # Update result via manager
+                            face_manager.update_result(best_name, confidence)
+                            
+                            # Draw bounding box and name
+                            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                            cv2.putText(frame, f"{display_name}: {confidence:.2f}",
+                                    (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+                            
+                            # Generate a face_id based on position and size
+                            face_id = face_capture.find_matching_face_id(x1, y1, x2, y2)
+                            detected_face_ids.append(face_id)
+                            
+                            # Track face for capturing 
+                            face_info = {
+                                'x1': x1,
+                                'y1': y1,
+                                'x2': x2,
+                                'y2': y2,
+                                'display_name': display_name,
+                                'confidence': confidence
+                            }
+                            tracker = face_capture.track_face(face_id, face, face_info, timestamp)
+                            
+                            # Show timer if tracking
+                            if tracker:
+                                elapsed_time = time.time() - tracker['start_time']
+                                if elapsed_time < 3.0:
+                                    # Draw timer
+                                    timer_text = f"Timer: {3.0 - elapsed_time:.1f}s"
+                                    cv2.putText(frame, timer_text, (x1, y2+20), 
+                                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+                                elif not tracker['saved'] and tracker['present_frames'] / tracker['frames'] > 0.6:
+                                    # Visual indicator that face will be saved
+                                    cv2.putText(frame, "Saving...", (x1, y2+20), 
+                                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+                    
+                    else:
+                        face_manager.latest_result = "none"
+                    
+                    # Mark faces as absent if they weren't detected in this frame
+                    face_capture.mark_faces_absent(detected_face_ids)
+                        
+                    # Save frame if recording
+                    if out is not None:
+                        out.write(frame)
 
-                            # Ve khung mau xanh quanh khuon mat
-                            cv2.rectangle(frame, (bb[i][0], bb[i][1]), (bb[i][2], bb[i][3]), (0, 255, 0), 2)
-                            text_x = bb[i][0]
-                            text_y = bb[i][3] + 20
-
-                            # Neu ty le nhan dang > 0.5 thi hien thi ten
-                            if best_class_probabilities > 0.5:
-                                name = class_names[best_class_indices[0]]
-                            else:
-                                # Con neu <=0.5 thi hien thi Unknow
-                                name = "Unknown"
-                                
-                            # Viet text len tren frame    
-                            cv2.putText(frame, name, (text_x, text_y), cv2.FONT_HERSHEY_COMPLEX_SMALL,
-                                        1, (255, 255, 255), thickness=1, lineType=2)
-                            cv2.putText(frame, str(round(best_class_probabilities[0], 3)), (text_x, text_y + 17),
-                                        cv2.FONT_HERSHEY_COMPLEX_SMALL,
-                                        1, (255, 255, 255), thickness=1, lineType=2)
-                            person_detected[best_name] += 1
-                except Exception as e:
-                    print(f"Error processing face: {e}")
-                    pass
-
-                # Hien thi frame len man hinh
-                cv2.imshow('Face Recognition', frame)
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
-
-            cap.release()
-            cv2.destroyAllWindows()
+                    cv2.imshow('Face Recognition', frame)
+                    if cv2.waitKey(1) & 0xFF == ord('q'):
+                        print(f"Recording saved to: {output_path}" if args.live else "Video processing complete")
+                        break
+                        
+            finally:
+                face_manager.stop()
+                cap.release()
+                if out is not None:
+                    out.release()
+                cv2.destroyAllWindows()
 
 
 if __name__ == "__main__":

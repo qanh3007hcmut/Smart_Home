@@ -25,16 +25,28 @@ After showing ```Saved classifier model to file "Models/facemodel.pkl"```, it me
 ```bash
 python3 run.py --task test sample
 ```
+- If want the video recorded live from laptop camera
+```bash
+python3 run.py --task test live
+```
+- When exit the camera it will automatically saved into the video folder. You must exit the record by pressing Q in the video recording tab or else the video file will be corrupted and can't be opened
 
-Reference: 
-# MiAI_FaceRecog_3
-Nhận diện khuôn mặt khá chuẩn xác bằng MTCNN và Facenet!
-Chạy trên Tensorflow 2.x
+- Face that appear most of the time in 3 second will be captured and store in folder ```Facenet_testing/captured_faces```
 
-Article link: http://miai.vn/2019/09/11/face-recog-2-0-nhan-dien-khuon-mat-trong-video-bang-mtcnn-va-facenet/
-
-#MìAI 
-Fanpage: http://facebook.com/miaiblog<br>
-Group trao đổi, chia sẻ: https://www.facebook.com/groups/miaigroup<br>
-Website: http://ainoodle.tech<br>
-Youtube: http://bit.ly/miaiyoutube<br>
+### 4. Event Detection Camera
+- Run the following cmd with ```sample``` is name of mp4 video test in ```Facenet_testing\video```. This will enable fall detection and motion detection
+```bash
+python3 run_events.py --task test_fall sample
+```
+- To only detect motion in a video:
+```bash
+python3 run_events.py --task test_motion sample
+```
+- To run fall detection using your webcam:
+```bash
+python3 run_events.py --task test_fall live
+```
+- To run motion detection only using your webcam:
+```bash
+python3 run_events.py --task test_motion live
+```

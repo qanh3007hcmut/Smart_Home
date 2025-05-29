@@ -8,3 +8,7 @@ Pillow
 requests
 psutil
 imageio
+ultralytics
+mediapipe
+filterpy
+scikit-image
