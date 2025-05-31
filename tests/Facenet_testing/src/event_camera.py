@@ -34,8 +34,9 @@ class EventDetectionCamera:
         
         # Fall detection parameters
         self.fall_records = {}  # Track people for fall detection
-        self.fall_speed_threshold = 20  # px/s - vertical movement threshold (increased from 15)
-        self.fall_window = 1.2  # seconds to analyze for fall (slightly increased)
+        self.fall_speed_threshold = 25  # px/s - vertical movement threshold (increased from 20)
+        self.fall_window = 1.2  # seconds to analyze for fall
+        self.fall_recovery_time = 2.0  # seconds to ignore detections after a bow/squat
         
         # Video recording parameters
         self.fourcc = cv2.VideoWriter_fourcc(*'mp4v')
@@ -265,25 +266,64 @@ class EventDetectionCamera:
                                             print(f"ID {int(tracking_id)}: Speed={vertical_speed:.1f} px/s, " +
                                                 f"Angle Change={vertical_angle_change:.1f}°, Total Y={total_y_change:.1f}px")
                                             
-                                            # Fall detection conditions with improved heuristics to avoid false positives on bowing
+                                            # Fall detection conditions with improved bow differentiation
                                             is_fall = False
                                             
-                                            # Condition 1: Rapid downward motion with significant vertical displacement
-                                            if vertical_speed > self.fall_speed_threshold and nose_y_change > 60:
+                                            # Track if this looks like a controlled movement (bow)
+                                            is_controlled_movement = False
+                                            
+                                            # Check if there are multiple position records to detect movement patterns
+                                            if len(positions) >= 5:
+                                                # Analyze movement pattern over multiple frames
+                                                # Calculate average acceleration and jerkiness
+                                                movement_profile = []
+                                                for i in range(1, len(positions)):
+                                                    prev_t, prev_y = positions[i-1][0], positions[i-1][1]
+                                                    curr_t, curr_y = positions[i][0], positions[i][1]
+                                                    if curr_t != prev_t:  # Avoid division by zero
+                                                        movement_profile.append((curr_y - prev_y)/(curr_t - prev_t))
+                                                
+                                                if len(movement_profile) >= 3:
+                                                    # Calculate movement variation (standard deviation of speeds)
+                                                    movement_variation = np.std(movement_profile)
+                                                    
+                                                    # Bowing typically has more controlled, gradual movement
+                                                    # Falls typically have more erratic, varied speeds
+                                                    if movement_variation < 10:  # Low variation = controlled movement
+                                                        is_controlled_movement = True
+                                            
+                                            # Condition 1: Rapid downward motion with significant displacement
+                                            # and not part of a controlled movement pattern
+                                            if vertical_speed > self.fall_speed_threshold and nose_y_change > 80 and not is_controlled_movement:
                                                 is_fall = True
                                             
-                                            # Condition 2: Moderate speed with very significant angle change (person becoming horizontal)
-                                            elif vertical_speed > 10 and abs(vertical_angle_change) > 45:
+                                            # Condition 2: Significant speed with extreme angle change (horizontal position)
+                                            elif vertical_speed > 15 and abs(vertical_angle_change) > 60 and time_diff < 0.8:
                                                 is_fall = True
                                                 
-                                            # Condition 3: Major orientation change with continuity in movement
-                                            # This helps avoid false positives from deliberate movements like bowing
-                                            elif abs(vertical_angle_change) > 60 and vertical_speed > 12:
-                                                # Check additional conditions to differentiate from controlled movements
-                                                if time_diff < 0.7:  # Falls happen quickly
-                                                    is_fall = True
+                                            # Condition 3: Very rapid movement with moderate angle change
+                                            elif vertical_speed > 30 and abs(vertical_angle_change) > 30 and not is_controlled_movement:
+                                                is_fall = True
                                             
-                                            if is_fall:
+                                            # Check for recovery movement that indicates a controlled action like bowing
+                                            # If the person moved down and then up, it's likely a bow, not a fall
+                                            has_recovery_movement = False
+                                            if len(positions) >= 7:  # Need enough points to detect pattern
+                                                # Check if movement direction changed (down then up)
+                                                mid_idx = len(positions) // 2
+                                                first_half = positions[:mid_idx]
+                                                second_half = positions[mid_idx:]
+                                                
+                                                # Calculate average direction for first half and second half
+                                                first_direction = first_half[-1][1] - first_half[0][1]  # positive = down
+                                                second_direction = second_half[-1][1] - second_half[0][1]  # negative = up
+                                                
+                                                # If went down then up, likely a bow
+                                                if first_direction > 0 and second_direction < 0:
+                                                    has_recovery_movement = True
+                                                    is_fall = False  # Override fall detection
+                                            
+                                            if is_fall and not has_recovery_movement:
                                                 fall_detected = True
                                                 fall_info = {
                                                     "id": int(tracking_id),
