@@ -24,12 +24,3 @@ class MQTTClient:
         self.client.loop_stop()
         self.client.disconnect()
         logging.info("MQTT client disconnected")
-
-    # def publish_sensor(self, sensor_cfg : SensorConfig, use_json=False):
-    #     value = sensor_cfg.generate_value()
-    #     payload = json.dumps({"value": value}) if use_json else str(value)
-    #     try:
-    #         self.client.publish(sensor_cfg.topic, payload)
-    #         logging.info(f"Published {sensor_cfg.type} → {payload} {sensor_cfg.unit}")
-    #     except Exception as e:
-    #         logging.warning(f"Failed to publish {sensor_cfg.type}: {e}")

@@ -1,0 +1,13 @@
+- name: "Bedroom 2 Light"
+  unique_id: "bedroom_light_2"
+  
+  schema: json
+  state_topic: "home/bedroom/2/light/state"
+  command_topic: "home/bedroom/2/light/set"
+
+  brightness: true
+  brightness_scale: 100
+
+  qos: 1
+  retain: true
+  optimistic: false

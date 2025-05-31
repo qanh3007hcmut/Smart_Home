@@ -17,7 +17,11 @@ from sklearn.svm import SVC
 from ultralytics import YOLO
 from datetime import datetime
 import time
+import json
+import paho.mqtt.client as mqtt
 
+from streaming import start_streaming, push_frame
+from rtps import FFmpegStreamer
 
 class FaceDetectionManager:
     _instance = None
@@ -60,7 +64,9 @@ class FaceDetectionManager:
 
 # New class for face capture functionality, completely separate from MQTT
 class FaceCaptureSystem:
-    def __init__(self):
+    def __init__(self, client : mqtt.Client = None):
+        self.client = client
+        self.face = {}
         self.face_trackers = {}  # Track multiple faces
         self.face_capture_dir = "captured_faces"
         os.makedirs(self.face_capture_dir, exist_ok=True)
@@ -81,7 +87,11 @@ class FaceCaptureSystem:
                 'info': face_info,
                 'saved': False
             }
-            print(f"New face tracker created: {face_id}")
+            
+            if face_info['display_name'] not in self.face:
+                self.face[face_info['display_name']] = current_time
+                
+            print(f"New face tracker created: {face_id}, {face_info['display_name']}")
         else:
             # Update existing face tracker
             tracker = self.face_trackers[face_id]
@@ -113,10 +123,36 @@ class FaceCaptureSystem:
         """
         Save the face image to disk
         """
+        def _format(seconds: float) -> str:
+            seconds = int(seconds)
+            parts = []
+
+            hours = seconds // 3600
+            if hours:
+                parts.append(f"{hours} hour{'s' if hours > 1 else ''}")
+
+            minutes = (seconds % 3600) // 60
+            if minutes:
+                parts.append(f"{minutes} minute{'s' if minutes > 1 else ''}")
+
+            secs = seconds % 60
+            if secs or not parts:  # luôn hiển thị ít nhất 1 đơn vị
+                parts.append(f"{secs} second{'s' if secs > 1 else ''}")
+
+            return " ".join(parts)
         # Create filename with timestamp and face ID
         filename = f"{self.face_capture_dir}/{timestamp}_{name}_{face_id}.jpg"
         cv2.imwrite(filename, face_img)
         print(f"Saved face to {filename}")
+        duration = time.time() - self.face[name] if self.face.get(name) else 0
+        payload = {
+            "name": name,
+            "timestamp": timestamp,
+            "timestand": _format(duration)
+        }
+        self.client.publish("home/frontdoor/notifications", json.dumps(payload), qos=1, retain=True)
+        print("published payload from AI")
+        
     
     # Replace the existing update_trackers method with this improved version:
     def update_trackers(self):
@@ -144,10 +180,23 @@ class FaceCaptureSystem:
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     self.save_face(face_id, tracker['best_image'], tracker['info']['display_name'], timestamp)
         
+        active_names = {
+            tracker['info']['display_name']
+            for tracker in self.face_trackers.values()
+            if tracker.get('info', {}).get('display_name') is not None
+        }
+        
+        self.face = {
+            name: data for name, data in self.face.items()
+            if name in active_names
+        }
+        
         # Remove old trackers
         for face_id in to_remove:
             self.face_trackers.pop(face_id, None)
-
+        
+        
+        
     def find_matching_face_id(self, x1, y1, x2, y2):
         """Find if this face matches any existing tracked face"""
         # Face center
@@ -186,14 +235,14 @@ class FaceCaptureSystem:
         for face_id in absent_face_ids:
             if face_id in self.face_trackers:
                 self.face_trackers[face_id]['frames'] += 1
-
+    
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', help='Path of the video you want to test on.', default=0)
     parser.add_argument('--live', action='store_true', help='Use live camera feed')
     args = parser.parse_args()
-    
+    client = mqtt.Client()
     # Load YOLO model instead of MTCNN
     yolo_model = YOLO('Models/yolov8_face.pt')
     
@@ -208,7 +257,7 @@ def main():
         model, class_names = pickle.load(file)
     
     # Initialize face capture system (separate from MQTT)
-    face_capture = FaceCaptureSystem()
+    face_capture = FaceCaptureSystem(client)
     
     graph = tf.Graph()
     with graph.as_default():
@@ -246,7 +295,7 @@ def main():
             if args.live:
                 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
                 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-                fps = 20.0  # Standard video recording rate
+                fps = 40.0  # Standard video recording rate
                 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
                 out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
 
@@ -254,6 +303,11 @@ def main():
             face_manager.start()
             
             try:
+                client.connect("172.20.96.1", 1883, 60)
+                client.loop_start()
+                start_streaming()
+                streamer = FFmpegStreamer()
+                streamer.start()
                 while cap.isOpened():
                     ret, frame = cap.read()
                     if not ret:
@@ -353,6 +407,8 @@ def main():
                         out.write(frame)
 
                     cv2.imshow('Face Recognition', frame)
+                    push_frame(frame)
+                    streamer.send_frame(frame)
                     if cv2.waitKey(1) & 0xFF == ord('q'):
                         print(f"Recording saved to: {output_path}" if args.live else "Video processing complete")
                         break
@@ -360,6 +416,9 @@ def main():
             finally:
                 face_manager.stop()
                 cap.release()
+                streamer.stop()
+                client.loop_stop()
+                client.disconnect()
                 if out is not None:
                     out.release()
                 cv2.destroyAllWindows()

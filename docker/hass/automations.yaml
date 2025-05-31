@@ -96,3 +96,20 @@
     target:
       entity_id: light.living_room_light
   mode: single
+- id: '1748614849274'
+  alias: camera notification
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/frontdoor/notifications
+  conditions:
+  - condition: template
+    value_template: '{{ trigger.payload_json.timestand != ''0''}}'
+  actions:
+  - action: persistent_notification.create
+    metadata: {}
+    data:
+      title: Front door camera
+      message: '{{trigger.payload_json.name}} detected and standing for {{trigger.payload_json.timestand}}'
+      notification_id: '{{trigger.payload_json.name}}'
+  mode: single

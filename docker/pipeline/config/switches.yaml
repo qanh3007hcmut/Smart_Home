@@ -1,0 +1,12 @@
+switches:
+- type: "Gas Stove Left"
+  state_topic: "home/kitchen/switch/stove/left/state"
+  command_topic: "home/kitchen/switch/stove/left/set"
+
+- type: "Gas Stove Mid"
+  state_topic: "home/kitchen/switch/stove/mid/state"
+  command_topic: "home/kitchen/switch/stove/mid/set"
+
+- type: "Gas Stove Right"
+  state_topic: "home/kitchen/switch/stove/right/state"
+  command_topic: "home/kitchen/switch/stove/right/set"

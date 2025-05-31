@@ -1,6 +1,30 @@
 lights:
   - type: "light"
-    
+    state_topic: "home/bedroom/1/light/state"
+    command_topic: "home/bedroom/1/light/set"
+    brightness_scale: 100
+
+  - type: "light"
+    state_topic: "home/bedroom/2/light/state"
+    command_topic: "home/bedroom/2/light/set"
+    brightness_scale: 100
+
+  - type: "light"
     state_topic: "home/livingroom/light/state"
     command_topic: "home/livingroom/light/set"
+    brightness_scale: 100
+
+  - type: "light"
+    state_topic: "home/kitchen/light/state"
+    command_topic: "home/kitchen/light/set"
+    brightness_scale: 100
+  
+  - type: "light"
+    state_topic: "home/bathroom/1/light/state"
+    command_topic: "home/bathroom/1/light/set"
+    brightness_scale: 100
+
+  - type: "light"
+    state_topic: "home/bathroom/2/light/state"
+    command_topic: "home/bathroom/2/light/set"
     brightness_scale: 100

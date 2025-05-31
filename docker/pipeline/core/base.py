@@ -244,4 +244,44 @@ class HVACConfig(Component):
             mqtt.client.message_callback_add(topic, make_callback(field, topic))
             logging.info(f"{self._type}: Subscribed to {field} command topic → {topic}")
 
+class SwitchConfig(Component):
+    def __init__(
+            self, 
+            _type, 
+            state_topic, 
+            command_topic, 
+    ):
+        self._type = _type
+        self.state_topic = state_topic
+        self.command_topic = command_topic
+        self._current_state = None
     
+    def publish_state(self, mqtt: MQTTClient, payload):
+        try:
+            mqtt.client.publish(self.state_topic, payload, qos = 1, retain=True)
+            logging.info(f"{self._type}: Published state → {payload}")
+            
+            self._current_state = (payload == "ON")
+        except Exception as e:
+            logging.warning(f"{self._type}: Failed to publish state: {e}")
+ 
+    def handle_command(self, payload: str, mqtt: MQTTClient):
+        try:
+            payload = payload.strip().upper()
+            self.publish_state(mqtt, payload)
+        except json.JSONDecodeError:
+            logging.warning(f"{self._type}: Invalid JSON command → {payload}")
+            return            
+
+    
+    def subscribe_command(self, mqtt: MQTTClient):
+        def _on_command(client, userdata, msg):
+            payload = msg.payload.decode()
+            logging.info(f"{self._type}: Received command → {payload}")
+            self.handle_command(payload, mqtt)
+
+        mqtt.client.subscribe(self.command_topic)
+        mqtt.client.message_callback_add(self.command_topic, _on_command)
+        logging.info(f"{self._type}: Subscribed to {self.command_topic}") 
+
+

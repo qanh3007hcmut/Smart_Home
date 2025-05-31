@@ -9,6 +9,19 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
+stream:
+  ll_hls: true
+  part_duration: 0.75
+  segment_duration: 6
+
+webrtc:
+  type: 'custom:webrtc-camera'
+  streams:
+    - url: 'rtsp://172.27.192.1:8554/webcam'
+      name: HD
+      mode: webrtc,webrtc/tcp,mse,hls,mjpeg  # stream technology, default all of them
+      media: video  # select only video or audio track, default both
+
 mqtt: 
   - sensor: !include_dir_merge_list components/sensors/
   # - binary_sensor: !include_dir_merge_list components/binary_sensors/
@@ -16,3 +29,5 @@ mqtt:
   - light: !include_dir_merge_list components/lights/ 
   - climate: !include_dir_merge_list components/HVACs/ 
   - device_tracker: !include_dir_merge_list components/device_trackers/
+  - switch: !include_dir_merge_list components/switches/
+  - notify: !include_dir_merge_list components/notifications/

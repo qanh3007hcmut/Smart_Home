@@ -1,0 +1,5 @@
+- name: "Door notification"
+  unique_id: front_door_notification
+  command_topic: "home/frontdoor/notifications"
+  qos: 1
+  retain: true

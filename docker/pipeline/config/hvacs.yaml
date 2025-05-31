@@ -18,3 +18,43 @@ hvacs:
 
   preset_mode_command_topic: "home/livingroom/hvac/mode/preset/set"
   preset_mode_state_topic:   "home/livingroom/hvac/mode/preset/state"
+
+- type: Bedroom Room Conditioner 2
+  
+  mode_command_topic: "home/bedroom/2/hvac/mode/set"
+  mode_state_topic:   "home/bedroom/2/hvac/mode/state"
+
+  temperature_command_topic: "home/bedroom/2/hvac/temperature/set"
+  temperature_state_topic:   "home/bedroom/2/hvac/temperature/state"
+
+  fan_mode_command_topic: "home/bedroom/2/hvac/mode/fan/set"
+  fan_mode_state_topic:   "home/bedroom/2/hvac/mode/fan/state"
+
+  swing_mode_command_topic: "home/bedroom/2/hvac/mode/swing/set"
+  swing_mode_state_topic:   "home/bedroom/2/hvac/mode/swing/state"
+
+  swing_horizontal_mode_command_topic: "home/bedroom/2/hvac/mode/swing/horizontal/set"
+  swing_horizontal_mode_state_topic:   "home/bedroom/2/hvac/mode/swing/horizontal/state"
+
+  preset_mode_command_topic: "home/bedroom/2/hvac/mode/preset/set"
+  preset_mode_state_topic:   "home/bedroom/2/hvac/mode/preset/state"
+
+- type: Bedroom Room Conditioner 1
+  
+  mode_command_topic: "home/bedroom/1/hvac/mode/set"
+  mode_state_topic:   "home/bedroom/1/hvac/mode/state"
+
+  temperature_command_topic: "home/bedroom/1/hvac/temperature/set"
+  temperature_state_topic:   "home/bedroom/1/hvac/temperature/state"
+
+  fan_mode_command_topic: "home/bedroom/1/hvac/mode/fan/set"
+  fan_mode_state_topic:   "home/bedroom/1/hvac/mode/fan/state"
+
+  swing_mode_command_topic: "home/bedroom/1/hvac/mode/swing/set"
+  swing_mode_state_topic:   "home/bedroom/1/hvac/mode/swing/state"
+
+  swing_horizontal_mode_command_topic: "home/bedroom/1/hvac/mode/swing/horizontal/set"
+  swing_horizontal_mode_state_topic:   "home/bedroom/1/hvac/mode/swing/horizontal/state"
+
+  preset_mode_command_topic: "home/bedroom/1/hvac/mode/preset/set"
+  preset_mode_state_topic:   "home/bedroom/1/hvac/mode/preset/state"

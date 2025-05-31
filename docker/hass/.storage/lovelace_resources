@@ -28,6 +28,11 @@
         "id": "95e2c26a7fbe43a5a7acf70f03fffe07",
         "url": "/hacsfiles/swipe-card/swipe-card.js?hacstag=192732887500",
         "type": "module"
+      },
+      {
+        "id": "c337e636022648c8a662e97a27c9df54",
+        "url": "/webrtc/webrtc-camera.js?v=v3.6.0",
+        "type": "module"
       }
     ]
   }

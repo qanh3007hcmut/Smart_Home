@@ -7,12 +7,12 @@
       {
         "extended_dict": {
           "last_step": "condition/0/entity_id/0",
-          "run_id": "6826550d84089441f9822c2dee9d6b92",
+          "run_id": "da5fc591dce5c42475ab0cd4d80914dd",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2025-04-20T13:55:06.975517+00:00",
-            "finish": "2025-04-20T13:55:06.975653+00:00"
+            "start": "2025-05-30T14:30:47.606278+00:00",
+            "finish": "2025-05-30T14:30:47.606464+00:00"
           },
           "domain": "automation",
           "item_id": "1745157257921",
@@ -21,23 +21,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2025-04-20T13:55:06.975560+00:00",
+                "timestamp": "2025-05-30T14:30:47.606345+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.turn_on_cooling_mode",
                     "state": "on",
                     "attributes": {
                       "id": "1745157257921",
-                      "last_triggered": null,
+                      "last_triggered": "2025-04-20T14:09:44.591961+00:00",
                       "mode": "single",
                       "current": 0,
                       "friendly_name": "Turn on cooling mode"
                     },
-                    "last_changed": "2025-04-20T13:54:29.474422+00:00",
-                    "last_reported": "2025-04-20T13:54:29.474697+00:00",
-                    "last_updated": "2025-04-20T13:54:29.474422+00:00",
+                    "last_changed": "2025-05-30T14:30:41.395610+00:00",
+                    "last_reported": "2025-05-30T14:30:41.395610+00:00",
+                    "last_updated": "2025-05-30T14:30:41.395610+00:00",
                     "context": {
-                      "id": "01JS9QN9Z2JCXZ3RPC7B81KQYH",
+                      "id": "01JWGSMAZKZ4CEG98NGDDKY9HA",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -52,887 +52,34 @@
                     "above": 30.0,
                     "from_state": {
                       "entity_id": "sensor.temperature",
-                      "state": "27.57",
+                      "state": "unknown",
                       "attributes": {
                         "unit_of_measurement": "\u00b0C",
                         "device_class": "temperature",
                         "friendly_name": "Temperature"
                       },
-                      "last_changed": "2025-04-20T13:55:01.973533+00:00",
-                      "last_reported": "2025-04-20T13:55:01.973533+00:00",
-                      "last_updated": "2025-04-20T13:55:01.973533+00:00",
+                      "last_changed": "2025-05-30T14:30:41.490836+00:00",
+                      "last_reported": "2025-05-30T14:30:41.490836+00:00",
+                      "last_updated": "2025-05-30T14:30:41.490836+00:00",
                       "context": {
-                        "id": "01JS9QP9PNEN77861AXKWJT7BB",
+                        "id": "01JWGSMB2JCKGN0M35W5JTQDVR",
                         "parent_id": null,
                         "user_id": null
                       }
                     },
                     "to_state": {
                       "entity_id": "sensor.temperature",
-                      "state": "31.22",
+                      "state": "34.24",
                       "attributes": {
                         "unit_of_measurement": "\u00b0C",
                         "device_class": "temperature",
                         "friendly_name": "Temperature"
                       },
-                      "last_changed": "2025-04-20T13:55:06.975192+00:00",
-                      "last_reported": "2025-04-20T13:55:06.975192+00:00",
-                      "last_updated": "2025-04-20T13:55:06.975192+00:00",
+                      "last_changed": "2025-05-30T14:30:46.604039+00:00",
+                      "last_reported": "2025-05-30T14:30:46.604039+00:00",
+                      "last_updated": "2025-05-30T14:30:46.604039+00:00",
                       "context": {
-                        "id": "01JS9QPEJZE2K0WJEMTNP27JKB",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "description": "numeric state of sensor.temperature"
-                  }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T13:55:06.975588+00:00",
-                "result": {
-                  "result": false
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T13:55:06.975607+00:00",
-                "result": {
-                  "result": false,
-                  "state": "unknown",
-                  "wanted_state": "home"
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745157257921",
-            "alias": "Turn on cooling mode",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "numeric_state",
-                "entity_id": [
-                  "sensor.temperature"
-                ],
-                "above": 30
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "state",
-                "entity_id": "device_tracker.member",
-                "state": "home"
-              }
-            ],
-            "actions": [
-              {
-                "action": "climate.set_hvac_mode",
-                "metadata": {},
-                "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "climate.set_preset_mode",
-                "metadata": {},
-                "data": {
-                  "preset_mode": "home"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9QPEJZ647ZZX735FAMEHQP",
-            "parent_id": "01JS9QPEJZE2K0WJEMTNP27JKB",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "6826550d84089441f9822c2dee9d6b92",
-          "state": "stopped",
-          "script_execution": "failed_conditions",
-          "timestamp": {
-            "start": "2025-04-20T13:55:06.975517+00:00",
-            "finish": "2025-04-20T13:55:06.975653+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745157257921",
-          "trigger": "numeric state of sensor.temperature"
-        }
-      },
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "2af1272cab7d8d12c3418bd6b7f603d2",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T13:55:26.980601+00:00",
-            "finish": "2025-04-20T13:55:26.989185+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745157257921",
-          "trigger": "numeric state of sensor.temperature",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T13:55:26.980627+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_on_cooling_mode",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745157257921",
-                      "last_triggered": null,
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn on cooling mode"
-                    },
-                    "last_changed": "2025-04-20T13:54:29.474422+00:00",
-                    "last_reported": "2025-04-20T13:54:29.474697+00:00",
-                    "last_updated": "2025-04-20T13:54:29.474422+00:00",
-                    "context": {
-                      "id": "01JS9QN9Z2JCXZ3RPC7B81KQYH",
-                      "parent_id": null,
-                      "user_id": null
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "numeric_state",
-                    "entity_id": "sensor.temperature",
-                    "below": null,
-                    "above": 30.0,
-                    "from_state": {
-                      "entity_id": "sensor.temperature",
-                      "state": "22.79",
-                      "attributes": {
-                        "unit_of_measurement": "\u00b0C",
-                        "device_class": "temperature",
-                        "friendly_name": "Temperature"
-                      },
-                      "last_changed": "2025-04-20T13:55:21.978401+00:00",
-                      "last_reported": "2025-04-20T13:55:21.978401+00:00",
-                      "last_updated": "2025-04-20T13:55:21.978401+00:00",
-                      "context": {
-                        "id": "01JS9QPX7T3D3G3NZFGAKWBVV9",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "sensor.temperature",
-                      "state": "32.39",
-                      "attributes": {
-                        "unit_of_measurement": "\u00b0C",
-                        "device_class": "temperature",
-                        "friendly_name": "Temperature"
-                      },
-                      "last_changed": "2025-04-20T13:55:26.980363+00:00",
-                      "last_reported": "2025-04-20T13:55:26.980363+00:00",
-                      "last_updated": "2025-04-20T13:55:26.980363+00:00",
-                      "context": {
-                        "id": "01JS9QQ244MMBDQVJZK375F6CR",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "description": "numeric state of sensor.temperature"
-                  }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T13:55:26.980647+00:00",
-                "result": {
-                  "result": true
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T13:55:26.980662+00:00",
-                "result": {
-                  "result": true,
-                  "state": "home",
-                  "wanted_state": "home"
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T13:55:26.981006+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9QQ244MDSFR7W5T6W1GR9D",
-                    "parent_id": "01JS9QQ244MMBDQVJZK375F6CR",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_hvac_mode",
-                    "service_data": {
-                      "hvac_mode": "cool",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T13:55:26.984980+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_preset_mode",
-                    "service_data": {
-                      "preset_mode": "home",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745157257921",
-            "alias": "Turn on cooling mode",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "numeric_state",
-                "entity_id": [
-                  "sensor.temperature"
-                ],
-                "above": 30
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "state",
-                "entity_id": "device_tracker.member",
-                "state": "home"
-              }
-            ],
-            "actions": [
-              {
-                "action": "climate.set_hvac_mode",
-                "metadata": {},
-                "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "climate.set_preset_mode",
-                "metadata": {},
-                "data": {
-                  "preset_mode": "home"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9QQ244MDSFR7W5T6W1GR9D",
-            "parent_id": "01JS9QQ244MMBDQVJZK375F6CR",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "action/1",
-          "run_id": "2af1272cab7d8d12c3418bd6b7f603d2",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T13:55:26.980601+00:00",
-            "finish": "2025-04-20T13:55:26.989185+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745157257921",
-          "trigger": "numeric state of sensor.temperature"
-        }
-      },
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "5d7529002747228bf7c0eedb68fffa49",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T13:55:46.987656+00:00",
-            "finish": "2025-04-20T13:55:46.994176+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745157257921",
-          "trigger": "numeric state of sensor.temperature",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T13:55:46.987716+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_on_cooling_mode",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745157257921",
-                      "last_triggered": "2025-04-20T13:55:26.980779+00:00",
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn on cooling mode"
-                    },
-                    "last_changed": "2025-04-20T13:55:40.119300+00:00",
-                    "last_reported": "2025-04-20T13:55:40.119300+00:00",
-                    "last_updated": "2025-04-20T13:55:40.119300+00:00",
-                    "context": {
-                      "id": "01JS9QQEYPX0EBJEFBV50922F4",
-                      "parent_id": null,
-                      "user_id": "9e94dd3fca87425695fd42f6424a91e5"
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "numeric_state",
-                    "entity_id": "sensor.temperature",
-                    "below": null,
-                    "above": 30.0,
-                    "from_state": {
-                      "entity_id": "sensor.temperature",
-                      "state": "27.98",
-                      "attributes": {
-                        "unit_of_measurement": "\u00b0C",
-                        "device_class": "temperature",
-                        "friendly_name": "Temperature"
-                      },
-                      "last_changed": "2025-04-20T13:55:41.985036+00:00",
-                      "last_reported": "2025-04-20T13:55:41.985036+00:00",
-                      "last_updated": "2025-04-20T13:55:41.985036+00:00",
-                      "context": {
-                        "id": "01JS9QQGS1KZR3BC09VF7QNT73",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "sensor.temperature",
-                      "state": "34.61",
-                      "attributes": {
-                        "unit_of_measurement": "\u00b0C",
-                        "device_class": "temperature",
-                        "friendly_name": "Temperature"
-                      },
-                      "last_changed": "2025-04-20T13:55:46.987263+00:00",
-                      "last_reported": "2025-04-20T13:55:46.987263+00:00",
-                      "last_updated": "2025-04-20T13:55:46.987263+00:00",
-                      "context": {
-                        "id": "01JS9QQNNBGT5YAGJF3GV1E7AD",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "description": "numeric state of sensor.temperature"
-                  }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T13:55:46.987754+00:00",
-                "result": {
-                  "result": true
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T13:55:46.987770+00:00",
-                "result": {
-                  "result": true,
-                  "state": "home",
-                  "wanted_state": "home"
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T13:55:46.988049+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9QQNNBH443NEHC9QXK4NXF",
-                    "parent_id": "01JS9QQNNBGT5YAGJF3GV1E7AD",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_hvac_mode",
-                    "service_data": {
-                      "hvac_mode": "cool",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T13:55:46.992596+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_preset_mode",
-                    "service_data": {
-                      "preset_mode": "home",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745157257921",
-            "alias": "Turn on cooling mode",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "numeric_state",
-                "entity_id": [
-                  "sensor.temperature"
-                ],
-                "above": 30
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "state",
-                "entity_id": "device_tracker.member",
-                "state": "home"
-              }
-            ],
-            "actions": [
-              {
-                "action": "climate.set_hvac_mode",
-                "metadata": {},
-                "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "climate.set_preset_mode",
-                "metadata": {},
-                "data": {
-                  "preset_mode": "home"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9QQNNBH443NEHC9QXK4NXF",
-            "parent_id": "01JS9QQNNBGT5YAGJF3GV1E7AD",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "action/1",
-          "run_id": "5d7529002747228bf7c0eedb68fffa49",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T13:55:46.987656+00:00",
-            "finish": "2025-04-20T13:55:46.994176+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745157257921",
-          "trigger": "numeric state of sensor.temperature"
-        }
-      },
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "267970fe55874f93fabe9f97e70da82f",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T13:56:06.992781+00:00",
-            "finish": "2025-04-20T13:56:07.043052+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745157257921",
-          "trigger": "numeric state of sensor.temperature",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T13:56:06.992848+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_on_cooling_mode",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745157257921",
-                      "last_triggered": "2025-04-20T13:55:46.987892+00:00",
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn on cooling mode"
-                    },
-                    "last_changed": "2025-04-20T13:55:40.119300+00:00",
-                    "last_reported": "2025-04-20T13:55:46.993726+00:00",
-                    "last_updated": "2025-04-20T13:55:46.993726+00:00",
-                    "context": {
-                      "id": "01JS9QQNNBH443NEHC9QXK4NXF",
-                      "parent_id": "01JS9QQNNBGT5YAGJF3GV1E7AD",
-                      "user_id": null
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "numeric_state",
-                    "entity_id": "sensor.temperature",
-                    "below": null,
-                    "above": 30.0,
-                    "from_state": {
-                      "entity_id": "sensor.temperature",
-                      "state": "18.19",
-                      "attributes": {
-                        "unit_of_measurement": "\u00b0C",
-                        "device_class": "temperature",
-                        "friendly_name": "Temperature"
-                      },
-                      "last_changed": "2025-04-20T13:56:01.991126+00:00",
-                      "last_reported": "2025-04-20T13:56:01.991126+00:00",
-                      "last_updated": "2025-04-20T13:56:01.991126+00:00",
-                      "context": {
-                        "id": "01JS9QR4A7RM2CA84V7W6E0XH1",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "sensor.temperature",
-                      "state": "33.97",
-                      "attributes": {
-                        "unit_of_measurement": "\u00b0C",
-                        "device_class": "temperature",
-                        "friendly_name": "Temperature"
-                      },
-                      "last_changed": "2025-04-20T13:56:06.992453+00:00",
-                      "last_reported": "2025-04-20T13:56:06.992453+00:00",
-                      "last_updated": "2025-04-20T13:56:06.992453+00:00",
-                      "context": {
-                        "id": "01JS9QR96GG98F5Z1GWJ8AK0XT",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "description": "numeric state of sensor.temperature"
-                  }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T13:56:06.992875+00:00",
-                "result": {
-                  "result": true
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T13:56:06.992892+00:00",
-                "result": {
-                  "result": true,
-                  "state": "home",
-                  "wanted_state": "home"
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T13:56:06.993116+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9QR96G8MNK585N5Q8CENT4",
-                    "parent_id": "01JS9QR96GG98F5Z1GWJ8AK0XT",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_hvac_mode",
-                    "service_data": {
-                      "hvac_mode": "cool",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T13:56:06.994937+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_preset_mode",
-                    "service_data": {
-                      "preset_mode": "home",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745157257921",
-            "alias": "Turn on cooling mode",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "numeric_state",
-                "entity_id": [
-                  "sensor.temperature"
-                ],
-                "above": 30
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "state",
-                "entity_id": "device_tracker.member",
-                "state": "home"
-              }
-            ],
-            "actions": [
-              {
-                "action": "climate.set_hvac_mode",
-                "metadata": {},
-                "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "climate.set_preset_mode",
-                "metadata": {},
-                "data": {
-                  "preset_mode": "home"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9QR96G8MNK585N5Q8CENT4",
-            "parent_id": "01JS9QR96GG98F5Z1GWJ8AK0XT",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "action/1",
-          "run_id": "267970fe55874f93fabe9f97e70da82f",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T13:56:06.992781+00:00",
-            "finish": "2025-04-20T13:56:07.043052+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745157257921",
-          "trigger": "numeric state of sensor.temperature"
-        }
-      },
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "4c110449d57beac12f2cc3c2c62a86fb",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:09:44.591509+00:00",
-            "finish": "2025-04-20T14:09:44.637687+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745157257921",
-          "trigger": "numeric state of sensor.temperature",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T14:09:44.591661+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_on_cooling_mode",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745157257921",
-                      "last_triggered": "2025-04-20T13:56:06.992989+00:00",
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn on cooling mode"
-                    },
-                    "last_changed": "2025-04-20T14:08:48.290112+00:00",
-                    "last_reported": "2025-04-20T14:08:48.290112+00:00",
-                    "last_updated": "2025-04-20T14:08:48.290112+00:00",
-                    "context": {
-                      "id": "01JS9RFGN29E65EVVVD2YXPE9P",
-                      "parent_id": null,
-                      "user_id": null
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "numeric_state",
-                    "entity_id": "sensor.temperature",
-                    "below": null,
-                    "above": 30.0,
-                    "from_state": {
-                      "entity_id": "sensor.temperature",
-                      "state": "16.0",
-                      "attributes": {
-                        "unit_of_measurement": "\u00b0C",
-                        "device_class": "temperature",
-                        "friendly_name": "Temperature"
-                      },
-                      "last_changed": "2025-04-20T14:09:40.359096+00:00",
-                      "last_reported": "2025-04-20T14:09:40.359096+00:00",
-                      "last_updated": "2025-04-20T14:09:40.359096+00:00",
-                      "context": {
-                        "id": "01JS9RH3G727ACXP54SYXEDG9P",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "sensor.temperature",
-                      "state": "39.33",
-                      "attributes": {
-                        "unit_of_measurement": "\u00b0C",
-                        "device_class": "temperature",
-                        "friendly_name": "Temperature"
-                      },
-                      "last_changed": "2025-04-20T14:09:43.588810+00:00",
-                      "last_reported": "2025-04-20T14:09:43.588810+00:00",
-                      "last_updated": "2025-04-20T14:09:43.588810+00:00",
-                      "context": {
-                        "id": "01JS9RH6N46Y05FEXVRFHFP1EE",
+                        "id": "01JWGSMG2CB0MYK04CKFGN9XH3",
                         "parent_id": null,
                         "user_id": null
                       }
@@ -949,75 +96,20 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2025-04-20T14:09:44.591711+00:00",
+                "timestamp": "2025-05-30T14:30:47.606391+00:00",
                 "result": {
-                  "result": true
+                  "result": false
                 }
               }
             ],
             "condition/0/entity_id/0": [
               {
                 "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T14:09:44.591728+00:00",
+                "timestamp": "2025-05-30T14:30:47.606416+00:00",
                 "result": {
-                  "result": true,
-                  "state": "home",
-                  "duration": "2025-04-20T14:09:43.591826+00:00"
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T14:09:44.592165+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9RH7MF8X9V7MF9QHQF8H2N",
-                    "parent_id": "01JS9RH6N46Y05FEXVRFHFP1EE",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_hvac_mode",
-                    "service_data": {
-                      "hvac_mode": "cool",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:09:44.594598+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_preset_mode",
-                    "service_data": {
-                      "preset_mode": "home",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
+                  "result": false,
+                  "state": "unknown",
+                  "wanted_state": "home"
                 }
               }
             ]
@@ -1043,13 +135,8 @@
             "conditions": [
               {
                 "condition": "state",
-                "entity_id": "device_tracker.member",
                 "state": "home",
-                "for": {
-                  "hours": 0,
-                  "minutes": 0,
-                  "seconds": 1
-                }
+                "entity_id": "device_tracker.member"
               }
             ],
             "actions": [
@@ -1072,25 +159,36 @@
                 "target": {
                   "entity_id": "climate.living_room_conditioner"
                 }
+              },
+              {
+                "action": "climate.set_temperature",
+                "metadata": {},
+                "data": {
+                  "temperature": 16,
+                  "hvac_mode": "cool"
+                },
+                "target": {
+                  "entity_id": "climate.living_room_conditioner"
+                }
               }
             ],
             "mode": "single"
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01JS9RH7MF8X9V7MF9QHQF8H2N",
-            "parent_id": "01JS9RH6N46Y05FEXVRFHFP1EE",
+            "id": "01JWGSMH1PDMH02BQRAH2RMQ02",
+            "parent_id": "01JWGSMG2CB0MYK04CKFGN9XH3",
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "action/1",
-          "run_id": "4c110449d57beac12f2cc3c2c62a86fb",
+          "last_step": "condition/0/entity_id/0",
+          "run_id": "da5fc591dce5c42475ab0cd4d80914dd",
           "state": "stopped",
-          "script_execution": "finished",
+          "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2025-04-20T14:09:44.591509+00:00",
-            "finish": "2025-04-20T14:09:44.637687+00:00"
+            "start": "2025-05-30T14:30:47.606278+00:00",
+            "finish": "2025-05-30T14:30:47.606464+00:00"
           },
           "domain": "automation",
           "item_id": "1745157257921",
@@ -1098,1004 +196,42 @@
         }
       }
     ],
-    "automation.1745158517325": [
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "4e8e535dc2d561c57be03e4ee3ef35d4",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:22:20.717930+00:00",
-            "finish": "2025-04-20T14:22:20.770255+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T14:22:20.717988+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_off_devices_while_no_one_home",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745158517325",
-                      "last_triggered": "2025-04-20T14:20:59.728347+00:00",
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn off devices while no one home"
-                    },
-                    "last_changed": "2025-04-20T14:15:35.379820+00:00",
-                    "last_reported": "2025-04-20T14:20:59.772549+00:00",
-                    "last_updated": "2025-04-20T14:20:59.772549+00:00",
-                    "context": {
-                      "id": "01JS9S5TYG7QRADXN70X7YRMC1",
-                      "parent_id": "01JS9S5TYG2R1F2QK4VB6H3T85",
-                      "user_id": null
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:21:12.013958+00:00",
-                      "last_reported": "2025-04-20T14:21:12.013958+00:00",
-                      "last_updated": "2025-04-20T14:21:12.013958+00:00",
-                      "context": {
-                        "id": "01JS9S66YD9T1YRMEV6TM8F5BV",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:22:20.717701+00:00",
-                      "last_reported": "2025-04-20T14:22:20.717701+00:00",
-                      "last_updated": "2025-04-20T14:22:20.717701+00:00",
-                      "context": {
-                        "id": "01JS9S8A1DWYQS4713Y3B1PBG4",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
-                  }
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T14:22:20.718146+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9S8A1DR7QK19VFCJ4ZBM06",
-                    "parent_id": "01JS9S8A1DWYQS4713Y3B1PBG4",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "light",
-                    "service": "turn_off",
-                    "service_data": {
-                      "transition": 2,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:22:20.768634+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "turn_off",
-                    "service_data": {},
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745158517325",
-            "alias": "Turn off devices while no one home",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "from": "home",
-                "to": "not_home"
-              }
-            ],
-            "conditions": [],
-            "actions": [
-              {
-                "action": "light.turn_off",
-                "metadata": {},
-                "data": {
-                  "transition": 2
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.turn_off",
-                "metadata": {},
-                "data": {},
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9S8A1DR7QK19VFCJ4ZBM06",
-            "parent_id": "01JS9S8A1DWYQS4713Y3B1PBG4",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "action/1",
-          "run_id": "4e8e535dc2d561c57be03e4ee3ef35d4",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:22:20.717930+00:00",
-            "finish": "2025-04-20T14:22:20.770255+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member"
-        }
-      },
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "78b31e45c4c4e87f997426d7ef7cd8e7",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:23:34.865987+00:00",
-            "finish": "2025-04-20T14:23:34.915916+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T14:23:34.866059+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_off_devices_while_no_one_home",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745158517325",
-                      "last_triggered": "2025-04-20T14:22:20.718043+00:00",
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn off devices while no one home"
-                    },
-                    "last_changed": "2025-04-20T14:15:35.379820+00:00",
-                    "last_reported": "2025-04-20T14:22:20.769772+00:00",
-                    "last_updated": "2025-04-20T14:22:20.769772+00:00",
-                    "context": {
-                      "id": "01JS9S8A1DR7QK19VFCJ4ZBM06",
-                      "parent_id": "01JS9S8A1DWYQS4713Y3B1PBG4",
-                      "user_id": null
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:22:35.859939+00:00",
-                      "last_reported": "2025-04-20T14:22:35.859939+00:00",
-                      "last_updated": "2025-04-20T14:22:35.859939+00:00",
-                      "context": {
-                        "id": "01JS9S8RTKMWPH1G2HV75RCDQJ",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:23:34.865694+00:00",
-                      "last_reported": "2025-04-20T14:23:34.865694+00:00",
-                      "last_updated": "2025-04-20T14:23:34.865694+00:00",
-                      "context": {
-                        "id": "01JS9SAJEH9E1JW6A2HSG1KRGF",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
-                  }
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T14:23:34.866324+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9SAJEHHC9WHA20QVGH2MNV",
-                    "parent_id": "01JS9SAJEH9E1JW6A2HSG1KRGF",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "light",
-                    "service": "turn_off",
-                    "service_data": {
-                      "transition": 2,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:23:34.913584+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "turn_off",
-                    "service_data": {},
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745158517325",
-            "alias": "Turn off devices while no one home",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "from": "home",
-                "to": "not_home"
-              }
-            ],
-            "conditions": [],
-            "actions": [
-              {
-                "action": "light.turn_off",
-                "metadata": {},
-                "data": {
-                  "transition": 2
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.turn_off",
-                "metadata": {},
-                "data": {},
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9SAJEHHC9WHA20QVGH2MNV",
-            "parent_id": "01JS9SAJEH9E1JW6A2HSG1KRGF",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "action/1",
-          "run_id": "78b31e45c4c4e87f997426d7ef7cd8e7",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:23:34.865987+00:00",
-            "finish": "2025-04-20T14:23:34.915916+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member"
-        }
-      },
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "9deec8ea945c5cdb8211113710c41e00",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:27:23.457662+00:00",
-            "finish": "2025-04-20T14:27:23.504317+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T14:27:23.457702+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_off_devices_while_no_one_home",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745158517325",
-                      "last_triggered": "2025-04-20T14:23:34.866156+00:00",
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn off devices while no one home"
-                    },
-                    "last_changed": "2025-04-20T14:15:35.379820+00:00",
-                    "last_reported": "2025-04-20T14:23:34.915100+00:00",
-                    "last_updated": "2025-04-20T14:23:34.915100+00:00",
-                    "context": {
-                      "id": "01JS9SAJEHHC9WHA20QVGH2MNV",
-                      "parent_id": "01JS9SAJEH9E1JW6A2HSG1KRGF",
-                      "user_id": null
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:23:46.224603+00:00",
-                      "last_reported": "2025-04-20T14:23:46.224603+00:00",
-                      "last_updated": "2025-04-20T14:23:46.224603+00:00",
-                      "context": {
-                        "id": "01JS9SAXHGHK2JEN7V4A8V5TFX",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:27:23.457459+00:00",
-                      "last_reported": "2025-04-20T14:27:23.457459+00:00",
-                      "last_updated": "2025-04-20T14:27:23.457459+00:00",
-                      "context": {
-                        "id": "01JS9SHHP1PZRPZH3G3Y9VBWHG",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
-                  }
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T14:27:23.457848+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9SHHP17TBE75E7N96Z6PG5",
-                    "parent_id": "01JS9SHHP1PZRPZH3G3Y9VBWHG",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "light",
-                    "service": "turn_off",
-                    "service_data": {
-                      "transition": 2,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:27:23.501643+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "turn_off",
-                    "service_data": {},
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745158517325",
-            "alias": "Turn off devices while no one home",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "from": "home",
-                "to": "not_home"
-              }
-            ],
-            "conditions": [],
-            "actions": [
-              {
-                "action": "light.turn_off",
-                "metadata": {},
-                "data": {
-                  "transition": 2
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.turn_off",
-                "metadata": {},
-                "data": {},
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9SHHP17TBE75E7N96Z6PG5",
-            "parent_id": "01JS9SHHP1PZRPZH3G3Y9VBWHG",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "action/1",
-          "run_id": "9deec8ea945c5cdb8211113710c41e00",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:27:23.457662+00:00",
-            "finish": "2025-04-20T14:27:23.504317+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member"
-        }
-      },
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "19dd01340ba5bb3ecfcb1801ae24e38c",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:28:18.117228+00:00",
-            "finish": "2025-04-20T14:28:18.162695+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T14:28:18.117347+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_off_devices_while_no_one_home",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745158517325",
-                      "last_triggered": "2025-04-20T14:27:23.457770+00:00",
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn off devices while no one home"
-                    },
-                    "last_changed": "2025-04-20T14:15:35.379820+00:00",
-                    "last_reported": "2025-04-20T14:27:23.503829+00:00",
-                    "last_updated": "2025-04-20T14:27:23.503829+00:00",
-                    "context": {
-                      "id": "01JS9SHHP17TBE75E7N96Z6PG5",
-                      "parent_id": "01JS9SHHP1PZRPZH3G3Y9VBWHG",
-                      "user_id": null
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:27:27.756967+00:00",
-                      "last_reported": "2025-04-20T14:27:27.756967+00:00",
-                      "last_updated": "2025-04-20T14:27:27.756967+00:00",
-                      "context": {
-                        "id": "01JS9SHNWCTEVBG8475WBER2PT",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:28:18.116989+00:00",
-                      "last_reported": "2025-04-20T14:28:18.116989+00:00",
-                      "last_updated": "2025-04-20T14:28:18.116989+00:00",
-                      "context": {
-                        "id": "01JS9SK724NBZTM0MK5BAMH4BJ",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
-                  }
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T14:28:18.117515+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9SK725525QGSNRB3W6MTR0",
-                    "parent_id": "01JS9SK724NBZTM0MK5BAMH4BJ",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "light",
-                    "service": "turn_off",
-                    "service_data": {
-                      "transition": 2,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:28:18.160199+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "turn_off",
-                    "service_data": {},
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745158517325",
-            "alias": "Turn off devices while no one home",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "from": "home",
-                "to": "not_home"
-              }
-            ],
-            "conditions": [],
-            "actions": [
-              {
-                "action": "light.turn_off",
-                "metadata": {},
-                "data": {
-                  "transition": 2
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.turn_off",
-                "metadata": {},
-                "data": {},
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9SK725525QGSNRB3W6MTR0",
-            "parent_id": "01JS9SK724NBZTM0MK5BAMH4BJ",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "action/1",
-          "run_id": "19dd01340ba5bb3ecfcb1801ae24e38c",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:28:18.117228+00:00",
-            "finish": "2025-04-20T14:28:18.162695+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member"
-        }
-      },
-      {
-        "extended_dict": {
-          "last_step": "action/1",
-          "run_id": "0cb45848230e4a009392b98958a17214",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:30:11.298124+00:00",
-            "finish": "2025-04-20T14:30:11.345786+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member",
-          "trace": {
-            "trigger/0": [
-              {
-                "path": "trigger/0",
-                "timestamp": "2025-04-20T14:30:11.298191+00:00",
-                "changed_variables": {
-                  "this": {
-                    "entity_id": "automation.turn_off_devices_while_no_one_home",
-                    "state": "on",
-                    "attributes": {
-                      "id": "1745158517325",
-                      "last_triggered": "2025-04-20T14:28:18.117408+00:00",
-                      "mode": "single",
-                      "current": 0,
-                      "friendly_name": "Turn off devices while no one home"
-                    },
-                    "last_changed": "2025-04-20T14:15:35.379820+00:00",
-                    "last_reported": "2025-04-20T14:28:18.162187+00:00",
-                    "last_updated": "2025-04-20T14:28:18.162187+00:00",
-                    "context": {
-                      "id": "01JS9SK725525QGSNRB3W6MTR0",
-                      "parent_id": "01JS9SK724NBZTM0MK5BAMH4BJ",
-                      "user_id": null
-                    }
-                  },
-                  "trigger": {
-                    "id": "0",
-                    "idx": "0",
-                    "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:28:24.177186+00:00",
-                      "last_reported": "2025-04-20T14:28:24.177186+00:00",
-                      "last_updated": "2025-04-20T14:28:24.177186+00:00",
-                      "context": {
-                        "id": "01JS9SKCZHR74PZYPQTS9Q9345",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:30:11.297950+00:00",
-                      "last_reported": "2025-04-20T14:30:11.297950+00:00",
-                      "last_updated": "2025-04-20T14:30:11.297950+00:00",
-                      "context": {
-                        "id": "01JS9SPNK16ZZB0ZFMMM817KRR",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
-                  }
-                }
-              }
-            ],
-            "action/0": [
-              {
-                "path": "action/0",
-                "timestamp": "2025-04-20T14:30:11.298323+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01JS9SPNK29FC12JEGZ7VA4BSR",
-                    "parent_id": "01JS9SPNK16ZZB0ZFMMM817KRR",
-                    "user_id": null
-                  }
-                },
-                "result": {
-                  "params": {
-                    "domain": "light",
-                    "service": "turn_off",
-                    "service_data": {
-                      "transition": 2,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:30:11.344232+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "turn_off",
-                    "service_data": {},
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ]
-          },
-          "config": {
-            "id": "1745158517325",
-            "alias": "Turn off devices while no one home",
-            "description": "",
-            "triggers": [
-              {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "from": "home",
-                "to": "not_home"
-              }
-            ],
-            "conditions": [],
-            "actions": [
-              {
-                "action": "light.turn_off",
-                "metadata": {},
-                "data": {
-                  "transition": 2
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.turn_off",
-                "metadata": {},
-                "data": {},
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              }
-            ],
-            "mode": "single"
-          },
-          "blueprint_inputs": null,
-          "context": {
-            "id": "01JS9SPNK29FC12JEGZ7VA4BSR",
-            "parent_id": "01JS9SPNK16ZZB0ZFMMM817KRR",
-            "user_id": null
-          }
-        },
-        "short_dict": {
-          "last_step": "action/1",
-          "run_id": "0cb45848230e4a009392b98958a17214",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2025-04-20T14:30:11.298124+00:00",
-            "finish": "2025-04-20T14:30:11.345786+00:00"
-          },
-          "domain": "automation",
-          "item_id": "1745158517325",
-          "trigger": "state of device_tracker.member"
-        }
-      }
-    ],
-    "automation.1745158830677": [
+    "automation.1748614849274": [
       {
         "extended_dict": {
           "last_step": "action/0",
-          "run_id": "2d13412225a49c0add78ffe25ce05347",
+          "run_id": "94555177e92c38a26a7e14f391488835",
           "state": "stopped",
           "script_execution": "error",
           "timestamp": {
-            "start": "2025-04-20T14:22:35.860158+00:00",
-            "finish": "2025-04-20T14:22:35.860891+00:00"
+            "start": "2025-05-30T15:43:06.247549+00:00",
+            "finish": "2025-05-30T15:43:06.248917+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "error": "two or more values in the same group of exclusion 'brightness' @ data[<brightness>]",
-          "trigger": "state of device_tracker.member",
+          "item_id": "1748614849274",
+          "error": "extra keys not allowed @ data['notification_id']",
+          "trigger": "mqtt topic home/livingroom/light/state",
           "trace": {
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2025-04-20T14:22:35.860195+00:00",
+                "timestamp": "2025-05-30T15:43:06.247645+00:00",
                 "changed_variables": {
                   "this": {
-                    "entity_id": "automation.get_home_member",
+                    "entity_id": "automation.camera_notification",
                     "state": "on",
                     "attributes": {
-                      "id": "1745158830677",
-                      "last_triggered": "2025-04-20T14:21:12.014255+00:00",
+                      "id": "1748614849274",
+                      "last_triggered": "2025-05-30T15:43:03.810742+00:00",
                       "mode": "single",
                       "current": 0,
-                      "friendly_name": "Get Home member"
+                      "friendly_name": "camera notification"
                     },
-                    "last_changed": "2025-04-20T14:22:09.229999+00:00",
-                    "last_reported": "2025-04-20T14:22:09.229999+00:00",
-                    "last_updated": "2025-04-20T14:22:09.229999+00:00",
+                    "last_changed": "2025-05-30T15:42:53.242261+00:00",
+                    "last_reported": "2025-05-30T15:43:03.811502+00:00",
+                    "last_updated": "2025-05-30T15:43:03.811502+00:00",
                     "context": {
-                      "id": "01JS9S7YTDJE7PDDYCKCHCD543",
+                      "id": "01JWGXRVM2REJF600S0WT2ZMFJ",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -2104,95 +240,40 @@
                     "id": "0",
                     "idx": "0",
                     "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:22:20.717701+00:00",
-                      "last_reported": "2025-04-20T14:22:20.717701+00:00",
-                      "last_updated": "2025-04-20T14:22:20.717701+00:00",
-                      "context": {
-                        "id": "01JS9S8A1DWYQS4713Y3B1PBG4",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:22:35.859939+00:00",
-                      "last_reported": "2025-04-20T14:22:35.859939+00:00",
-                      "last_updated": "2025-04-20T14:22:35.859939+00:00",
-                      "context": {
-                        "id": "01JS9S8RTKMWPH1G2HV75RCDQJ",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
+                    "platform": "mqtt",
+                    "topic": "home/livingroom/light/state",
+                    "payload": "{\"state\": \"ON\", \"brightness\": null}",
+                    "qos": 1,
+                    "description": "mqtt topic home/livingroom/light/state",
+                    "payload_json": {
+                      "state": "ON",
+                      "brightness": null
+                    }
                   }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T14:22:35.860216+00:00",
-                "result": {
-                  "result": true
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T14:22:35.860235+00:00",
-                "result": {
-                  "result": true,
-                  "state": 32.56
                 }
               }
             ],
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2025-04-20T14:22:35.860411+00:00",
+                "timestamp": "2025-05-30T15:43:06.247984+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01JS9S8RTM86MQ50S0DMVAKNSH",
-                    "parent_id": "01JS9S8RTKMWPH1G2HV75RCDQJ",
+                    "id": "01JWGXRY075KK45832QKW3CWH7",
+                    "parent_id": null,
                     "user_id": null
                   }
                 },
-                "error": "two or more values in the same group of exclusion 'brightness' @ data[<brightness>]",
+                "error": "extra keys not allowed @ data['notification_id']",
                 "result": {
                   "params": {
-                    "domain": "light",
-                    "service": "turn_on",
+                    "domain": "notify",
+                    "service": "persistent_notification",
                     "service_data": {
-                      "brightness_pct": 100,
-                      "transition": 3,
-                      "brightness_step_pct": 1,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
+                      "message": "{\"state\": \"ON\", \"brightness\": null}",
+                      "notification_id": "1"
                     },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
+                    "target": {}
                   },
                   "running_script": false
                 }
@@ -2200,56 +281,23 @@
             ]
           },
           "config": {
-            "id": "1745158830677",
-            "alias": "Get Home member",
+            "id": "1748614849274",
+            "alias": "camera notification",
             "description": "",
             "triggers": [
               {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "to": "home"
+                "trigger": "mqtt",
+                "topic": "home/livingroom/light/state"
               }
             ],
-            "conditions": [
-              {
-                "condition": "numeric_state",
-                "entity_id": "sensor.temperature",
-                "above": 30
-              }
-            ],
+            "conditions": [],
             "actions": [
               {
-                "action": "light.turn_on",
+                "action": "notify.persistent_notification",
                 "metadata": {},
                 "data": {
-                  "brightness_pct": 100,
-                  "transition": 3,
-                  "brightness_step_pct": 1
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.set_hvac_mode",
-                "metadata": {},
-                "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "lock.lock",
-                "metadata": {},
-                "data": {
-                  "code": "0000"
-                },
-                "target": {
-                  "entity_id": "lock.front_door_lock"
+                  "message": "{{trigger.payload}}",
+                  "notification_id": "1"
                 }
               }
             ],
@@ -2257,61 +305,61 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01JS9S8RTM86MQ50S0DMVAKNSH",
-            "parent_id": "01JS9S8RTKMWPH1G2HV75RCDQJ",
+            "id": "01JWGXRY075KK45832QKW3CWH7",
+            "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0",
-          "run_id": "2d13412225a49c0add78ffe25ce05347",
+          "run_id": "94555177e92c38a26a7e14f391488835",
           "state": "stopped",
           "script_execution": "error",
           "timestamp": {
-            "start": "2025-04-20T14:22:35.860158+00:00",
-            "finish": "2025-04-20T14:22:35.860891+00:00"
+            "start": "2025-05-30T15:43:06.247549+00:00",
+            "finish": "2025-05-30T15:43:06.248917+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "error": "two or more values in the same group of exclusion 'brightness' @ data[<brightness>]",
-          "trigger": "state of device_tracker.member"
+          "item_id": "1748614849274",
+          "error": "extra keys not allowed @ data['notification_id']",
+          "trigger": "mqtt topic home/livingroom/light/state"
         }
       },
       {
         "extended_dict": {
           "last_step": "action/0",
-          "run_id": "3640fc16b233ed0a8099825398516b67",
+          "run_id": "c262cb8faf915d307b5cff0fed08ae98",
           "state": "stopped",
           "script_execution": "error",
           "timestamp": {
-            "start": "2025-04-20T14:23:46.224792+00:00",
-            "finish": "2025-04-20T14:23:46.225367+00:00"
+            "start": "2025-05-30T15:43:09.690057+00:00",
+            "finish": "2025-05-30T15:43:09.690980+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "error": "two or more values in the same group of exclusion 'brightness' @ data[<brightness>]",
-          "trigger": "state of device_tracker.member",
+          "item_id": "1748614849274",
+          "error": "extra keys not allowed @ data['notification_id']",
+          "trigger": "mqtt topic home/livingroom/light/state",
           "trace": {
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2025-04-20T14:23:46.224825+00:00",
+                "timestamp": "2025-05-30T15:43:09.690115+00:00",
                 "changed_variables": {
                   "this": {
-                    "entity_id": "automation.get_home_member",
+                    "entity_id": "automation.camera_notification",
                     "state": "on",
                     "attributes": {
-                      "id": "1745158830677",
-                      "last_triggered": "2025-04-20T14:22:35.860316+00:00",
+                      "id": "1748614849274",
+                      "last_triggered": "2025-05-30T15:43:06.247794+00:00",
                       "mode": "single",
                       "current": 0,
-                      "friendly_name": "Get Home member"
+                      "friendly_name": "camera notification"
                     },
-                    "last_changed": "2025-04-20T14:23:23.793620+00:00",
-                    "last_reported": "2025-04-20T14:23:23.793620+00:00",
-                    "last_updated": "2025-04-20T14:23:23.793620+00:00",
+                    "last_changed": "2025-05-30T15:42:53.242261+00:00",
+                    "last_reported": "2025-05-30T15:43:06.248659+00:00",
+                    "last_updated": "2025-05-30T15:43:06.248659+00:00",
                     "context": {
-                      "id": "01JS9SA7MHV58XGXRE36SGA7WR",
+                      "id": "01JWGXRY075KK45832QKW3CWH7",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -2320,95 +368,43 @@
                     "id": "0",
                     "idx": "0",
                     "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:23:34.865694+00:00",
-                      "last_reported": "2025-04-20T14:23:34.865694+00:00",
-                      "last_updated": "2025-04-20T14:23:34.865694+00:00",
-                      "context": {
-                        "id": "01JS9SAJEH9E1JW6A2HSG1KRGF",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:23:46.224603+00:00",
-                      "last_reported": "2025-04-20T14:23:46.224603+00:00",
-                      "last_updated": "2025-04-20T14:23:46.224603+00:00",
-                      "context": {
-                        "id": "01JS9SAXHGHK2JEN7V4A8V5TFX",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
+                    "platform": "mqtt",
+                    "topic": "home/livingroom/light/state",
+                    "payload": "{\"state\": \"ON\", \"brightness\": 76}",
+                    "qos": 1,
+                    "description": "mqtt topic home/livingroom/light/state",
+                    "payload_json": {
+                      "state": "ON",
+                      "brightness": 76
+                    }
                   }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T14:23:46.224839+00:00",
-                "result": {
-                  "result": true
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T14:23:46.224849+00:00",
-                "result": {
-                  "result": true,
-                  "state": 37.81
                 }
               }
             ],
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2025-04-20T14:23:46.224972+00:00",
+                "timestamp": "2025-05-30T15:43:09.690317+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01JS9SAXHGWBZJTNGYKGZ9B8SG",
-                    "parent_id": "01JS9SAXHGHK2JEN7V4A8V5TFX",
+                    "id": "01JWGXS1BTF5JJF88YJC320GT4",
+                    "parent_id": null,
                     "user_id": null
                   }
                 },
-                "error": "two or more values in the same group of exclusion 'brightness' @ data[<brightness>]",
+                "error": "extra keys not allowed @ data['notification_id']",
                 "result": {
                   "params": {
-                    "domain": "light",
-                    "service": "turn_on",
+                    "domain": "notify",
+                    "service": "persistent_notification",
                     "service_data": {
-                      "brightness_pct": 100,
-                      "transition": 3,
-                      "brightness_step_pct": 1,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
+                      "message": {
+                        "state": "ON",
+                        "brightness": 76
+                      },
+                      "notification_id": "1"
                     },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
+                    "target": {}
                   },
                   "running_script": false
                 }
@@ -2416,57 +412,23 @@
             ]
           },
           "config": {
-            "id": "1745158830677",
-            "alias": "Get Home member",
+            "id": "1748614849274",
+            "alias": "camera notification",
             "description": "",
             "triggers": [
               {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "to": "home",
-                "from": null
+                "trigger": "mqtt",
+                "topic": "home/livingroom/light/state"
               }
             ],
-            "conditions": [
-              {
-                "condition": "numeric_state",
-                "entity_id": "sensor.temperature",
-                "above": 30
-              }
-            ],
+            "conditions": [],
             "actions": [
               {
-                "action": "light.turn_on",
+                "action": "notify.persistent_notification",
                 "metadata": {},
                 "data": {
-                  "brightness_pct": 100,
-                  "transition": 3,
-                  "brightness_step_pct": 1
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.set_hvac_mode",
-                "metadata": {},
-                "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "lock.lock",
-                "metadata": {},
-                "data": {
-                  "code": "0000"
-                },
-                "target": {
-                  "entity_id": "lock.front_door_lock"
+                  "message": "{{trigger.payload}}",
+                  "notification_id": "1"
                 }
               }
             ],
@@ -2474,60 +436,61 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01JS9SAXHGWBZJTNGYKGZ9B8SG",
-            "parent_id": "01JS9SAXHGHK2JEN7V4A8V5TFX",
+            "id": "01JWGXS1BTF5JJF88YJC320GT4",
+            "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0",
-          "run_id": "3640fc16b233ed0a8099825398516b67",
+          "run_id": "c262cb8faf915d307b5cff0fed08ae98",
           "state": "stopped",
           "script_execution": "error",
           "timestamp": {
-            "start": "2025-04-20T14:23:46.224792+00:00",
-            "finish": "2025-04-20T14:23:46.225367+00:00"
+            "start": "2025-05-30T15:43:09.690057+00:00",
+            "finish": "2025-05-30T15:43:09.690980+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "error": "two or more values in the same group of exclusion 'brightness' @ data[<brightness>]",
-          "trigger": "state of device_tracker.member"
+          "item_id": "1748614849274",
+          "error": "extra keys not allowed @ data['notification_id']",
+          "trigger": "mqtt topic home/livingroom/light/state"
         }
       },
       {
         "extended_dict": {
-          "last_step": "action/2",
-          "run_id": "cccdde1aaa75c672d82faac34171e215",
+          "last_step": "action/0",
+          "run_id": "20fd4cf6c96f272fed38c55eef3c9d46",
           "state": "stopped",
-          "script_execution": "finished",
+          "script_execution": "error",
           "timestamp": {
-            "start": "2025-04-20T14:27:27.757258+00:00",
-            "finish": "2025-04-20T14:27:27.805456+00:00"
+            "start": "2025-05-30T15:47:07.772374+00:00",
+            "finish": "2025-05-30T15:47:07.773421+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "trigger": "state of device_tracker.member",
+          "item_id": "1748614849274",
+          "error": "extra keys not allowed @ data['notification_id']",
+          "trigger": "mqtt topic home/livingroom/light/state",
           "trace": {
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2025-04-20T14:27:27.757285+00:00",
+                "timestamp": "2025-05-30T15:47:07.772420+00:00",
                 "changed_variables": {
                   "this": {
-                    "entity_id": "automation.get_home_member",
+                    "entity_id": "automation.camera_notification",
                     "state": "on",
                     "attributes": {
-                      "id": "1745158830677",
-                      "last_triggered": "2025-04-20T14:23:46.224899+00:00",
+                      "id": "1748614849274",
+                      "last_triggered": "2025-05-30T15:43:09.690178+00:00",
                       "mode": "single",
                       "current": 0,
-                      "friendly_name": "Get Home member"
+                      "friendly_name": "camera notification"
                     },
-                    "last_changed": "2025-04-20T14:26:44.018553+00:00",
-                    "last_reported": "2025-04-20T14:26:44.018553+00:00",
-                    "last_updated": "2025-04-20T14:26:44.018553+00:00",
+                    "last_changed": "2025-05-30T15:47:07.670311+00:00",
+                    "last_reported": "2025-05-30T15:47:07.670311+00:00",
+                    "last_updated": "2025-05-30T15:47:07.670311+00:00",
                     "context": {
-                      "id": "01JS9SGB5JWZ7D84C59RDQQND1",
+                      "id": "01JWGY09RP5MT6K6GQTD4S5JHW",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -2536,135 +499,43 @@
                     "id": "0",
                     "idx": "0",
                     "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:27:23.457459+00:00",
-                      "last_reported": "2025-04-20T14:27:23.457459+00:00",
-                      "last_updated": "2025-04-20T14:27:23.457459+00:00",
-                      "context": {
-                        "id": "01JS9SHHP1PZRPZH3G3Y9VBWHG",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:27:27.756967+00:00",
-                      "last_reported": "2025-04-20T14:27:27.756967+00:00",
-                      "last_updated": "2025-04-20T14:27:27.756967+00:00",
-                      "context": {
-                        "id": "01JS9SHNWCTEVBG8475WBER2PT",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
+                    "platform": "mqtt",
+                    "topic": "home/livingroom/light/state",
+                    "payload": "{\"state\": \"ON\", \"brightness\": 76}",
+                    "qos": 1,
+                    "description": "mqtt topic home/livingroom/light/state",
+                    "payload_json": {
+                      "state": "ON",
+                      "brightness": 76
+                    }
                   }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T14:27:27.757303+00:00",
-                "result": {
-                  "result": true
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T14:27:27.757314+00:00",
-                "result": {
-                  "result": true,
-                  "state": 40.95
                 }
               }
             ],
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2025-04-20T14:27:27.757465+00:00",
+                "timestamp": "2025-05-30T15:47:07.772638+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01JS9SHNWDX31PJTPHS8E98J9N",
-                    "parent_id": "01JS9SHNWCTEVBG8475WBER2PT",
+                    "id": "01JWGY09VWFANK0PZBVG61T2EC",
+                    "parent_id": null,
                     "user_id": null
                   }
                 },
+                "error": "extra keys not allowed @ data['notification_id']",
                 "result": {
                   "params": {
-                    "domain": "light",
-                    "service": "turn_on",
-                    "service_data": {},
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:27:27.801712+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_hvac_mode",
+                    "domain": "notify",
+                    "service": "persistent_notification",
                     "service_data": {
-                      "hvac_mode": "cool",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
+                      "message": {
+                        "state": "ON",
+                        "brightness": 76
+                      },
+                      "notification_id": "1"
                     },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/2": [
-              {
-                "path": "action/2",
-                "timestamp": "2025-04-20T14:27:27.803734+00:00",
-                "result": {
-                  "params": {
-                    "domain": "lock",
-                    "service": "lock",
-                    "service_data": {
-                      "code": "0000",
-                      "entity_id": [
-                        "lock.front_door_lock"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "lock.front_door_lock"
-                      ]
-                    }
+                    "target": {}
                   },
                   "running_script": false
                 }
@@ -2672,113 +543,89 @@
             ]
           },
           "config": {
-            "id": "1745158830677",
-            "alias": "Get Home member",
+            "id": "1748614849274",
+            "alias": "camera notification",
             "description": "",
             "triggers": [
               {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "to": "home",
-                "from": null
+                "trigger": "mqtt",
+                "topic": "home/livingroom/light/state"
               }
             ],
-            "conditions": [
-              {
-                "condition": "numeric_state",
-                "entity_id": "sensor.temperature",
-                "above": 30
-              }
-            ],
+            "conditions": [],
             "actions": [
               {
-                "action": "light.turn_on",
+                "action": "notify.persistent_notification",
                 "metadata": {},
-                "data": {},
-                "target": {
-                  "entity_id": "light.living_room_light"
+                "data": {
+                  "message": "{{trigger.payload}}",
+                  "notification_id": "1"
                 }
               },
               {
-                "action": "climate.set_hvac_mode",
+                "action": "persistent_notification.create",
                 "metadata": {},
-                "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "lock.lock",
-                "metadata": {},
-                "data": {
-                  "code": "0000"
-                },
-                "target": {
-                  "entity_id": "lock.front_door_lock"
-                }
+                "data": {}
               }
             ],
             "mode": "single"
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01JS9SHNWDX31PJTPHS8E98J9N",
-            "parent_id": "01JS9SHNWCTEVBG8475WBER2PT",
+            "id": "01JWGY09VWFANK0PZBVG61T2EC",
+            "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "action/2",
-          "run_id": "cccdde1aaa75c672d82faac34171e215",
+          "last_step": "action/0",
+          "run_id": "20fd4cf6c96f272fed38c55eef3c9d46",
           "state": "stopped",
-          "script_execution": "finished",
+          "script_execution": "error",
           "timestamp": {
-            "start": "2025-04-20T14:27:27.757258+00:00",
-            "finish": "2025-04-20T14:27:27.805456+00:00"
+            "start": "2025-05-30T15:47:07.772374+00:00",
+            "finish": "2025-05-30T15:47:07.773421+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "trigger": "state of device_tracker.member"
+          "item_id": "1748614849274",
+          "error": "extra keys not allowed @ data['notification_id']",
+          "trigger": "mqtt topic home/livingroom/light/state"
         }
       },
       {
         "extended_dict": {
-          "last_step": "action/3",
-          "run_id": "a0b656309cc492585a4595beec6faa52",
+          "last_step": "action/0",
+          "run_id": "cced46c70aca59d64536d1277feb0bf7",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2025-04-20T14:28:24.177348+00:00",
-            "finish": "2025-04-20T14:28:24.223117+00:00"
+            "start": "2025-05-30T15:47:26.234086+00:00",
+            "finish": "2025-05-30T15:47:26.234793+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "trigger": "state of device_tracker.member",
+          "item_id": "1748614849274",
+          "trigger": "mqtt topic home/livingroom/light/state",
           "trace": {
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2025-04-20T14:28:24.177379+00:00",
+                "timestamp": "2025-05-30T15:47:26.234133+00:00",
                 "changed_variables": {
                   "this": {
-                    "entity_id": "automation.get_home_member",
+                    "entity_id": "automation.camera_notification",
                     "state": "on",
                     "attributes": {
-                      "id": "1745158830677",
-                      "last_triggered": "2025-04-20T14:27:27.757371+00:00",
+                      "id": "1748614849274",
+                      "last_triggered": "2025-05-30T15:47:07.772506+00:00",
                       "mode": "single",
                       "current": 0,
-                      "friendly_name": "Get Home member"
+                      "friendly_name": "camera notification"
                     },
-                    "last_changed": "2025-04-20T14:28:08.580832+00:00",
-                    "last_reported": "2025-04-20T14:28:08.580832+00:00",
-                    "last_updated": "2025-04-20T14:28:08.580832+00:00",
+                    "last_changed": "2025-05-30T15:47:26.132133+00:00",
+                    "last_reported": "2025-05-30T15:47:26.132133+00:00",
+                    "last_updated": "2025-05-30T15:47:26.132133+00:00",
                     "context": {
-                      "id": "01JS9SJXR4W29T6KGED28DAV4R",
+                      "id": "01JWGY0VSMV8N07WMJD7YDPDQS",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -2787,159 +634,42 @@
                     "id": "0",
                     "idx": "0",
                     "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:28:18.116989+00:00",
-                      "last_reported": "2025-04-20T14:28:18.116989+00:00",
-                      "last_updated": "2025-04-20T14:28:18.116989+00:00",
-                      "context": {
-                        "id": "01JS9SK724NBZTM0MK5BAMH4BJ",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:28:24.177186+00:00",
-                      "last_reported": "2025-04-20T14:28:24.177186+00:00",
-                      "last_updated": "2025-04-20T14:28:24.177186+00:00",
-                      "context": {
-                        "id": "01JS9SKCZHR74PZYPQTS9Q9345",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
+                    "platform": "mqtt",
+                    "topic": "home/livingroom/light/state",
+                    "payload": "{\"state\": \"ON\", \"brightness\": 76}",
+                    "qos": 1,
+                    "description": "mqtt topic home/livingroom/light/state",
+                    "payload_json": {
+                      "state": "ON",
+                      "brightness": 76
+                    }
                   }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T14:28:24.177393+00:00",
-                "result": {
-                  "result": true
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T14:28:24.177401+00:00",
-                "result": {
-                  "result": true,
-                  "state": 31.1
                 }
               }
             ],
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2025-04-20T14:28:24.177520+00:00",
+                "timestamp": "2025-05-30T15:47:26.234352+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01JS9SKCZHGWH65GVSZKQ5RDV5",
-                    "parent_id": "01JS9SKCZHR74PZYPQTS9Q9345",
+                    "id": "01JWGY0VWTSWK20JW1R0F8N50M",
+                    "parent_id": null,
                     "user_id": null
                   }
                 },
                 "result": {
                   "params": {
-                    "domain": "light",
-                    "service": "turn_on",
-                    "service_data": {},
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:28:24.219038+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_hvac_mode",
+                    "domain": "persistent_notification",
+                    "service": "create",
                     "service_data": {
-                      "hvac_mode": "cool",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
+                      "message": {
+                        "state": "ON",
+                        "brightness": 76
+                      },
+                      "notification_id": "1"
                     },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/2": [
-              {
-                "path": "action/2",
-                "timestamp": "2025-04-20T14:28:24.221055+00:00",
-                "result": {
-                  "params": {
-                    "domain": "lock",
-                    "service": "lock",
-                    "service_data": {
-                      "code": "0000",
-                      "entity_id": [
-                        "lock.front_door_lock"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "lock.front_door_lock"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/3": [
-              {
-                "path": "action/3",
-                "timestamp": "2025-04-20T14:28:24.221885+00:00",
-                "result": {
-                  "params": {
-                    "domain": "light",
-                    "service": "turn_on",
-                    "service_data": {
-                      "brightness_pct": 99,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
+                    "target": {}
                   },
                   "running_script": false
                 }
@@ -2947,63 +677,23 @@
             ]
           },
           "config": {
-            "id": "1745158830677",
-            "alias": "Get Home member",
+            "id": "1748614849274",
+            "alias": "camera notification",
             "description": "",
             "triggers": [
               {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "to": "home",
-                "from": null
+                "trigger": "mqtt",
+                "topic": "home/livingroom/light/state"
               }
             ],
-            "conditions": [
-              {
-                "condition": "numeric_state",
-                "entity_id": "sensor.temperature",
-                "above": 30
-              }
-            ],
+            "conditions": [],
             "actions": [
               {
-                "action": "light.turn_on",
-                "metadata": {},
-                "data": {},
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.set_hvac_mode",
+                "action": "persistent_notification.create",
                 "metadata": {},
                 "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "lock.lock",
-                "metadata": {},
-                "data": {
-                  "code": "0000"
-                },
-                "target": {
-                  "entity_id": "lock.front_door_lock"
-                }
-              },
-              {
-                "action": "light.turn_on",
-                "metadata": {},
-                "data": {
-                  "brightness_pct": 99
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
+                  "message": "{{trigger.payload}}",
+                  "notification_id": "1"
                 }
               }
             ],
@@ -3011,59 +701,59 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01JS9SKCZHGWH65GVSZKQ5RDV5",
-            "parent_id": "01JS9SKCZHR74PZYPQTS9Q9345",
+            "id": "01JWGY0VWTSWK20JW1R0F8N50M",
+            "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "action/3",
-          "run_id": "a0b656309cc492585a4595beec6faa52",
+          "last_step": "action/0",
+          "run_id": "cced46c70aca59d64536d1277feb0bf7",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2025-04-20T14:28:24.177348+00:00",
-            "finish": "2025-04-20T14:28:24.223117+00:00"
+            "start": "2025-05-30T15:47:26.234086+00:00",
+            "finish": "2025-05-30T15:47:26.234793+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "trigger": "state of device_tracker.member"
+          "item_id": "1748614849274",
+          "trigger": "mqtt topic home/livingroom/light/state"
         }
       },
       {
         "extended_dict": {
-          "last_step": "action/3",
-          "run_id": "7488d81672351703755e6d5e25d6883a",
+          "last_step": "action/0",
+          "run_id": "de0c59ddb8a35f4ee19099cd15b48176",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2025-04-20T14:30:18.723377+00:00",
-            "finish": "2025-04-20T14:30:18.727749+00:00"
+            "start": "2025-05-30T15:47:41.387643+00:00",
+            "finish": "2025-05-30T15:47:41.388372+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "trigger": "state of device_tracker.member",
+          "item_id": "1748614849274",
+          "trigger": "mqtt topic home/frontdoor/notifications",
           "trace": {
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2025-04-20T14:30:18.723426+00:00",
+                "timestamp": "2025-05-30T15:47:41.387689+00:00",
                 "changed_variables": {
                   "this": {
-                    "entity_id": "automation.get_home_member",
+                    "entity_id": "automation.camera_notification",
                     "state": "on",
                     "attributes": {
-                      "id": "1745158830677",
-                      "last_triggered": "2025-04-20T14:28:24.177446+00:00",
+                      "id": "1748614849274",
+                      "last_triggered": "2025-05-30T15:47:26.234222+00:00",
                       "mode": "single",
                       "current": 0,
-                      "friendly_name": "Get Home member"
+                      "friendly_name": "camera notification"
                     },
-                    "last_changed": "2025-04-20T14:29:01.171034+00:00",
-                    "last_reported": "2025-04-20T14:29:01.171034+00:00",
-                    "last_updated": "2025-04-20T14:29:01.171034+00:00",
+                    "last_changed": "2025-05-30T15:47:41.286212+00:00",
+                    "last_reported": "2025-05-30T15:47:41.286212+00:00",
+                    "last_updated": "2025-05-30T15:47:41.286212+00:00",
                     "context": {
-                      "id": "01JS9SMH3K2GBRJ2WTSMW78ZT6",
+                      "id": "01JWGY1AK6SJ10JKNZAMZR7HG6",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -3072,159 +762,35 @@
                     "id": "0",
                     "idx": "0",
                     "alias": null,
-                    "platform": "state",
-                    "entity_id": "device_tracker.member",
-                    "from_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "not_home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:30:11.297950+00:00",
-                      "last_reported": "2025-04-20T14:30:11.297950+00:00",
-                      "last_updated": "2025-04-20T14:30:11.297950+00:00",
-                      "context": {
-                        "id": "01JS9SPNK16ZZB0ZFMMM817KRR",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "to_state": {
-                      "entity_id": "device_tracker.member",
-                      "state": "home",
-                      "attributes": {
-                        "source_type": "router",
-                        "friendly_name": "member"
-                      },
-                      "last_changed": "2025-04-20T14:30:18.723194+00:00",
-                      "last_reported": "2025-04-20T14:30:18.723194+00:00",
-                      "last_updated": "2025-04-20T14:30:18.723194+00:00",
-                      "context": {
-                        "id": "01JS9SPWV3MKCRBR9009HJFGKC",
-                        "parent_id": null,
-                        "user_id": null
-                      }
-                    },
-                    "for": null,
-                    "attribute": null,
-                    "description": "state of device_tracker.member"
+                    "platform": "mqtt",
+                    "topic": "home/frontdoor/notifications",
+                    "payload": "1234a",
+                    "qos": 0,
+                    "description": "mqtt topic home/frontdoor/notifications"
                   }
-                }
-              }
-            ],
-            "condition/0": [
-              {
-                "path": "condition/0",
-                "timestamp": "2025-04-20T14:30:18.723442+00:00",
-                "result": {
-                  "result": true
-                }
-              }
-            ],
-            "condition/0/entity_id/0": [
-              {
-                "path": "condition/0/entity_id/0",
-                "timestamp": "2025-04-20T14:30:18.723451+00:00",
-                "result": {
-                  "result": true,
-                  "state": 31.1
                 }
               }
             ],
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2025-04-20T14:30:18.723580+00:00",
+                "timestamp": "2025-05-30T15:47:41.387900+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01JS9SPWV32C3EH4EKJA4Y6R62",
-                    "parent_id": "01JS9SPWV3MKCRBR9009HJFGKC",
+                    "id": "01JWGY1APBCY9ZYTHNEQ4AVC7Y",
+                    "parent_id": null,
                     "user_id": null
                   }
                 },
                 "result": {
                   "params": {
-                    "domain": "light",
-                    "service": "turn_on",
-                    "service_data": {},
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/1": [
-              {
-                "path": "action/1",
-                "timestamp": "2025-04-20T14:30:18.724813+00:00",
-                "result": {
-                  "params": {
-                    "domain": "climate",
-                    "service": "set_hvac_mode",
+                    "domain": "persistent_notification",
+                    "service": "create",
                     "service_data": {
-                      "hvac_mode": "cool",
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
+                      "message": "1234a",
+                      "notification_id": "1"
                     },
-                    "target": {
-                      "entity_id": [
-                        "climate.living_room_conditioner"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/2": [
-              {
-                "path": "action/2",
-                "timestamp": "2025-04-20T14:30:18.725592+00:00",
-                "result": {
-                  "params": {
-                    "domain": "lock",
-                    "service": "lock",
-                    "service_data": {
-                      "code": "0000",
-                      "entity_id": [
-                        "lock.front_door_lock"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "lock.front_door_lock"
-                      ]
-                    }
-                  },
-                  "running_script": false
-                }
-              }
-            ],
-            "action/3": [
-              {
-                "path": "action/3",
-                "timestamp": "2025-04-20T14:30:18.726377+00:00",
-                "result": {
-                  "params": {
-                    "domain": "light",
-                    "service": "turn_on",
-                    "service_data": {
-                      "brightness_pct": 55,
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    },
-                    "target": {
-                      "entity_id": [
-                        "light.living_room_light"
-                      ]
-                    }
+                    "target": {}
                   },
                   "running_script": false
                 }
@@ -3232,63 +798,23 @@
             ]
           },
           "config": {
-            "id": "1745158830677",
-            "alias": "Get Home member",
+            "id": "1748614849274",
+            "alias": "camera notification",
             "description": "",
             "triggers": [
               {
-                "trigger": "state",
-                "entity_id": [
-                  "device_tracker.member"
-                ],
-                "to": "home",
-                "from": null
+                "trigger": "mqtt",
+                "topic": "home/frontdoor/notifications"
               }
             ],
-            "conditions": [
-              {
-                "condition": "numeric_state",
-                "entity_id": "sensor.temperature",
-                "above": 30
-              }
-            ],
+            "conditions": [],
             "actions": [
               {
-                "action": "light.turn_on",
-                "metadata": {},
-                "data": {},
-                "target": {
-                  "entity_id": "light.living_room_light"
-                }
-              },
-              {
-                "action": "climate.set_hvac_mode",
+                "action": "persistent_notification.create",
                 "metadata": {},
                 "data": {
-                  "hvac_mode": "cool"
-                },
-                "target": {
-                  "entity_id": "climate.living_room_conditioner"
-                }
-              },
-              {
-                "action": "lock.lock",
-                "metadata": {},
-                "data": {
-                  "code": "0000"
-                },
-                "target": {
-                  "entity_id": "lock.front_door_lock"
-                }
-              },
-              {
-                "action": "light.turn_on",
-                "metadata": {},
-                "data": {
-                  "brightness_pct": 55
-                },
-                "target": {
-                  "entity_id": "light.living_room_light"
+                  "message": "{{trigger.payload}}",
+                  "notification_id": "1"
                 }
               }
             ],
@@ -3296,23 +822,23 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01JS9SPWV32C3EH4EKJA4Y6R62",
-            "parent_id": "01JS9SPWV3MKCRBR9009HJFGKC",
+            "id": "01JWGY1APBCY9ZYTHNEQ4AVC7Y",
+            "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "action/3",
-          "run_id": "7488d81672351703755e6d5e25d6883a",
+          "last_step": "action/0",
+          "run_id": "de0c59ddb8a35f4ee19099cd15b48176",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2025-04-20T14:30:18.723377+00:00",
-            "finish": "2025-04-20T14:30:18.727749+00:00"
+            "start": "2025-05-30T15:47:41.387643+00:00",
+            "finish": "2025-05-30T15:47:41.388372+00:00"
           },
           "domain": "automation",
-          "item_id": "1745158830677",
-          "trigger": "state of device_tracker.member"
+          "item_id": "1748614849274",
+          "trigger": "mqtt topic home/frontdoor/notifications"
         }
       }
     ]

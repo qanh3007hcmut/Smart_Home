@@ -13,7 +13,8 @@ factory: Dict[str, Factory] = {
     'binary_sensor' : BinarySensorFactory(),
     'lock' : LockFactory(),
     'light' : LightFactory(),
-    'hvac' : HVACFactory()
+    'hvac' : HVACFactory(),
+    'switch' : SwitchFactory(),
 }
 
 sensors : List[SensorConfig] = [factory['sensor'].create(sensor_conf) for sensor_conf in config["sensor"]] 
@@ -21,7 +22,9 @@ binary_sensors : List[BinarySensorConfig] = [factory['binary_sensor'].create(bin
 locks : List[LockConfig] = [factory['lock'].create(lock_conf) for lock_conf in config["lock"]] 
 lights : List[LightConfig] = [factory['light'].create(light_conf) for light_conf in config["light"]] 
 hvacs: List[HVACConfig] = [factory['hvac'].create(hvac_conf) for hvac_conf in config["hvac"]] 
-ini_entities = [locks, lights, hvacs]
+switches: List[SwitchConfig] = [factory['switch'].create(hvac_conf) for hvac_conf in config["switch"]] 
+
+ini_entities = [locks, lights, hvacs, switches]
 def run():
     mqtt.connect()
 

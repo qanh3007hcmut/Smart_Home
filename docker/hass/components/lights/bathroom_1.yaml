@@ -1,0 +1,13 @@
+- name: "Bathroom Light 1"
+  unique_id: "bathroom_light_1"
+  
+  schema: json
+  state_topic: "home/bathroom/1/light/state"
+  command_topic: "home/bathroom/1/light/set"
+
+  brightness: true
+  brightness_scale: 100
+
+  qos: 1
+  retain: true
+  optimistic: false

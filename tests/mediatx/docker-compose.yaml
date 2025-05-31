@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  # go2rtc:
+  #   image: alexxit/go2rtc:latest
+  #   container_name: go2rtc
+  #   ports:
+  #     - "8554:8554"  # RTSP port
+  #     - "1984:1984"  # WebRTC HTTP port
+  #     - "1985:1985/udp"  # WebRTC ICE port
+  #   volumes:
+  #     - ./go2rtc:/config  # Lưu cấu hình go2rtc
+  #   environment:
+  #     - TZ=Asia/Ho_Chi_Minh  # Thay bằng múi giờ của bạn
+  #   restart: unless-stopped
+  #   networks:
+  #     - webcam_network
+
+  mediamtx:
+    image: bluenviron/mediamtx:latest
+    container_name: mediamtx
+    ports:
+      - "8554:8554"  # RTSP port
+      - "8888:8888"  # WebRTC HTTP port
+      - "8889:8889/udp"  # WebRTC ICE port
+    volumes:
+      - ./mediamtx:/config  # Lưu cấu hình MediaMTX
+    environment:
+      - MTX_PROTOCOLS=tcp
+      - MTX_WEBRTCADDITIONALHOSTS=172.27.192.1
+    restart: unless-stopped
+    networks:
+      - webcam_network
+
+networks:
+  webcam_network:
+    driver: bridge

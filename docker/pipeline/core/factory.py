@@ -72,6 +72,21 @@ class LightFactory(Factory):
             state_topic = component['state_topic'], 
         )
         return light
+
+class SwitchFactory(Factory):
+    SWITCH_MAP = {
+            
+        }
+    
+    def create(self, component : dict) -> SwitchConfig:
+        _type = component['type']
+        cls = self.SWITCH_MAP.get(_type, SwitchConfig)
+        light = cls(
+            _type = component['type'],
+            command_topic = component['command_topic'],
+            state_topic = component['state_topic'], 
+        )
+        return light
     
 class HVACFactory(Factory):
     HVAC_MAP = {}

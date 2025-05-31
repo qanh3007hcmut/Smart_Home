@@ -80,6 +80,13 @@
         "domain": "mqtt",
         "is_persistent": false,
         "issue_id": "0xde64ea4d619cd88"
+      },
+      {
+        "created": "2025-05-29T05:11:49.443443+00:00",
+        "dismissed_version": "2025.4.2",
+        "domain": "camera",
+        "is_persistent": false,
+        "issue_id": "legacy_webrtc_provider_rtsp_to_webrtc"
       }
     ]
   }

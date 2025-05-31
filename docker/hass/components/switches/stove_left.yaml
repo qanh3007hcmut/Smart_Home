@@ -1,0 +1,7 @@
+- name: "Gas Stove Left"
+  unique_id: stove_left  
+  state_topic: "home/kitchen/switch/stove/left/state"
+  command_topic: "home/kitchen/switch/stove/left/set"
+  optimistic: false
+  qos: 1
+  retain: true

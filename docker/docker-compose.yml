@@ -12,6 +12,24 @@ services:
       - mosquitto
     environment:
       - TZ=Asia/Ho_Chi_Minh
+    networks:
+      - ha
+
+  mediamtx:
+    image: bluenviron/mediamtx:latest
+    container_name: mediamtx
+    ports:
+      - "8554:8554"  # RTSP port
+      - "8888:8888"  # WebRTC HTTP port
+      - "8889:8889/udp"  # WebRTC ICE port
+    volumes:
+      - ./mediamtx:/config  # Lưu cấu hình MediaMTX
+    environment:
+      - MTX_PROTOCOLS=tcp
+      - MTX_WEBRTCADDITIONALHOSTS=172.27.192.1
+    restart: unless-stopped
+    networks:
+      - ha
 
   mosquitto:
     container_name: hass-mosquitto
@@ -22,6 +40,8 @@ services:
     volumes:
       - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
     restart: unless-stopped
+    networks:
+      - ha
   # component:
   #   build: ./component
   #   depends_on:
@@ -32,3 +52,9 @@ services:
     depends_on:
       - mosquitto
     restart: unless-stopped
+    networks:
+      - ha
+
+networks:
+  ha:
+    driver: bridge

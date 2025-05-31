@@ -1,0 +1,7 @@
+- name: "Gas Stove Mid"
+  unique_id: stove_mid  
+  state_topic: "home/kitchen/switch/stove/mid/state"
+  command_topic: "home/kitchen/switch/stove/mid/set"
+  optimistic: false
+  qos: 1
+  retain: true

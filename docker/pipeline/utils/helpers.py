@@ -33,6 +33,9 @@ def load_config() -> dict:
     
     with open('config/hvacs.yaml', 'r') as f:
         hvac_config = yaml.safe_load(f)
+    
+    with open('config/switches.yaml', 'r') as f:
+        switch_config = yaml.safe_load(f)
         
     with open('config/mqtt.yaml', 'r') as f:
         mqtt_config = yaml.safe_load(f)
@@ -43,6 +46,7 @@ def load_config() -> dict:
         'lock': lock_config["locks"],
         'light': light_config["lights"],
         'hvac' : hvac_config["hvacs"],
+        'switch' : switch_config["switches"],
         'mqtt': mqtt_config
     }
     
@@ -63,13 +67,21 @@ def initialzize_entities(mqtt, entities : List[List]):
         for ele in hvacs:
             ele.publish_state(mqtt, field = "mode", value = "auto")
             ele.subscribe_command(mqtt)
+    
+    def initialize_switch(switches):
+        for ele in switches:
+            ele.publish_state(mqtt, "OFF")
+            ele.subscribe_command(mqtt)
+            
     for list in entities:
-        from core.base import LockConfig, LightConfig, HVACConfig
+        from core.base import LockConfig, LightConfig, HVACConfig, SwitchConfig
         if isinstance(list[0], LockConfig):
             initialize_lock(list)
         elif isinstance(list[0], LightConfig):
             initialize_light(list)    
         elif isinstance(list[0], HVACConfig):
             initialize_hvac(list)    
+        elif isinstance(list[0], SwitchConfig):
+            initialize_switch(list)    
         
         
