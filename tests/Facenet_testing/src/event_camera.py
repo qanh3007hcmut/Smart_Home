@@ -34,8 +34,8 @@ class EventDetectionCamera:
         
         # Fall detection parameters
         self.fall_records = {}  # Track people for fall detection
-        self.fall_speed_threshold = 15  # px/s - vertical movement threshold
-        self.fall_window = 1.0  # seconds to analyze for fall
+        self.fall_speed_threshold = 20  # px/s - vertical movement threshold (increased from 15)
+        self.fall_window = 1.2  # seconds to analyze for fall (slightly increased)
         
         # Video recording parameters
         self.fourcc = cv2.VideoWriter_fourcc(*'mp4v')
@@ -265,12 +265,25 @@ class EventDetectionCamera:
                                             print(f"ID {int(tracking_id)}: Speed={vertical_speed:.1f} px/s, " +
                                                 f"Angle Change={vertical_angle_change:.1f}°, Total Y={total_y_change:.1f}px")
                                             
-                                            # Fall detection conditions: Check for rapid downward movement AND 
-                                            # significant angle change (person becoming horizontal)
-                                            if ((vertical_speed > self.fall_speed_threshold and nose_y_change > 30) or  # Fast downward motion
-                                                (vertical_speed > 10 and abs(vertical_angle_change) > 30) or  # Angle change with movement
-                                                (abs(vertical_angle_change) > 45 and vertical_speed > 5)):  # Major orientation change
+                                            # Fall detection conditions with improved heuristics to avoid false positives on bowing
+                                            is_fall = False
+                                            
+                                            # Condition 1: Rapid downward motion with significant vertical displacement
+                                            if vertical_speed > self.fall_speed_threshold and nose_y_change > 60:
+                                                is_fall = True
+                                            
+                                            # Condition 2: Moderate speed with very significant angle change (person becoming horizontal)
+                                            elif vertical_speed > 10 and abs(vertical_angle_change) > 45:
+                                                is_fall = True
                                                 
+                                            # Condition 3: Major orientation change with continuity in movement
+                                            # This helps avoid false positives from deliberate movements like bowing
+                                            elif abs(vertical_angle_change) > 60 and vertical_speed > 12:
+                                                # Check additional conditions to differentiate from controlled movements
+                                                if time_diff < 0.7:  # Falls happen quickly
+                                                    is_fall = True
+                                            
+                                            if is_fall:
                                                 fall_detected = True
                                                 fall_info = {
                                                     "id": int(tracking_id),

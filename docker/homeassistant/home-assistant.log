@@ -3,3 +3,11 @@
 2025-05-29 07:24:41.521 WARNING (MainThread) [homeassistant.helpers.entity] Updating state for sensor.temperature_sensor (<class 'homeassistant.components.mqtt.sensor.MqttSensor'>) took 2.002 seconds. Please create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+mqtt%22
 2025-05-29 07:24:43.715 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
 2025-05-29 11:25:31.823 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-29 23:19:30.288 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-30 06:53:41.774 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-30 10:42:54.973 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-31 06:56:32.621 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-31 10:13:22.563 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-31 12:53:59.613 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-31 17:18:17.543 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-31 20:11:34.154 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
