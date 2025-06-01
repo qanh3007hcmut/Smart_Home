@@ -104,12 +104,81 @@
     topic: home/frontdoor/notifications
   conditions:
   - condition: template
-    value_template: '{{ trigger.payload_json.timestand != ''0''}}'
+    value_template: '{{ trigger.payload_json.timestand != 0 }}'
   actions:
   - action: persistent_notification.create
     metadata: {}
     data:
-      title: Front door camera
-      message: '{{trigger.payload_json.name}} detected and standing for {{trigger.payload_json.timestand}}'
-      notification_id: '{{trigger.payload_json.name}}'
+      title: Frontdoor Camera - {{ now().strftime('%B %d %H:%M') }}
+      message: '{{ trigger.payload_json.name | title }} detected and standing for
+        {{trigger.payload_json.timestand}}'
+      notification_id: frontdoor_camera_{{ trigger.payload_json.name | lower }}
+  mode: single
+- id: '1748681697677'
+  alias: Stove open warning
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.people_detection
+    from:
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  conditions:
+  - condition: or
+    conditions:
+    - condition: state
+      state: 'on'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 5
+      entity_id: switch.gas_stove_left
+    - condition: state
+      state: 'on'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 5
+      entity_id: switch.gas_stove_right
+    - condition: state
+      state: 'on'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 5
+      entity_id: switch.gas_stove_mid
+  actions:
+  - action: persistent_notification.create
+    data:
+      title: Active Stove Warning!!! - {{ now().strftime('%B %d %H:%M') }}
+      message: 'Stoves are still on, but no one is detected in the kitchen.
+
+        '
+  mode: single
+- id: '1748704185401'
+  alias: Clear empty notification
+  description: ''
+  triggers:
+  - trigger: persistent_notification
+    update_type:
+    - updated
+    - current
+    - removed
+    - added
+  conditions:
+  - condition: template
+    value_template: '{{ trigger.notification.notification_id.startswith(''frontdoor_camera_'')
+      }}'
+    enabled: true
+  - condition: template
+    value_template: '{{ trigger.notification.message.endswith(''0 second'') }}'
+  actions:
+  - action: persistent_notification.dismiss
+    metadata: {}
+    data:
+      notification_id: '{{ trigger.notification.notification_id}}'
   mode: single

@@ -1,4 +1,5 @@
 - name: Front Door Lock
+  unique_id: "frontdoor_lock"
   code_format: "^\\d{4}$"
   command_topic: "home/door/front/lock/set"
   command_template: '{ "action": "{{ value }}", "code":"{{ code }}" }'

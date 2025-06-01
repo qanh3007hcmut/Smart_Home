@@ -8,6 +8,8 @@ import mediapipe as mp
 from sort import Sort 
 from ultralytics import YOLO
 import torch
+import paho.mqtt.client as mqtt
+
 
 class EventDetectionCamera:
     def __init__(self, video_source=0, output_path=None, detect_types=None):
@@ -15,7 +17,8 @@ class EventDetectionCamera:
         self.video_path = video_source
         self.output_path = output_path
         self.detect_types = detect_types if detect_types else ["motion", "fall"]
-        
+        self.detected = time.time()
+        self.detected_interval = 10
         # Create output directories
         os.makedirs('events', exist_ok=True)
         os.makedirs('video', exist_ok=True)
@@ -405,6 +408,7 @@ class EventDetectionCamera:
         """Run the event detection camera"""
         # Open video capture
         cap = cv2.VideoCapture(self.video_path)
+        client = mqtt.Client()
         if not cap.isOpened():
             print(f"Error: Could not open video source {self.video_path}")
             return
@@ -425,6 +429,8 @@ class EventDetectionCamera:
         frame_delay = 1.0 / fps if self.video_path != 0 else 0
         
         try:
+            client.connect("172.20.96.1", 1883, 60)
+            client.loop_start()
             while True:
                 ret, frame = cap.read()
                 if not ret or frame is None:
@@ -450,7 +456,10 @@ class EventDetectionCamera:
                 motion_detected = False
                 if "motion" in self.detect_types:
                     motion_detected, motion_regions = self.detect_motion(frame, person_boxes)
-                    
+                    if current_time - self.detected >= self.detected_interval:
+                        client.publish("home/kitchen/people/state", "1" if motion_detected else "0", qos=1, retain=True)
+                        self.detected = time.time()
+                        
                     if motion_detected:
                         self.last_motion_time = current_time
                         
@@ -501,6 +510,8 @@ class EventDetectionCamera:
             if self.event_out is not None:
                 self.event_out.release()
             cv2.destroyAllWindows()
+            client.loop_stop()
+            client.disconnect()
             print("Event detection camera stopped")
 
 

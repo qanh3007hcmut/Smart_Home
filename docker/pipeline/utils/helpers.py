@@ -53,28 +53,32 @@ def load_config() -> dict:
     return config
 
 def initialzize_entities(mqtt, entities : List[List]):
-    def initialize_lock(locks):
+    from core.base import LockConfig, LightConfig, HVACConfig, SwitchConfig, BinarySensorConfig
+    def initialize_lock(locks : List[LockConfig]):
         for ele in locks:
             ele.publish_state(mqtt, lock = True)
             ele.subscribe_command(mqtt)
     
-    def initialize_light(lights):
+    def initialize_light(lights : List[LightConfig]):
         for ele in lights:
             ele.publish_state(mqtt, {"state":"OFF", "brightness":"100"})
             ele.subscribe_command(mqtt)
     
-    def initialize_hvac(hvacs):
+    def initialize_hvac(hvacs : List[HVACConfig]):
         for ele in hvacs:
             ele.publish_state(mqtt, field = "mode", value = "auto")
             ele.subscribe_command(mqtt)
     
-    def initialize_switch(switches):
+    def initialize_switch(switches : List[SwitchConfig]):
         for ele in switches:
             ele.publish_state(mqtt, "OFF")
             ele.subscribe_command(mqtt)
+    
+    def initialize_binary_sensor(bsensors : List[BinarySensorConfig]):
+        for ele in bsensors:
+            ele.publish_state(mqtt, False)
             
     for list in entities:
-        from core.base import LockConfig, LightConfig, HVACConfig, SwitchConfig
         if isinstance(list[0], LockConfig):
             initialize_lock(list)
         elif isinstance(list[0], LightConfig):
@@ -83,5 +87,7 @@ def initialzize_entities(mqtt, entities : List[List]):
             initialize_hvac(list)    
         elif isinstance(list[0], SwitchConfig):
             initialize_switch(list)    
+        elif isinstance(list[0], BinarySensorConfig):
+            initialize_binary_sensor(list)    
         
         

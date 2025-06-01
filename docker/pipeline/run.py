@@ -24,7 +24,7 @@ lights : List[LightConfig] = [factory['light'].create(light_conf) for light_conf
 hvacs: List[HVACConfig] = [factory['hvac'].create(hvac_conf) for hvac_conf in config["hvac"]] 
 switches: List[SwitchConfig] = [factory['switch'].create(hvac_conf) for hvac_conf in config["switch"]] 
 
-ini_entities = [locks, lights, hvacs, switches]
+ini_entities = [binary_sensors, locks, lights, hvacs, switches]
 def run():
     mqtt.connect()
 

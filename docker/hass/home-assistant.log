@@ -1,76 +1,340 @@
-2025-05-31 12:37:20.052 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2025-05-31 12:37:20.138 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration webrtc which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2025-05-31 12:37:24.490 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2025-05-31 12:37:36.895 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'webrtc' accessed lovelace_data['resources'] instead of lovelace_data.resources at custom_components/webrtc/utils.py, line 129: resources: ResourceStorageCollection = hass.data["lovelace"]["resources"]. This will stop working in Home Assistant 2026.2, please create a bug report at https://github.com/AlexxIT/WebRTC/issues
-2025-05-31 12:37:39.548 ERROR (MainThread) [custom_components.hacs] Could not update theme - Error fetching data from HACS: Cannot connect to host data-v2.hacs.xyz:443 ssl:default [Domain name not found]
-2025-05-31 12:37:39.549 ERROR (MainThread) [custom_components.hacs] Could not update template - Error fetching data from HACS: Cannot connect to host data-v2.hacs.xyz:443 ssl:default [Domain name not found]
-2025-05-31 12:37:39.549 ERROR (MainThread) [custom_components.hacs] Could not update integration - Error fetching data from HACS: Cannot connect to host data-v2.hacs.xyz:443 ssl:default [Domain name not found]
-2025-05-31 12:37:39.549 ERROR (MainThread) [custom_components.hacs] Could not update plugin - Error fetching data from HACS: Cannot connect to host data-v2.hacs.xyz:443 ssl:default [Domain name not found]
-2025-05-31 12:37:39.599 ERROR (MainThread) [homeassistant.components.homeassistant_alerts.coordinator] Error requesting homeassistant_alerts data: Cannot connect to host alerts.home-assistant.io:443 ssl:default [Domain name not found]
-2025-05-31 12:37:39.676 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:37:40.299 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_1
-2025-05-31 12:37:40.301 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_2
-2025-05-31 12:37:40.306 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_1_light
-2025-05-31 12:37:40.318 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_2_light
-2025-05-31 12:37:40.321 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.kitchen_light
-2025-05-31 12:37:40.339 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.living_room_light
-2025-05-31 12:37:49.706 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:38:09.727 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:38:39.753 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:39:19.947 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:40:09.960 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:41:09.973 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:42:19.981 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:45:39.778 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 12:47:09.781 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:48:49.798 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:50:39.797 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:52:39.635 ERROR (MainThread) [homeassistant.components.analytics] Error sending analytics to https://analytics-api.home-assistant.io/v1: ClientConnectorDNSError(ConnectionKey(host='analytics-api.home-assistant.io', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(None, 'Domain name not found'))
-2025-05-31 12:52:39.798 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:54:49.802 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:57:09.816 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 12:58:32.306 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139922503668288] Error handling message: Unknown error (unknown_error) localhost from 172.21.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0)
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/generic/config_flow.py", line 570, in ws_start_preview
-    user_input = flow.preview_image_settings
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'preview_image_settings'
-2025-05-31 12:58:33.793 ERROR (MainThread) [frontend.js.modern.202504110] Uncaught error from Edge 136.0.0.0 on Windows 10
-TypeError: Cannot read properties of null (reading 'srcObject')
-_loadedData (src/components/ha-web-rtc-player.ts:388:25)
-call (src/lit-html.ts:2018:28)
-2025-05-31 12:59:39.815 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:02:19.815 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:05:09.812 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:08:09.812 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:11:19.806 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:14:39.802 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:18:09.796 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:21:49.794 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:25:39.789 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:29:39.783 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 13:37:55.962 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 13:42:53.779 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 13:50:47.519 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 13:56:02.683 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 14:00:52.671 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 14:05:52.660 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 14:13:02.275 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 14:18:22.262 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 14:23:52.250 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 14:29:32.237 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 14:35:22.224 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 14:41:22.211 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 14:47:32.197 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 15:03:34.345 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 15:03:44.353 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 15:10:23.147 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 15:10:33.156 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 15:14:00.569 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 15:24:45.856 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
-2025-05-31 15:24:55.863 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 15:25:15.870 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 15:25:45.878 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 15:26:25.882 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:36:45.817 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-05-31 21:36:45.821 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration webrtc which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-05-31 21:36:47.453 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'webrtc' accessed lovelace_data['resources'] instead of lovelace_data.resources at custom_components/webrtc/utils.py, line 129: resources: ResourceStorageCollection = hass.data["lovelace"]["resources"]. This will stop working in Home Assistant 2026.2, please create a bug report at https://github.com/AlexxIT/WebRTC/issues
+2025-05-31 21:36:49.715 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:36:53.956 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_1_light
+2025-05-31 21:36:53.957 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_2_light
+2025-05-31 21:36:53.958 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.living_room_light
+2025-05-31 21:36:53.959 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.kitchen_light
+2025-05-31 21:36:53.960 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_1
+2025-05-31 21:36:53.960 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_2
+2025-05-31 21:36:59.722 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:37:19.728 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:37:49.733 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:38:29.740 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:39:19.745 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:40:19.747 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:41:29.751 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:42:41.261 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_1_light
+2025-05-31 21:42:41.262 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_2_light
+2025-05-31 21:42:41.262 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.living_room_light
+2025-05-31 21:42:41.262 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.kitchen_light
+2025-05-31 21:42:41.263 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_1
+2025-05-31 21:42:41.263 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_2
+2025-05-31 21:42:49.754 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:44:19.756 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:44:20.186 WARNING (MainThread) [homeassistant.components.light] light.kitchen_light (<class 'homeassistant.components.mqtt.light.schema_json.MqttLightJson'>) does not report a color mode, this will stop working in Home Assistant Core 2025.3, please create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+mqtt%22
+2025-05-31 21:44:26.190 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'str object' has no attribute 'value' when rendering 'No one at kitchen while {{trigger.platform.value}} are still on fire'
+2025-05-31 21:45:59.761 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:47:49.762 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:48:23.337 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'name' when rendering 'stove "{{trigger.name }}" is still on, but no one is detected in the kitchen.'
+2025-05-31 21:49:49.764 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:51:59.766 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 21:54:19.765 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:13:11.894 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:11.908 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:17.014 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:17.015 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:22.082 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:22.083 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:27.239 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:27.239 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:32.661 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:32.662 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:37.850 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:37.851 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:41.919 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:41.919 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:47.114 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:47.114 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:52.260 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:52.260 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:13:58.267 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:13:58.268 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:03.522 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:03.523 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:08.891 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:08.891 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:14.218 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:14.219 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:19.776 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:19.777 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:24.912 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:24.913 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:30.276 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:30.276 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:34.461 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:34.462 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:39.652 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:39.652 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:44.964 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:44.965 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:50.211 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:50.212 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:14:55.462 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:14:55.463 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:00.707 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:00.707 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:05.837 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:05.838 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:12.985 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:12.985 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:18.342 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:18.343 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:23.524 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:23.524 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:28.609 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:28.610 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:33.952 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:33.952 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:39.137 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:39.138 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:44.367 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:44.368 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:49.592 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:49.593 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:15:54.903 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:15:54.903 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:00.234 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:00.235 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:05.473 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:05.474 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:10.657 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:10.657 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:16.864 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:16.865 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:21.864 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:21.865 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:21.865 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:21.865 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:21.866 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:21.866 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:21.866 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:21.866 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:22.265 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:22.266 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:27.370 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:27.371 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:32.744 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:32.744 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:37.837 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:37.838 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:43.230 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:43.231 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:48.320 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:48.320 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:53.500 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:53.500 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:16:58.796 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:16:58.796 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:04.224 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:04.224 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:09.521 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:09.521 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:14.617 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:14.618 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:19.944 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:19.944 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:25.168 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:25.169 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:33.496 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:33.496 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:38.866 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:38.866 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:44.250 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:44.251 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:49.486 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'notification_id' when rendering '{{ trigger.notification_id.startswith('frontdoor_camera_') }}'
+2025-05-31 22:17:49.487 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Clear empty notification':
+In 'condition':
+  In 'template' condition: UndefinedError: 'dict object' has no attribute 'notification_id'
+2025-05-31 22:17:54.596 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'notification_id' when rendering '{{trigger.notification_id}}'
+2025-05-31 22:17:54.600 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:17:59.841 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'notification_id' when rendering '{{trigger.notification_id}}'
+2025-05-31 22:17:59.842 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:04.908 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'notification_id' when rendering '{{trigger.notification_id}}'
+2025-05-31 22:18:04.909 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:10.283 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'notification_id' when rendering '{{trigger.notification_id}}'
+2025-05-31 22:18:10.284 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:15.400 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'notification_id' when rendering '{{trigger.notification_id}}'
+2025-05-31 22:18:15.401 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:20.548 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'notification_id' when rendering '{{trigger.notification_id}}'
+2025-05-31 22:18:20.549 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:29.960 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'notification_id' when rendering '{{trigger.notification_id}}'
+2025-05-31 22:18:29.961 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:35.169 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:45.591 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:50.896 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:18:56.121 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:19:01.366 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:19:06.544 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:19:11.706 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:19:16.926 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:19:21.290 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:22:22.814 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:22:33.283 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:22:49.939 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:23:13.890 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:23:18.951 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:23:24.284 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:23:29.491 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:23:55.179 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:24:08.276 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:24:23.928 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:24:41.116 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:24:46.330 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:25:08.955 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:25:12.145 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:25:17.397 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:25:22.575 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:25:32.700 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:25:43.078 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:25:48.328 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:25:56.089 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:26:41.631 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:26:46.834 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:26:52.118 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:27:07.187 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:27:19.459 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:27:39.706 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:28:02.290 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:28:07.498 WARNING (MainThread) [homeassistant.components.automation.clear_empty_notification] Clear empty notification: Already running
+2025-05-31 22:28:10.887 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Stream ended; no additional packets
+2025-05-31 22:28:20.898 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:28:40.903 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:29:10.908 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:29:50.932 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:30:40.940 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:31:40.946 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:32:50.953 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:34:10.954 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:35:40.955 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:37:20.960 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:39:10.959 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:41:10.960 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:43:20.969 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:45:40.975 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:48:10.977 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:50:50.982 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:53:08.895 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'condition' is undefined when rendering '"{{ condition.entity_id.split('.')[1].replace('_', ' ').title() }}" is still on, but no one is detected in the kitchen.'
+2025-05-31 22:53:08.899 ERROR (MainThread) [homeassistant.components.automation.stove_open_warning] Stove open warning: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'condition' is undefined
+2025-05-31 22:53:08.900 ERROR (MainThread) [homeassistant.components.automation.stove_open_warning] Error while executing automation automation.stove_open_warning: Error rendering data template: UndefinedError: 'condition' is undefined
+2025-05-31 22:53:40.987 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:53:49.791 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'condition' is undefined when rendering '"{{ condition.entity_id.split('.')[1].replace('_', ' ').title() }}" is still on, but no one is detected in the kitchen.'
+2025-05-31 22:53:49.791 ERROR (MainThread) [homeassistant.components.automation.stove_open_warning] Stove open warning: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'condition' is undefined
+2025-05-31 22:53:49.792 ERROR (MainThread) [homeassistant.components.automation.stove_open_warning] Error while executing automation automation.stove_open_warning: Error rendering data template: UndefinedError: 'condition' is undefined
+2025-05-31 22:56:40.985 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 22:59:50.982 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 23:03:10.977 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-05-31 23:06:40.974 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)

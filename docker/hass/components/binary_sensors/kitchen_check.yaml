@@ -1,0 +1,7 @@
+- name: "People Detection"
+  unique_id: "people_detect_kitchen"
+  state_topic: "home/kitchen/people/state"
+  payload_on: "1"
+  payload_off: "0"
+  device_class: occupancy
+  qos: 1

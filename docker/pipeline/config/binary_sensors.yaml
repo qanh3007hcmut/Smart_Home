@@ -1,5 +1,5 @@
 binary_sensors:
-  - type: "door"
-    state_topic: "home/door/main/state"
-    payload_on: "locked"
-    payload_off: "unlocked"
+  - type: "people_detect_kitchen"
+    state_topic: "home/kitchen/people/state"
+    payload_on: "1"
+    payload_off: "0"

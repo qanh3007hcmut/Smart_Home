@@ -24,7 +24,7 @@ webrtc:
 
 mqtt: 
   - sensor: !include_dir_merge_list components/sensors/
-  # - binary_sensor: !include_dir_merge_list components/binary_sensors/
+  - binary_sensor: !include_dir_merge_list components/binary_sensors/
   - lock: !include_dir_merge_list components/locks/
   - light: !include_dir_merge_list components/lights/ 
   - climate: !include_dir_merge_list components/HVACs/ 

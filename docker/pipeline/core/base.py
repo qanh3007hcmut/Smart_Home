@@ -49,7 +49,7 @@ class BinarySensorConfig(Component):
     def publish_state(self, mqtt : MQTTClient, on = True):   
         payload = str(self.on if on else self.off)
         try:
-            mqtt.client.publish(self.state_topic, payload, retain=True)
+            mqtt.client.publish(self.state_topic, payload, qos=1, retain=True)
             logging.info(f"Published {self.type} → {payload}")
         except Exception as e:
             logging.warning(f"Failed to publish {self.type}: {e}") 
