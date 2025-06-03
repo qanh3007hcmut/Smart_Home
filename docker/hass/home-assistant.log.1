@@ -1,19 +1,376 @@
-2025-05-31 21:30:40.986 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2025-05-31 21:30:40.991 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration webrtc which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2025-05-31 21:30:44.179 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'webrtc' accessed lovelace_data['resources'] instead of lovelace_data.resources at custom_components/webrtc/utils.py, line 129: resources: ResourceStorageCollection = hass.data["lovelace"]["resources"]. This will stop working in Home Assistant 2026.2, please create a bug report at https://github.com/AlexxIT/WebRTC/issues
-2025-05-31 21:30:45.251 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_1
-2025-05-31 21:30:45.251 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_2
-2025-05-31 21:30:45.253 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_1_light
-2025-05-31 21:30:45.254 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_2_light
-2025-05-31 21:30:45.255 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.kitchen_light
-2025-05-31 21:30:45.257 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.living_room_light
-2025-05-31 21:30:46.502 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 21:30:51.271 WARNING (MainThread) [homeassistant.components.light] light.kitchen_light (<class 'homeassistant.components.mqtt.light.schema_json.MqttLightJson'>) does not report a color mode, this will stop working in Home Assistant Core 2025.3, please create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+mqtt%22
-2025-05-31 21:30:56.508 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 21:31:16.514 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 21:31:46.521 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 21:32:26.525 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 21:33:16.535 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 21:34:16.543 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 21:35:26.548 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Not Found error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found, rtsp://****:****@172.27.192.1:8554/mystream)
-2025-05-31 21:36:37.333 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-06-02 21:07:09.670 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-06-02 21:07:09.682 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration webrtc which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-06-02 21:07:13.020 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'webrtc' accessed lovelace_data['resources'] instead of lovelace_data.resources at custom_components/webrtc/utils.py, line 129: resources: ResourceStorageCollection = hass.data["lovelace"]["resources"]. This will stop working in Home Assistant 2026.2, please create a bug report at https://github.com/AlexxIT/WebRTC/issues
+2025-06-02 21:07:14.874 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_1
+2025-06-02 21:07:14.876 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bathroom_light_2
+2025-06-02 21:07:14.880 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_1_light
+2025-06-02 21:07:14.884 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.bedroom_2_light
+2025-06-02 21:07:14.885 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.kitchen_light
+2025-06-02 21:07:14.892 WARNING (MainThread) [homeassistant.components.mqtt.light.schema_json] Invalid brightness value '100' received for entity light.living_room_light
+2025-06-02 21:07:19.471 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:07:34.376 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:07:59.265 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:08:34.166 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:09:19.087 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:10:13.900 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:11:18.721 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:12:33.370 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:13:58.004 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:15:32.658 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:17:17.335 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:19:11.934 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:21:16.491 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:23:30.878 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:25:55.260 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:28:29.638 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:31:14.129 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:34:08.419 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:37:12.712 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:40:26.850 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:43:50.976 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:47:25.113 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:51:09.261 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:55:03.510 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 21:59:07.635 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:03:21.652 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:04:22.103 ERROR (MainThread) [custom_components.hacs] <Plugin custom-cards/stack-in-card> 401
+2025-06-02 22:04:22.410 ERROR (MainThread) [custom_components.hacs] HACS is disabled - invalid_token
+2025-06-02 22:04:35.043 ERROR (MainThread) [custom_components.hacs] <Plugin custom-cards/button-card> 401
+2025-06-02 22:05:22.810 ERROR (MainThread) [homeassistant.config_entries] Error unloading entry  for switch
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 965, in async_unload
+    result = await component.async_unload_entry(hass, self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/switch/__init__.py", line 84, in async_unload_entry
+    return await hass.data[DATA_COMPONENT].async_unload_entry(entry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 200, in async_unload_entry
+    raise ValueError("Config entry was never loaded!")
+ValueError: Config entry was never loaded!
+2025-06-02 22:05:22.821 ERROR (MainThread) [homeassistant.config_entries] Error unloading entry  for update
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 965, in async_unload
+    result = await component.async_unload_entry(hass, self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/update/__init__.py", line 124, in async_unload_entry
+    return await hass.data[DATA_COMPONENT].async_unload_entry(entry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 200, in async_unload_entry
+    raise ValueError("Config entry was never loaded!")
+ValueError: Config entry was never loaded!
+2025-06-02 22:05:22.824 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:22.839 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:23.001 ERROR (MainThread) [homeassistant.components.switch] Error while setting up hacs platform for switch: 'hacs'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 382, in _async_setup_platform
+    await asyncio.shield(awaitable)
+  File "/config/custom_components/hacs/switch.py", line 25, in async_setup_entry
+    hacs: HacsBase = hass.data[DOMAIN]
+                     ~~~~~~~~~^^^^^^^^
+KeyError: 'hacs'
+2025-06-02 22:05:23.020 ERROR (MainThread) [homeassistant.components.update] Error while setting up hacs platform for update: 'hacs'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 382, in _async_setup_platform
+    await asyncio.shield(awaitable)
+  File "/config/custom_components/hacs/update.py", line 24, in async_setup_entry
+    hacs: HacsBase = hass.data[DOMAIN]
+                     ~~~~~~~~~^^^^^^^^
+KeyError: 'hacs'
+2025-06-02 22:05:23.031 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry  for hacs
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 751, in __async_setup_with_context
+    result = await component.async_setup_entry(hass, self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/hacs/__init__.py", line 186, in async_setup_entry
+    hacs: HacsBase = hass.data[DOMAIN]
+                     ~~~~~~~~~^^^^^^^^
+KeyError: 'hacs'
+2025-06-02 22:05:23.447 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:23.572 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:23.579 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:23.584 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:27.409 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:27.415 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:05:38.539 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:38.548 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364663855216] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:05:40.009 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364728289312] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:40.017 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364728289312] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:05:43.218 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364728289312] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:43.223 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364728289312] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:05:44.619 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364546416144] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:44.625 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364546416144] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:05:49.161 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540077264] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:49.169 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540077264] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:05:59.966 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540077264] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:05:59.975 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540077264] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:06:03.062 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540078416] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:06:03.069 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540078416] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:06:04.004 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540068768] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:06:04.010 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540068768] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:06:04.532 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540078848] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:06:04.538 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540078848] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:06:04.957 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540077984] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:06:04.962 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540077984] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:06:11.048 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540080288] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/repositories.py", line 70, in hacs_repositories_list
+    for repo in hacs.repositories.list_all
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'repositories'
+2025-06-02 22:06:11.057 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140364540080288] Error handling message: Unknown error (unknown_error) localhost from 172.19.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/hacs/websocket/__init__.py", line 111, in hacs_info
+    "categories": hacs.common.categories,
+                  ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'common'
+2025-06-02 22:06:37.785 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry  for switch
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 751, in __async_setup_with_context
+    result = await component.async_setup_entry(hass, self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/switch/__init__.py", line 79, in async_setup_entry
+    return await hass.data[DATA_COMPONENT].async_setup_entry(entry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 182, in async_setup_entry
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Config entry  (01JS6NVTA8RX2ZWY76XDK5TP0K) for hacs.switch has already been setup!
+2025-06-02 22:06:37.786 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry  for update
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 751, in __async_setup_with_context
+    result = await component.async_setup_entry(hass, self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/update/__init__.py", line 119, in async_setup_entry
+    return await hass.data[DATA_COMPONENT].async_setup_entry(entry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 182, in async_setup_entry
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Config entry  (01JS6NVTA8RX2ZWY76XDK5TP0K) for hacs.update has already been setup!
+2025-06-02 22:07:45.600 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:12:19.566 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:17:03.588 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:21:57.482 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:27:01.447 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:32:15.246 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:37:39.074 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:43:12.868 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:48:56.718 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 22:54:50.501 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:00:54.355 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:07:08.037 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:13:31.741 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:20:05.449 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:26:49.228 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:33:43.012 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:40:41.111 WARNING (MainThread) [homeassistant.components.light] light.living_room_light (<class 'homeassistant.components.mqtt.light.schema_json.MqttLightJson'>) does not report a color mode, this will stop working in Home Assistant Core 2025.3, please create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+mqtt%22
+2025-06-02 23:40:46.745 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:48:00.373 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-02 23:55:24.025 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-03 00:02:57.713 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-03 00:10:41.420 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-03 00:18:35.107 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-03 00:26:38.797 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)
+2025-06-03 00:34:52.452 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.172_27_192_1] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out, rtsp://****:****@172.27.192.1:8554/mystream)

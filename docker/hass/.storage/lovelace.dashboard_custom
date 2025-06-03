@@ -12,70 +12,192 @@
               "type": "grid",
               "cards": [
                 {
-                  "type": "tile",
-                  "entity": "lock.front_door_lock",
-                  "features_position": "bottom",
-                  "vertical": true,
-                  "name": "Front Door",
-                  "show_entity_picture": true,
-                  "icon": "mdi:door",
-                  "hide_state": false,
-                  "state_content": "last_changed",
-                  "features": [
+                  "type": "custom:stack-in-card",
+                  "cards": [
                     {
-                      "type": "lock-commands"
+                      "type": "entity",
+                      "entity": "sensor.sun_next_dawn",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #5C2E7E !important;\n}\n"
+                      }
                     },
                     {
-                      "type": "lock-open-door"
+                      "type": "entities",
+                      "entities": [
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.temperature",
+                          "state": "{{ states('sensor.temperature') }} {{ state_attr('sensor.temperature', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co_sensor",
+                          "icon": "mdi:molecule-co",
+                          "name": "{{ state_attr('sensor.co_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co_sensor') }} {{ state_attr('sensor.co_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co2_sensor",
+                          "icon": "mdi:molecule-co2",
+                          "name": "{{ state_attr('sensor.co2_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co2_sensor') }} {{ state_attr('sensor.co2_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.gas_sensor",
+                          "state": "{{ states('sensor.gas_sensor') }} {{ state_attr('sensor.gas_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.humid_sensor",
+                          "state": "{{ states('sensor.humid_sensor') }} {{ state_attr('sensor.humid_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.light_sensor",
+                          "state": "{{ states('sensor.light_sensor') }} {{ state_attr('sensor.light_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm10_sensor",
+                          "state": "{{ states('sensor.pm10_sensor') }} {{ state_attr('sensor.pm10_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm2_5_sensor",
+                          "state": "{{ states('sensor.pm2_5_sensor') }} {{ state_attr('sensor.pm2_5_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        }
+                      ],
+                      "show_header_toggle": false,
+                      "card_mod": {
+                        "style": "ha-card {\n  background-color: #FBFCFF !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #8183B4 !important;\n}\n"
+                      }
                     }
                   ],
-                  "grid_options": {
-                    "rows": 4,
-                    "columns": 4
-                  }
-                },
-                {
-                  "graph": "line",
-                  "type": "sensor",
-                  "entity": "sensor.temperature",
-                  "detail": 1,
-                  "hours_to_show": 24,
-                  "grid_options": {
-                    "columns": 8,
-                    "rows": 2
-                  }
-                },
-                {
-                  "graph": "line",
-                  "type": "sensor",
-                  "detail": 1,
-                  "entity": "sensor.humid_sensor",
-                  "name": "Humidity",
-                  "grid_options": {
-                    "columns": 8,
-                    "rows": 2
-                  }
-                },
-                {
-                  "type": "light",
-                  "entity": "light.living_room_light",
-                  "tap_action": {
-                    "action": "toggle"
-                  }
-                },
-                {
-                  "type": "thermostat",
-                  "entity": "climate.living_room_conditioner",
-                  "show_current_as_primary": true,
-                  "grid_options": {
-                    "rows": 4
+                  "stack-in-card": {
+                    "keep": {
+                      "background": true,
+                      "box_shadow": true
+                    }
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  background-color: #FBFCFF !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n}\n"
                   }
                 }
-              ]
+              ],
+              "column_span": 1
             },
             {
               "type": "grid",
               "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.co_sensor",
+                  "grid_options": {
+                    "columns": 9,
+                    "rows": 3
+                  }
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.gas_sensor",
+                  "grid_options": {
+                    "columns": 9,
+                    "rows": 3
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm10_sensor",
+                  "name": "PM 10",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 500,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:blur",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        168,
+                        230,
+                        207
+                      ]
+                    },
+                    {
+                      "from": 55,
+                      "color": [
+                        255,
+                        211,
+                        182
+                      ]
+                    },
+                    {
+                      "from": 155,
+                      "color": [
+                        255,
+                        139,
+                        148
+                      ]
+                    }
+                  ],
+                  "secondary": {},
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;  /* pastel white-purple */\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Segoe UI\", sans-serif;\n  padding: 12px;\n}\n"
+                  },
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 9,
+                    "rows": 4
+                  }
+                }
+              ],
+              "column_span": 1
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.co2_sensor",
+                  "name": "CO2",
+                  "unit": "ppm",
+                  "min": 0,
+                  "max": 10000,
+                  "needle": true,
+                  "severity": {
+                    "green": 400,
+                    "yellow": 1000,
+                    "red": 3000
+                  }
+                },
                 {
                   "type": "gauge",
                   "entity": "sensor.humid_sensor",
@@ -108,54 +230,59 @@
               "type": "grid",
               "cards": [
                 {
-                  "type": "gauge",
-                  "entity": "sensor.pm10_sensor",
-                  "name": "PM 10",
-                  "unit": "µg/m³",
-                  "min": 0,
-                  "max": 500,
-                  "needle": true,
-                  "severity": {
-                    "green": 55,
-                    "yellow": 155,
-                    "red": 255
+                  "type": "tile",
+                  "entity": "lock.front_door_lock",
+                  "features_position": "bottom",
+                  "vertical": true,
+                  "name": "Front Door",
+                  "show_entity_picture": true,
+                  "icon": "mdi:door",
+                  "hide_state": false,
+                  "state_content": "last_changed",
+                  "features": [
+                    {
+                      "type": "lock-commands"
+                    },
+                    {
+                      "type": "lock-open-door"
+                    }
+                  ],
+                  "grid_options": {
+                    "rows": 4,
+                    "columns": 6
                   }
                 },
                 {
-                  "type": "gauge",
-                  "entity": "sensor.co2_sensor",
-                  "name": "CO2",
-                  "unit": "ppm",
-                  "min": 0,
-                  "max": 10000,
-                  "needle": true,
-                  "severity": {
-                    "green": 400,
-                    "yellow": 1000,
-                    "red": 3000
+                  "graph": "line",
+                  "type": "sensor",
+                  "detail": 1,
+                  "entity": "sensor.humid_sensor",
+                  "name": "Humidity",
+                  "grid_options": {
+                    "columns": 8,
+                    "rows": 2
                   }
-                }
-              ]
-            },
-            {
-              "type": "grid",
-              "cards": [
+                },
                 {
-                  "type": "entity",
-                  "entity": "device_tracker.member",
-                  "state_color": true,
-                  "icon": "mdi:account",
-                  "name": "Member 1"
+                  "type": "light",
+                  "entity": "light.living_room_light",
+                  "tap_action": {
+                    "action": "toggle"
+                  }
+                },
+                {
+                  "type": "thermostat",
+                  "entity": "climate.living_room_conditioner",
+                  "show_current_as_primary": true,
+                  "grid_options": {
+                    "rows": 4
+                  }
                 }
               ]
             }
           ],
-          "badges": [
-            {
-              "type": "entity",
-              "entity": "lock.front_door_lock"
-            }
-          ]
+          "badges": [],
+          "header": {}
         }
       ]
     }

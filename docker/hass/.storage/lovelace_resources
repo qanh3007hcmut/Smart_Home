@@ -33,6 +33,16 @@
         "id": "c337e636022648c8a662e97a27c9df54",
         "url": "/webrtc/webrtc-camera.js?v=v3.6.0",
         "type": "module"
+      },
+      {
+        "id": "3a08a68cd4004d9b8791fe09657048d7",
+        "url": "/hacsfiles/lovelace-template-entity-row/template-entity-row.js?hacstag=231674882141",
+        "type": "module"
+      },
+      {
+        "id": "9e29237652e1459c96021921a31c77bf",
+        "url": "/hacsfiles/modern-circular-gauge/modern-circular-gauge.js?hacstag=871730343090",
+        "type": "module"
       }
     ]
   }
