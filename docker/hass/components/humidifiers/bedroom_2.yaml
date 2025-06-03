@@ -1,0 +1,26 @@
+- name: "Bedroom humidifier 2"
+  unique_id: bedroom_humid_2
+  device_class: "humidifier"
+  
+  current_humidity_topic: "home/sensor/humidity"
+  command_topic: "home/bedroom/2/humidity/set"
+
+  target_humidity_command_topic: "home/bedroom/2/humidity/set"
+  target_humidity_state_topic: "home/bedroom/2/humidity/state"
+
+  mode_command_topic: "home/bedroom/2/preset/preset_mode"
+  mode_state_topic: "home/bedroom/2/humidity/mode/state"
+
+  state_topic: "home/bedroom/2/humidity/state"
+  action_topic: "home/bedroom/2/humidity/action" # off, humidifying, drying, idle
+  
+  modes:
+    - "normal"
+    - "eco"
+    - "home"
+    - "sleep"
+    - "auto"
+  qos: 1
+
+  min_humidity: 30
+  max_humidity: 80

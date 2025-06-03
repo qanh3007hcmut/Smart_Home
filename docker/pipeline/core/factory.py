@@ -94,7 +94,7 @@ class HVACFactory(Factory):
     def create(self, component : dict) -> HVACConfig:
         _type = component['type']
         cls = self.HVAC_MAP.get(_type, HVACConfig)
-        light = cls(
+        hvac = cls(
             _type = component['type'],
             mode_command_topic = component['mode_command_topic'], 
             temperature_command_topic = component['temperature_command_topic'],
@@ -102,13 +102,31 @@ class HVACFactory(Factory):
             swing_mode_command_topic = component['swing_mode_command_topic'],
             swing_horizontal_mode_command_topic = component['swing_horizontal_mode_command_topic'],
             preset_mode_command_topic = component['preset_mode_command_topic'],
-            
+            target_humidity_command_topic = component['target_humidity_command_topic'],
             mode_state_topic = component['mode_state_topic'],
             temperature_state_topic = component['temperature_state_topic'],
             fan_mode_state_topic = component['fan_mode_state_topic'],
             swing_mode_state_topic = component['swing_mode_state_topic'],
             swing_horizontal_mode_state_topic = component['swing_horizontal_mode_state_topic'],
-            preset_mode_state_topic = component['preset_mode_state_topic']
+            preset_mode_state_topic = component['preset_mode_state_topic'],
+            target_humidity_state_topic = component['target_humidity_state_topic']
         )
-        return light
+        return hvac
+
+class HumidifierFactory(Factory):
+    Humidifier_MAP = {}
+    
+    def create(self, component : dict) -> HumidifierConfig:
+        _type = component['type']
+        cls = self.Humidifier_MAP.get(_type, HumidifierConfig)
+        humidifier = cls(
+            _type = component['type'],
+            command_topic = component['command_topic'],
+            state_topic = component['state_topic'],
+            target_humidity_command_topic = component['target_humidity_command_topic'],
+            mode_command_topic = component['mode_command_topic'],
+            target_humidity_state_topic = component['target_humidity_state_topic'],
+            mode_state_topic = component['mode_state_topic'],
+        )
+        return humidifier
     

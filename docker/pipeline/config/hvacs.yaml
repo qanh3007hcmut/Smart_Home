@@ -19,6 +19,9 @@ hvacs:
   preset_mode_command_topic: "home/livingroom/hvac/mode/preset/set"
   preset_mode_state_topic:   "home/livingroom/hvac/mode/preset/state"
 
+  target_humidity_command_topic: "home/livingroom/hvac/target/humidity/set"
+  target_humidity_state_topic: "home/livingroom/hvac/target/humidity/state"
+
 - type: Bedroom Room Conditioner 2
   
   mode_command_topic: "home/bedroom/2/hvac/mode/set"
@@ -38,6 +41,8 @@ hvacs:
 
   preset_mode_command_topic: "home/bedroom/2/hvac/mode/preset/set"
   preset_mode_state_topic:   "home/bedroom/2/hvac/mode/preset/state"
+  target_humidity_command_topic: "home/bedroom/2/hvac/target/humidity/set"
+  target_humidity_state_topic: "home/bedroom/2/hvac/target/humidity/state"
 
 - type: Bedroom Room Conditioner 1
   
@@ -58,3 +63,6 @@ hvacs:
 
   preset_mode_command_topic: "home/bedroom/1/hvac/mode/preset/set"
   preset_mode_state_topic:   "home/bedroom/1/hvac/mode/preset/state"
+
+  target_humidity_command_topic: "home/bedroom/1/hvac/target/humidity/set"
+  target_humidity_state_topic: "home/bedroom/1/hvac/target/humidity/state"

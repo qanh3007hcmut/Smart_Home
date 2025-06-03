@@ -201,6 +201,22 @@
           message: Unhealthy high temperature
           title: Temperature Warning!!!
           notification_id: high_temp_warning
+      - action: climate.set_temperature
+        metadata: {}
+        data:
+          temperature: 21
+          hvac_mode: cool
+        target:
+          entity_id:
+          - climate.bedroom_room_conditioner_1_2
+          - climate.bedroom_room_conditioner_1
+          - climate.living_room_conditioner
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Adjust air conditioner down to 21°C
+          title: Cooling mode activated!
+          notification_id: hvac_activated
     - conditions:
       - condition: template
         value_template: '{{ 35 < (trigger.payload | float) <= 45.0 }}'
@@ -211,6 +227,22 @@
           message: Hazardous high temperature
           title: Temperature Warning!!!
           notification_id: high_temp_warning
+      - action: climate.set_temperature
+        metadata: {}
+        data:
+          temperature: 21
+          hvac_mode: cool
+        target:
+          entity_id:
+          - climate.bedroom_room_conditioner_1_2
+          - climate.bedroom_room_conditioner_1
+          - climate.living_room_conditioner
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Adjust air conditioner down to 21°C
+          title: Cooling mode activated!
+          notification_id: hvac_activated
   mode: single
 - id: '1748934631877'
   alias: Humidity warning
@@ -401,4 +433,249 @@
           message: High levels of carbon monoxide detected – evacuate immediately
           notification_id: co2_warning
           title: Danger!!!!
+  mode: single
+- id: '1748859184225'
+  alias: Fall detection
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/living/people/fall/state
+    payload: '1'
+  conditions: []
+  actions:
+  - action: persistent_notification.create
+    metadata: {}
+    data:
+      message: Someone fell in the living room
+      title: Fall Detection Warning!!!
+  mode: single
+- id: '1748956648036'
+  alias: set action to humidifier
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - humidifier.living_room_humidifier
+    above: 0
+    below: sensor.humid_sensor
+    attribute: humidity
+  conditions: []
+  actions:
+  - action: mqtt.publish
+    metadata: {}
+    data:
+      qos: '1'
+      retain: true
+      topic: home/living/humidity/action
+      payload: humidifying
+  mode: single
+- id: '1748957956807'
+  alias: set humid drying
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - humidifier.living_room_humidifier
+    attribute: humidity
+    above: sensor.humid_sensor
+    below: 100
+  conditions: []
+  actions:
+  - action: mqtt.publish
+    metadata: {}
+    data:
+      qos: '1'
+      retain: true
+      topic: home/living/humidity/action
+      payload: drying
+  mode: single
+- id: '1748958953795'
+  alias: set drying bedroom 1
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - humidifier.bedroom_humidifier_1
+    attribute: humidity
+    above: sensor.humid_sensor
+    below: 100
+  conditions: []
+  actions:
+  - action: mqtt.publish
+    metadata: {}
+    data:
+      qos: '1'
+      retain: true
+      topic: home/bedroom/1/humidity/action
+      payload: drying
+  mode: single
+- id: '1748959014888'
+  alias: set humidifying bedroom 1
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - humidifier.bedroom_humidifier_1
+    above: 0
+    below: sensor.humid_sensor
+    attribute: humidity
+  conditions: []
+  actions:
+  - action: mqtt.publish
+    metadata: {}
+    data:
+      qos: '1'
+      retain: true
+      topic: home/bedroom/1/humidity/action
+      payload: humidifying
+  mode: single
+- id: '1748959058628'
+  alias: set drying bedroom 2
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - humidifier.bedroom_humidifier_2
+    attribute: humidity
+    above: sensor.humid_sensor
+    below: 100
+  conditions: []
+  actions:
+  - action: mqtt.publish
+    metadata: {}
+    data:
+      qos: '1'
+      retain: true
+      topic: home/bedroom/2/humidity/action
+      payload: drying
+  mode: single
+- id: '1748959088933'
+  alias: set humidifying bedroom 2
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - humidifier.bedroom_humidifier_2
+    above: 0
+    below: sensor.humid_sensor
+    attribute: humidity
+  conditions: []
+  actions:
+  - action: mqtt.publish
+    metadata: {}
+    data:
+      qos: '1'
+      retain: true
+      topic: home/bedroom/2/humidity/action
+      payload: humidifying
+  mode: single
+- id: '1748959317369'
+  alias: adjust humidity
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/sensor/humidity
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ 20 < (trigger.payload | float) <= 30}}'
+      sequence:
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/living/humidity/set
+          payload: '60'
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/bedroom/1/humidity/set
+          payload: '60'
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/bedroom/2/humidity/set
+          payload: '60'
+    - conditions:
+      - condition: template
+        value_template: '{{0 <= (trigger.payload | float) <= 20}}'
+      sequence:
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/living/humidity/set
+          payload: '40'
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/bedroom/1/humidity/set
+          payload: '40'
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/bedroom/2/humidity/set
+          payload: '40'
+    - conditions:
+      - condition: template
+        value_template: '{{80 < (trigger.payload | float) <= 100}}'
+      sequence:
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/living/humidity/set
+          payload: '40'
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/bedroom/1/humidity/set
+          payload: '40'
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/bedroom/2/humidity/set
+          payload: '40'
+    - conditions:
+      - condition: template
+        value_template: '{{ 70 < (trigger.payload | float) <= 80}}'
+      sequence:
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/living/humidity/set
+          payload: '50'
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/bedroom/1/humidity/set
+          payload: '50'
+      - action: mqtt.publish
+        metadata: {}
+        data:
+          qos: '2'
+          retain: true
+          topic: home/bedroom/2/humidity/set
+          payload: '50'
   mode: single

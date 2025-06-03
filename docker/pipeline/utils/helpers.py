@@ -36,9 +36,14 @@ def load_config() -> dict:
     
     with open('config/switches.yaml', 'r') as f:
         switch_config = yaml.safe_load(f)
+    
+    with open('config/humidifiers.yaml', 'r') as f:
+        humidifier_config = yaml.safe_load(f)
         
     with open('config/mqtt.yaml', 'r') as f:
         mqtt_config = yaml.safe_load(f)
+    
+    
     
     config = {
         'sensor': sensor_config["sensors"],
@@ -47,13 +52,14 @@ def load_config() -> dict:
         'light': light_config["lights"],
         'hvac' : hvac_config["hvacs"],
         'switch' : switch_config["switches"],
+        'humidifier' : humidifier_config["humidifiers"],
         'mqtt': mqtt_config
     }
     
     return config
 
 def initialzize_entities(mqtt, entities : List[List]):
-    from core.base import LockConfig, LightConfig, HVACConfig, SwitchConfig, BinarySensorConfig
+    from core.base import LockConfig, LightConfig, HVACConfig, SwitchConfig, BinarySensorConfig, HumidifierConfig
     def initialize_lock(locks : List[LockConfig]):
         for ele in locks:
             ele.publish_state(mqtt, lock = True)
@@ -67,8 +73,17 @@ def initialzize_entities(mqtt, entities : List[List]):
     def initialize_hvac(hvacs : List[HVACConfig]):
         for ele in hvacs:
             ele.publish_state(mqtt, field = "mode", value = "auto")
+            ele.publish_state(mqtt, field = "temperature", value = 16)
+            ele.publish_state(mqtt, field = "humidity", value = 50)
             ele.subscribe_command(mqtt)
     
+    def initialize_humidifier(hvacs : List[HumidifierConfig]):
+        for ele in hvacs:
+            ele.publish_state(mqtt, field = "command", value = "ON")
+            ele.publish_state(mqtt, field = "mode", value = "auto")
+            ele.publish_state(mqtt, field = "humidity", value = 50)
+            ele.subscribe_command(mqtt)
+            
     def initialize_switch(switches : List[SwitchConfig]):
         for ele in switches:
             ele.publish_state(mqtt, "OFF")
@@ -89,5 +104,7 @@ def initialzize_entities(mqtt, entities : List[List]):
             initialize_switch(list)    
         elif isinstance(list[0], BinarySensorConfig):
             initialize_binary_sensor(list)    
+        elif isinstance(list[0], HumidifierConfig):
+            initialize_humidifier(list)
         
         

@@ -1,0 +1,25 @@
+new_script:
+  sequence:
+  - if:
+    - condition: numeric_state
+      entity_id: humidifier.living_room_humidifier
+      below: sensor.humid_sensor
+      attribute: humidity
+    then:
+    - action: mqtt.publish
+      metadata: {}
+      data:
+        qos: '1'
+        retain: true
+        topic: home/living/humidity/action
+        payload: humidifying
+    else:
+    - action: mqtt.publish
+      metadata: {}
+      data:
+        qos: '1'
+        retain: true
+        topic: home/living/humidity/action
+        payload: drying
+  alias: New Script
+  description: ''

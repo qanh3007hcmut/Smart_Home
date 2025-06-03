@@ -1,6 +1,9 @@
 - name: Living Room Conditioner
   unique_id: "living_room_hvac"
-  
+
+  current_humidity_topic: "home/sensor/humidity"
+  current_temperature_topic: "home/sensor/temperature"
+
   mode_command_topic: "home/livingroom/hvac/mode/set"
   mode_state_topic:   "home/livingroom/hvac/mode/state"
 
@@ -24,14 +27,13 @@
     - home
     - sleep
     - boost
-  # current_humidity_topic: ""
-  # current_temperature_topic: ""
-
   
-  # preset_modes: []
-
-  # target_humidity_command_topic: ""
-  # target_humidity_state_topic: ""
+  max_temp: 50
+  max_humidity: 100
+  min_humidity: 0
+  target_humidity_command_topic: "home/livingroom/hvac/target/humidity/set"
+  target_humidity_state_topic: "home/livingroom/hvac/target/humidity/state"
+  
   
   optimistic: false
   qos : 1

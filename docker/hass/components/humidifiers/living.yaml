@@ -1,0 +1,26 @@
+- name: "Living room humidifier"
+  unique_id: living_room_humidifier
+  device_class: "humidifier"
+  
+  current_humidity_topic: "home/sensor/humidity"
+  command_topic: "home/living/humidity/set"
+
+  target_humidity_command_topic: "home/living/humidity/set"
+  target_humidity_state_topic: "home/living/humidity/state"
+
+  mode_command_topic: "home/living/preset/preset_mode"
+  mode_state_topic: "home/living/humidity/mode/state"
+
+  state_topic: "home/living/humidity/state"
+  action_topic: "home/living/humidity/action" # off, humidifying, drying, idle
+  
+  modes:
+    - "normal"
+    - "eco"
+    - "home"
+    - "sleep"
+    - "auto"
+  qos: 1
+
+  min_humidity: 30
+  max_humidity: 80

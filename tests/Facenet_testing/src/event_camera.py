@@ -9,7 +9,7 @@ from sort import Sort
 from ultralytics import YOLO
 import torch
 import paho.mqtt.client as mqtt
-
+from rtps import FFmpegStreamer
 
 class EventDetectionCamera:
     def __init__(self, video_source=0, output_path=None, detect_types=None):
@@ -484,6 +484,8 @@ class EventDetectionCamera:
         try:
             client.connect("172.20.96.1", 1883, 60)
             client.loop_start()
+            streamer = FFmpegStreamer(rtsp_url='rtsp://172.27.192.1:8554/fall')
+            streamer.start()
             while True:
                 ret, frame = cap.read()
                 if not ret or frame is None:
@@ -536,7 +538,7 @@ class EventDetectionCamera:
                     # Start recording if not already recording an event
                     if not self.recording_event:
                         self.start_event_recording(frame, "fall")
-                
+                client.publish("home/living/people/fall/state", "1" if fall_detected else "0", qos=1, retain=True)
                 # Update event recording if active
                 self.update_event_recording(display_frame)
                 
@@ -550,7 +552,7 @@ class EventDetectionCamera:
                 
                 # Show the resulting frame
                 cv2.imshow('Event Detection Camera', display_frame)
-                
+                streamer.send_frame(display_frame)
                 # Break the loop on 'q' key press
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
@@ -565,6 +567,7 @@ class EventDetectionCamera:
             cv2.destroyAllWindows()
             client.loop_stop()
             client.disconnect()
+            streamer.stop()
             print("Event detection camera stopped")
 
 

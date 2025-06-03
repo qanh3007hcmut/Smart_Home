@@ -326,6 +326,13 @@
             "should_expose": true
           }
         }
+      },
+      "humidifier.living_room_humidifier": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
       }
     }
   }

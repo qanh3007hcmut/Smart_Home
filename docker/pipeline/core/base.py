@@ -180,13 +180,14 @@ class HVACConfig(Component):
             swing_mode_command_topic,
             swing_horizontal_mode_command_topic,
             preset_mode_command_topic,
-            
+            target_humidity_command_topic,
             mode_state_topic,
             temperature_state_topic,
             fan_mode_state_topic,
             swing_mode_state_topic,
             swing_horizontal_mode_state_topic,
-            preset_mode_state_topic
+            preset_mode_state_topic,
+            target_humidity_state_topic
     ):
         self._type = _type
         self.command_topics = {
@@ -196,6 +197,7 @@ class HVACConfig(Component):
             "swing_mode": swing_mode_command_topic,
             "swing_horizontal_mode": swing_horizontal_mode_command_topic,
             "preset_mode": preset_mode_command_topic,
+            "humidity": target_humidity_command_topic,
         }
 
         # State topics
@@ -206,6 +208,8 @@ class HVACConfig(Component):
             "swing_mode": swing_mode_state_topic,
             "swing_horizontal_mode": swing_horizontal_mode_state_topic,
             "preset_mode": preset_mode_state_topic,
+            "humidity": target_humidity_state_topic,
+            
         }
 
         self._current_state = {}
@@ -284,4 +288,65 @@ class SwitchConfig(Component):
         mqtt.client.message_callback_add(self.command_topic, _on_command)
         logging.info(f"{self._type}: Subscribed to {self.command_topic}") 
 
+class HumidifierConfig(Component):
+    def __init__(
+            self, 
+            _type, 
+            command_topic,
+            # action_topic
+            state_topic,
+            target_humidity_command_topic,
+            mode_command_topic,
+            target_humidity_state_topic,
+            mode_state_topic,
+    ):
+        self._type = _type
+        self.command_topics = {
+            "mode": mode_command_topic,
+            "humidity": target_humidity_command_topic,
+        }
+
+        # State topics
+        self.state_topics = {
+            # "action": action_topic,
+            "command": command_topic,
+            "mode": mode_state_topic,
+            "humidity": target_humidity_state_topic,
+        }
+
+        self._current_state = {}
+    
+    def publish_state(self, mqtt: MQTTClient, field: str, value):
+        topic = self.state_topics.get(field)
+        if not topic:
+            logging.warning(f"{self._type}: No state topic defined for '{field}'")
+            return
+        try:
+            mqtt.client.publish(topic, str(value), qos=1, retain=True)
+            logging.info(f"{self._type}: Published {field} state → {value}")
+            self._current_state[field] = value
+        except Exception as e:
+            logging.warning(f"{self._type}: Failed to publish {field} state: {e}")
+ 
+    def handle_command(self, topic: str, payload: str, mqtt: MQTTClient):
+        for field, cmd_topic in self.command_topics.items():
+            if cmd_topic == topic:
+                self.publish_state(mqtt, field, payload)
+                break
+        else:
+            logging.warning(f"{self._type}: Unknown command topic → {topic}")
+
+    
+    def subscribe_command(self, mqtt: MQTTClient):
+        for field, topic in self.command_topics.items():
+            def make_callback(field_name, topic_name):
+                def _on_command(client, userdata, msg):
+                    payload = msg.payload.decode()
+                    logging.info(f"{self._type}: Received {field_name} command → {payload}")
+                    self.handle_command(topic_name, payload, mqtt)
+                return _on_command
+
+            mqtt.client.subscribe(topic)
+            mqtt.client.message_callback_add(topic, make_callback(field, topic))
+            logging.info(f"{self._type}: Subscribed to {field} command topic → {topic}")
 

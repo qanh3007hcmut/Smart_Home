@@ -4,6 +4,8 @@ import threading
 import queue
 import time
 RTSP = 'rtsp://172.27.192.1:8554/mystream'
+FALL = 'rtsp://172.27.192.1:8554/fall'
+
 
 class FFmpegStreamer:
     def __init__(self, width=640, height=480, fps=7, bitrate='500k', gop=10, rtsp_url=RTSP):

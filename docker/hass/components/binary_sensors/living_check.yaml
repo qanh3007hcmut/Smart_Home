@@ -1,0 +1,7 @@
+- name: "Fall Detection"
+  unique_id: "people_fall_detect_living"
+  state_topic: "home/living/people/fall/state"
+  payload_on: "1"
+  payload_off: "0"
+  device_class: occupancy
+  qos: 1
