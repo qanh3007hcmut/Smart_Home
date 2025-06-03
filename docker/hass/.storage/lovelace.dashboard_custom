@@ -106,7 +106,7 @@
                     }
                   },
                   "card_mod": {
-                    "style": "ha-card {\n  background-color: #FBFCFF !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n}\n"
+                    "style": "ha-card {\n  background-color: #FBFCFF !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  font-family: 'Trebuchet MS', sans-serif;\n  margin: 0 !important;\n  height: 750px\n}\n"
                   }
                 }
               ],
@@ -116,119 +116,27 @@
               "type": "grid",
               "cards": [
                 {
-                  "type": "gauge",
-                  "entity": "sensor.co_sensor",
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1",
                   "grid_options": {
-                    "columns": 9,
-                    "rows": 3
-                  }
-                },
-                {
-                  "type": "gauge",
-                  "entity": "sensor.gas_sensor",
-                  "grid_options": {
-                    "columns": 9,
-                    "rows": 3
-                  }
-                },
-                {
-                  "type": "custom:modern-circular-gauge",
-                  "entity": "sensor.pm10_sensor",
-                  "name": "PM 10",
-                  "unit": "µg/m³",
-                  "min": 0,
-                  "max": 500,
-                  "needle": true,
-                  "smooth_segments": true,
-                  "adaptive_icon_color": true,
-                  "icon": "mdi:blur",
-                  "segments": [
-                    {
-                      "from": 0,
-                      "color": [
-                        168,
-                        230,
-                        207
-                      ]
-                    },
-                    {
-                      "from": 55,
-                      "color": [
-                        255,
-                        211,
-                        182
-                      ]
-                    },
-                    {
-                      "from": 155,
-                      "color": [
-                        255,
-                        139,
-                        148
-                      ]
-                    }
-                  ],
-                  "secondary": {},
-                  "card_mod": {
-                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;  /* pastel white-purple */\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Segoe UI\", sans-serif;\n  padding: 12px;\n}\n"
-                  },
-                  "tertiary": {},
-                  "grid_options": {
-                    "columns": 9,
+                    "columns": 18,
                     "rows": 4
                   }
-                }
-              ],
-              "column_span": 1
-            },
-            {
-              "type": "grid",
-              "cards": [
-                {
-                  "type": "gauge",
-                  "entity": "sensor.co2_sensor",
-                  "name": "CO2",
-                  "unit": "ppm",
-                  "min": 0,
-                  "max": 10000,
-                  "needle": true,
-                  "severity": {
-                    "green": 400,
-                    "yellow": 1000,
-                    "red": 3000
-                  }
                 },
                 {
-                  "type": "gauge",
-                  "entity": "sensor.humid_sensor",
-                  "name": "Humidity",
-                  "unit": "%",
-                  "needle": true,
-                  "severity": {
-                    "green": 40,
-                    "yellow": 70,
-                    "red": 80
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1_2",
+                  "grid_options": {
+                    "columns": 18,
+                    "rows": 4
                   }
                 },
-                {
-                  "type": "gauge",
-                  "entity": "sensor.pm2_5_sensor",
-                  "name": "PM 2.5",
-                  "unit": "µg/m³",
-                  "min": 0,
-                  "max": 200,
-                  "needle": true,
-                  "severity": {
-                    "green": 12,
-                    "yellow": 35.5,
-                    "red": 55.5
-                  }
-                }
-              ]
-            },
-            {
-              "type": "grid",
-              "cards": [
                 {
                   "type": "tile",
                   "entity": "lock.front_door_lock",
@@ -248,37 +156,467 @@
                     }
                   ],
                   "grid_options": {
-                    "rows": 4,
+                    "rows": 8,
                     "columns": 6
                   }
                 },
                 {
-                  "graph": "line",
-                  "type": "sensor",
-                  "detail": 1,
-                  "entity": "sensor.humid_sensor",
-                  "name": "Humidity",
-                  "grid_options": {
-                    "columns": 8,
-                    "rows": 2
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.humid_sensor"
+                    }
+                  ],
+                  "unit": "%",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 0,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 20,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 30,
+                      "color": "#009bff"
+                    },
+                    {
+                      "value": 40,
+                      "color": "#00ff27"
+                    },
+                    {
+                      "value": 60,
+                      "color": "#009bff"
+                    },
+                    {
+                      "value": 70,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 80,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
                   }
                 },
                 {
-                  "type": "light",
-                  "entity": "light.living_room_light",
-                  "tap_action": {
-                    "action": "toggle"
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.light_sensor",
+                  "name": "Light",
+                  "unit": "lx",
+                  "min": 0,
+                  "max": 5000,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:brightness-7",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 20,
+                      "color": [
+                        0,
+                        73,
+                        146
+                      ]
+                    },
+                    {
+                      "from": 100,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 500,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 1000,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 5000,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
                   }
                 },
                 {
-                  "type": "thermostat",
-                  "entity": "climate.living_room_conditioner",
-                  "show_current_as_primary": true,
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm2_5_sensor",
+                  "name": "PM 2.5",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 200,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 12.1,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 35.5,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 55.5,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
                   "grid_options": {
-                    "rows": 4
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.co_sensor",
+                  "name": "CO",
+                  "unit": "ppm",
+                  "min": 0,
+                  "max": 300,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule-co",
+                  "height": 150,
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 5,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 15,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 50,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.temperature"
+                    }
+                  ],
+                  "unit": "°C",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 18,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 25,
+                      "color": "#ff6600"
+                    },
+                    {
+                      "value": 31,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 36,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm10_sensor",
+                  "name": "PM 10",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 500,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 55,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 155,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 255,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.gas_sensor",
+                  "name": "Gas",
+                  "unit": "ppm",
+                  "min": 0,
+                  "max": 5000,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:meter-gas",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 200,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 400,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 1000,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.co2_sensor",
+                  "name": "CO2",
+                  "unit": "ppm",
+                  "min": 0,
+                  "max": 10000,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule-co2",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 400,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 1000,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 3000,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
                   }
                 }
-              ]
+              ],
+              "column_span": 3
             }
           ],
           "badges": [],
