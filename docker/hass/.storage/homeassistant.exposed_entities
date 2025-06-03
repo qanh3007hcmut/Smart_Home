@@ -319,6 +319,13 @@
             "should_expose": true
           }
         }
+      },
+      "humidifier.bedroom_humidifier": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
       }
     }
   }

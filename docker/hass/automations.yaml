@@ -182,3 +182,223 @@
     data:
       notification_id: '{{ trigger.notification.notification_id}}'
   mode: single
+- id: '1748932858082'
+  alias: High temperature warning
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/sensor/temperature
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ 31 <= (trigger.payload | float) <= 35 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Unhealthy high temperature
+          title: Temperature Warning!!!
+          notification_id: high_temp_warning
+    - conditions:
+      - condition: template
+        value_template: '{{ 35 < (trigger.payload | float) <= 45.0 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Hazardous high temperature
+          title: Temperature Warning!!!
+          notification_id: high_temp_warning
+  mode: single
+- id: '1748934631877'
+  alias: Humidity warning
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/sensor/humidity
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ 20 < (trigger.payload | float) <= 30}}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Unhealthy low humidity
+          title: Humidity Warning!!!
+          notification_id: low_humidity_warning
+    - conditions:
+      - condition: template
+        value_template: '{{0 <= (trigger.payload | float) <= 20}}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Hazardous low humidity
+          title: Humidity Warning!!!
+          notification_id: low_humidity_warning
+    - conditions:
+      - condition: template
+        value_template: '{{80 < (trigger.payload | float) <= 100}}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Hazardous high humidity
+          title: Humidity Warning!!!
+          notification_id: high_humidity_warning
+    - conditions:
+      - condition: template
+        value_template: '{{ 70 < (trigger.payload | float) <= 80}}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Unhealthy high humidity
+          title: Humidity Warning!!!
+          notification_id: high_humidity_warning
+  mode: single
+- id: '1748948977924'
+  alias: Gas leaking warning
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/sensor/gas_concentration
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ 400 <= trigger.payload | float}}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          title: Gas Leaking Warning!!!
+          notification_id: gas_leaking_warning
+          message: ' '
+  mode: single
+- id: '1748949370424'
+  alias: PM2.5 warning
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/sensor/pm25
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ 35.5 <= (trigger.payload | float) <= 55.4 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Unhealthy air quality due to elevated PM2.5 concentration
+          notification_id: pm2.5_warning
+          title: Air quality warning!!!
+    - conditions:
+      - condition: template
+        value_template: '{{ 55.5 <= (trigger.payload | float) <= 200 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: PM2.5 at hazardous levels
+          notification_id: pm2.5_warning
+          title: Air quality warning!!!
+  mode: single
+- id: '1748949556532'
+  alias: PM10
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/sensor/pm10
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ 150 <= (trigger.payload | float) < 250 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: PM10 levels exceed safe limits
+          notification_id: pm10_warning
+          title: Air quality warning!!!
+    - conditions:
+      - condition: template
+        value_template: '{{ 250 <= trigger.payload | float }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: Fine dust (PM10) at hazardous levels
+          notification_id: pm10_warning
+          title: Air quality warning!!!
+  mode: single
+- id: '1748949758398'
+  alias: CO2 warning
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/sensor/co2
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ 1000 <= (trigger.payload | float) <= 3000 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: CO₂ concentration above safe limit
+          notification_id: co2_warning
+          title: Poor air circulation!!!
+    - conditions:
+      - condition: template
+        value_template: '{{ 3000 < (trigger.payload | float) <= 10000 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: High CO₂ levels detected – ventilation activated
+          notification_id: co2_warning
+          title: CO2 Warning!!!
+  mode: single
+- id: '1748949853195'
+  alias: CO warning
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: home/sensor/co
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ 15 <= (trigger.payload | float) <= 50 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: CO levels exceed safe threshold – risk of poisoning
+          notification_id: co_warning
+          title: Warning!!!
+    - conditions:
+      - condition: template
+        value_template: '{{ 50 < (trigger.payload | float) <= 300 }}'
+      sequence:
+      - action: persistent_notification.create
+        metadata: {}
+        data:
+          message: High levels of carbon monoxide detected – evacuate immediately
+          notification_id: co2_warning
+          title: Danger!!!!
+  mode: single

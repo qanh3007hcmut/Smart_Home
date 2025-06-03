@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "core.category_registry",
+  "data": {
+    "categories": {
+      "automation": [
+        {
+          "category_id": "01JWT786V7V9153J243SB278M7",
+          "created_at": "2025-06-03T06:21:53.895603+00:00",
+          "icon": "mdi:tools",
+          "modified_at": "2025-06-03T06:21:53.895610+00:00",
+          "name": "utils"
+        },
+        {
+          "category_id": "01JWT7A4J99741T0C5XG9FZ654",
+          "created_at": "2025-06-03T06:22:57.097306+00:00",
+          "icon": "mdi:camera",
+          "modified_at": "2025-06-03T06:22:57.097311+00:00",
+          "name": "Camera"
+        },
+        {
+          "category_id": "01JWT7NZCQHSCJ9P3JJC3K10EJ",
+          "created_at": "2025-06-03T06:29:25.015259+00:00",
+          "icon": "mdi:leak",
+          "modified_at": "2025-06-03T06:29:25.015263+00:00",
+          "name": "Sensor warning"
+        }
+      ]
+    }
+  }
+}
