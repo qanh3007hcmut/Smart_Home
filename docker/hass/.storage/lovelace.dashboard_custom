@@ -15,12 +15,29 @@
                   "type": "custom:stack-in-card",
                   "cards": [
                     {
-                      "type": "entity",
-                      "entity": "sensor.sun_next_dawn",
+                      "type": "markdown",
+                      "content": "## <span style=\"color: white;\">HO CHI MINH CITY</span>\n",
                       "card_mod": {
-                        "style": "ha-card {\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #5C2E7E !important;\n}\n"
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n  line-height: 1.2;\n}\n"
                       }
                     },
+                    {
+                      "type": "clock",
+                      "clock_size": "medium",
+                      "time_format": "12",
+                      "show_seconds": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #8E90E5;\n  color: #ffffff;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  padding: 0 !important;\n  margin: 0 !important;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
                     {
                       "type": "entities",
                       "entities": [
@@ -95,7 +112,7 @@
                       ],
                       "show_header_toggle": false,
                       "card_mod": {
-                        "style": "ha-card {\n  background-color: #FBFCFF !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #8183B4 !important;\n}\n"
+                        "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #8183B4 !important;\n}\n"
                       }
                     }
                   ],
@@ -106,7 +123,7 @@
                     }
                   },
                   "card_mod": {
-                    "style": "ha-card {\n  background-color: #FBFCFF !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  font-family: 'Trebuchet MS', sans-serif;\n  margin: 0 !important;\n  height: 750px\n}\n"
+                    "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  font-family: 'Trebuchet MS', sans-serif;\n  margin: 0 !important;\n  height: 630px\n}\n"
                   }
                 }
               ],
@@ -138,6 +155,14 @@
                   }
                 },
                 {
+                  "features": [
+                    {
+                      "type": "lock-commands"
+                    },
+                    {
+                      "type": "lock-open-door"
+                    }
+                  ],
                   "type": "tile",
                   "entity": "lock.front_door_lock",
                   "features_position": "bottom",
@@ -147,17 +172,13 @@
                   "icon": "mdi:door",
                   "hide_state": false,
                   "state_content": "last_changed",
-                  "features": [
-                    {
-                      "type": "lock-commands"
-                    },
-                    {
-                      "type": "lock-open-door"
-                    }
-                  ],
                   "grid_options": {
                     "rows": 8,
                     "columns": 6
+                  },
+                  "color": "yellow",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #4A4A92;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  color: #ffffff;\n  --tile-color: #ffffff;\n  --primary-text-color: #ffffff;\n}\n"
                   }
                 },
                 {
@@ -207,34 +228,18 @@
                 },
                 {
                   "type": "custom:modern-circular-gauge",
-                  "entity": "sensor.light_sensor",
-                  "name": "Light",
-                  "unit": "lx",
+                  "entity": "sensor.co2_sensor",
+                  "name": "CO2",
+                  "unit": "ppm",
                   "min": 0,
-                  "max": 5000,
+                  "max": 10000,
                   "needle": true,
                   "smooth_segments": true,
                   "adaptive_icon_color": true,
-                  "icon": "mdi:brightness-7",
+                  "icon": "mdi:molecule-co2",
                   "segments": [
                     {
                       "from": 0,
-                      "color": [
-                        0,
-                        0,
-                        0
-                      ]
-                    },
-                    {
-                      "from": 20,
-                      "color": [
-                        0,
-                        73,
-                        146
-                      ]
-                    },
-                    {
-                      "from": 100,
                       "color": [
                         0,
                         255,
@@ -242,7 +247,7 @@
                       ]
                     },
                     {
-                      "from": 500,
+                      "from": 400,
                       "color": [
                         251,
                         255,
@@ -258,67 +263,7 @@
                       ]
                     },
                     {
-                      "from": 5000,
-                      "color": [
-                        255,
-                        0,
-                        0
-                      ]
-                    }
-                  ],
-                  "header_position": "bottom",
-                  "show_header": true,
-                  "show_state": true,
-                  "show_icon": true,
-                  "adaptive_state_color": false,
-                  "secondary": {},
-                  "tertiary": {},
-                  "grid_options": {
-                    "columns": 6,
-                    "rows": 3.9
-                  },
-                  "card_mod": {
-                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
-                  }
-                },
-                {
-                  "type": "custom:modern-circular-gauge",
-                  "entity": "sensor.pm2_5_sensor",
-                  "name": "PM 2.5",
-                  "unit": "µg/m³",
-                  "min": 0,
-                  "max": 200,
-                  "needle": true,
-                  "smooth_segments": true,
-                  "adaptive_icon_color": true,
-                  "icon": "mdi:molecule",
-                  "segments": [
-                    {
-                      "from": 0,
-                      "color": [
-                        0,
-                        255,
-                        162
-                      ]
-                    },
-                    {
-                      "from": 12.1,
-                      "color": [
-                        251,
-                        255,
-                        0
-                      ]
-                    },
-                    {
-                      "from": 35.5,
-                      "color": [
-                        255,
-                        115,
-                        0
-                      ]
-                    },
-                    {
-                      "from": 55.5,
+                      "from": 3000,
                       "color": [
                         255,
                         0,
@@ -403,36 +348,79 @@
                   }
                 },
                 {
-                  "type": "custom:mini-graph-card",
-                  "entities": [
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.light_sensor",
+                  "name": "Light",
+                  "unit": "lx",
+                  "min": 0,
+                  "max": 5000,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:brightness-7",
+                  "segments": [
                     {
-                      "entity": "sensor.temperature"
+                      "from": 0,
+                      "color": [
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 20,
+                      "color": [
+                        0,
+                        73,
+                        146
+                      ]
+                    },
+                    {
+                      "from": 100,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 500,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 1000,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 5000,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
                     }
                   ],
-                  "unit": "°C",
-                  "hours_to_show": 5,
-                  "points_per_hour": 3,
-                  "height": 194,
-                  "color_thresholds": [
-                    {
-                      "value": 18,
-                      "color": "#ff0000"
-                    },
-                    {
-                      "value": 25,
-                      "color": "#ff6600"
-                    },
-                    {
-                      "value": 31,
-                      "color": "#ffb200"
-                    },
-                    {
-                      "value": 36,
-                      "color": "#ff0000"
-                    }
-                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
                   "card_mod": {
-                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
                   }
                 },
                 {
@@ -473,6 +461,66 @@
                     },
                     {
                       "from": 255,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm2_5_sensor",
+                  "name": "PM 2.5",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 200,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 12.1,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 35.5,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 55.5,
                       "color": [
                         255,
                         0,
@@ -556,16 +604,184 @@
                   }
                 },
                 {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.temperature"
+                    }
+                  ],
+                  "unit": "°C",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 18,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 25,
+                      "color": "#ff6600"
+                    },
+                    {
+                      "value": 31,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 36,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                }
+              ],
+              "column_span": 3
+            }
+          ],
+          "badges": [],
+          "header": {}
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "title": "Living Room",
+          "path": "living-room",
+          "icon": "",
+          "theme": "My Custom Theme",
+          "top_margin": false,
+          "dense_section_placement": false,
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
+                    {
+                      "type": "markdown",
+                      "content": "## <span style=\"color: white;\">HO CHI MINH CITY</span>\n",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n  line-height: 1.2;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "clock",
+                      "clock_size": "medium",
+                      "time_format": "12",
+                      "show_seconds": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #8E90E5;\n  color: #ffffff;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  padding: 0 !important;\n  margin: 0 !important;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
+                    {
+                      "type": "entities",
+                      "entities": [
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.temperature",
+                          "state": "{{ states('sensor.temperature') }} {{ state_attr('sensor.temperature', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co_sensor",
+                          "icon": "mdi:molecule-co",
+                          "name": "{{ state_attr('sensor.co_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co_sensor') }} {{ state_attr('sensor.co_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co2_sensor",
+                          "icon": "mdi:molecule-co2",
+                          "name": "{{ state_attr('sensor.co2_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co2_sensor') }} {{ state_attr('sensor.co2_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.gas_sensor",
+                          "state": "{{ states('sensor.gas_sensor') }} {{ state_attr('sensor.gas_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.humid_sensor",
+                          "state": "{{ states('sensor.humid_sensor') }} {{ state_attr('sensor.humid_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.light_sensor",
+                          "state": "{{ states('sensor.light_sensor') }} {{ state_attr('sensor.light_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm10_sensor",
+                          "state": "{{ states('sensor.pm10_sensor') }} {{ state_attr('sensor.pm10_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm2_5_sensor",
+                          "state": "{{ states('sensor.pm2_5_sensor') }} {{ state_attr('sensor.pm2_5_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        }
+                      ],
+                      "show_header_toggle": false,
+                      "card_mod": {
+                        "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #8183B4 !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "stack-in-card": {
+                    "keep": {
+                      "background": true,
+                      "box_shadow": true
+                    }
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  font-family: 'Trebuchet MS', sans-serif;\n  margin: 0 !important;\n  height: px\n}\n"
+                  }
+                },
+                {
                   "type": "custom:modern-circular-gauge",
-                  "entity": "sensor.co2_sensor",
-                  "name": "CO2",
-                  "unit": "ppm",
+                  "entity": "sensor.pm10_sensor",
+                  "name": "PM 10",
+                  "unit": "µg/m³",
                   "min": 0,
-                  "max": 10000,
+                  "max": 500,
                   "needle": true,
                   "smooth_segments": true,
                   "adaptive_icon_color": true,
-                  "icon": "mdi:molecule-co2",
+                  "icon": "mdi:molecule",
                   "segments": [
                     {
                       "from": 0,
@@ -576,7 +792,7 @@
                       ]
                     },
                     {
-                      "from": 400,
+                      "from": 55,
                       "color": [
                         251,
                         255,
@@ -584,7 +800,7 @@
                       ]
                     },
                     {
-                      "from": 1000,
+                      "from": 155,
                       "color": [
                         255,
                         115,
@@ -592,7 +808,721 @@
                       ]
                     },
                     {
-                      "from": 3000,
+                      "from": 255,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "top",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm2_5_sensor",
+                  "name": "PM 2.5",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 200,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 12.1,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 35.5,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 55.5,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "top",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                }
+              ],
+              "column_span": 1
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "thermostat",
+                  "entity": "climate.living_room_conditioner",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 5
+                  }
+                },
+                {
+                  "type": "humidifier",
+                  "entity": "humidifier.living_room_humidifier",
+                  "features": [
+                    {
+                      "type": "humidifier-toggle"
+                    }
+                  ],
+                  "show_current_as_primary": false,
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 6
+                  }
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1_2",
+                  "grid_options": {
+                    "columns": 24,
+                    "rows": 4
+                  }
+                },
+                {
+                  "type": "light",
+                  "entity": "light.living_room_light",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 3.5
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #4A4A92; /* Purple background */\n  color: #FFD700;      /* Yellow text */\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFD700;         /* Yellow text */\n  --secondary-text-color: #FFD700;       /* Yellow subtext */\n  --state-icon-color: #FFD700 !important;/* Yellow icon */\n}\n"
+                  },
+                  "name": " "
+                },
+                {
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 3.5
+                  }
+                },
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.temperature"
+                    }
+                  ],
+                  "unit": "°C",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 18,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 25,
+                      "color": "#ff6600"
+                    },
+                    {
+                      "value": 31,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 36,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.humid_sensor"
+                    }
+                  ],
+                  "unit": "%",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 0,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 20,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 30,
+                      "color": "#009bff"
+                    },
+                    {
+                      "value": 40,
+                      "color": "#00ff27"
+                    },
+                    {
+                      "value": 60,
+                      "color": "#009bff"
+                    },
+                    {
+                      "value": 70,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 80,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                }
+              ],
+              "column_span": 2
+            }
+          ],
+          "cards": []
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "path": "kitchen",
+          "subview": false,
+          "title": "Kitchen",
+          "theme": "My Custom Theme",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
+                    {
+                      "type": "markdown",
+                      "content": "## <span style=\"color: white;\">HO CHI MINH CITY</span>\n",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n  line-height: 1.2;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "clock",
+                      "clock_size": "medium",
+                      "time_format": "12",
+                      "show_seconds": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #8E90E5;\n  color: #ffffff;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  padding: 0 !important;\n  margin: 0 !important;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
+                    {
+                      "type": "entities",
+                      "entities": [
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.temperature",
+                          "state": "{{ states('sensor.temperature') }} {{ state_attr('sensor.temperature', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co_sensor",
+                          "icon": "mdi:molecule-co",
+                          "name": "{{ state_attr('sensor.co_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co_sensor') }} {{ state_attr('sensor.co_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co2_sensor",
+                          "icon": "mdi:molecule-co2",
+                          "name": "{{ state_attr('sensor.co2_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co2_sensor') }} {{ state_attr('sensor.co2_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.gas_sensor",
+                          "state": "{{ states('sensor.gas_sensor') }} {{ state_attr('sensor.gas_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.humid_sensor",
+                          "state": "{{ states('sensor.humid_sensor') }} {{ state_attr('sensor.humid_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.light_sensor",
+                          "state": "{{ states('sensor.light_sensor') }} {{ state_attr('sensor.light_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm10_sensor",
+                          "state": "{{ states('sensor.pm10_sensor') }} {{ state_attr('sensor.pm10_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm2_5_sensor",
+                          "state": "{{ states('sensor.pm2_5_sensor') }} {{ state_attr('sensor.pm2_5_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        }
+                      ],
+                      "show_header_toggle": false,
+                      "card_mod": {
+                        "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #8183B4 !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "stack-in-card": {
+                    "keep": {
+                      "background": true,
+                      "box_shadow": true
+                    }
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  font-family: 'Trebuchet MS', sans-serif;\n  margin: 0 !important;\n}\n"
+                  }
+                }
+              ],
+              "column_span": 1
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "light",
+                  "entity": "light.kitchen_light",
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 4
+                  },
+                  "name": " ",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #4A4A92; /* Purple background */\n  color: #FFD700;      /* Yellow text */\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFD700;         /* Yellow text */\n  --secondary-text-color: #FFD700;       /* Yellow subtext */\n  --state-icon-color: #FFD700 !important;/* Yellow icon */\n}\n"
+                  }
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.gas_stove_left",
+                  "name": "Left Stove",
+                  "features_position": "bottom",
+                  "vertical": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "hide_state": false,
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 4
+                  },
+                  "color": "amber",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #595AAA;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFFFFF;\n}\n"
+                  }
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.gas_stove_mid",
+                  "name": "Left Stove",
+                  "features_position": "bottom",
+                  "vertical": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "hide_state": false,
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 4
+                  },
+                  "color": "amber",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #6465B5;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFFFFF;\n}\n"
+                  }
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.gas_stove_right",
+                  "name": "Left Stove",
+                  "features_position": "bottom",
+                  "vertical": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "hide_state": false,
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 4
+                  },
+                  "color": "amber",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #6B6CBC;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFFFFF;\n}\n"
+                  }
+                },
+                {
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 5
+                  }
+                },
+                {
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1_2",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 5
+                  }
+                }
+              ],
+              "column_span": 2
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "tile",
+                  "entity": "binary_sensor.people_detection",
+                  "features_position": "bottom",
+                  "vertical": false,
+                  "grid_options": {
+                    "columns": "full"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.gas_sensor",
+                  "name": "Gas",
+                  "unit": "ppm",
+                  "min": 0,
+                  "max": 5000,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:meter-gas",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 200,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 400,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 1000,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.co_sensor",
+                  "name": "CO",
+                  "unit": "ppm",
+                  "min": 0,
+                  "max": 300,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule-co",
+                  "height": 150,
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 5,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 15,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 50,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.temperature",
+                  "name": "Temperature",
+                  "unit": "°C",
+                  "min": 18,
+                  "max": 45,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:thermometer",
+                  "segments": [
+                    {
+                      "from": 18,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 25,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 31,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 36,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "bottom",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.9
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.humid_sensor",
+                  "name": "Humid",
+                  "unit": "%",
+                  "min": 0,
+                  "max": 100,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:water-percent",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 20,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 30,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 40,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 60,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 70,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 80,
                       "color": [
                         255,
                         0,
@@ -615,12 +1545,823 @@
                     "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
                   }
                 }
-              ],
-              "column_span": 3
+              ]
             }
-          ],
-          "badges": [],
-          "header": {}
+          ]
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "title": "Bed Room 1",
+          "path": "bed-room-1",
+          "theme": "My Custom Theme",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
+                    {
+                      "type": "markdown",
+                      "content": "## <span style=\"color: white;\">HO CHI MINH CITY</span>\n",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n  line-height: 1.2;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "clock",
+                      "clock_size": "medium",
+                      "time_format": "12",
+                      "show_seconds": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #8E90E5;\n  color: #ffffff;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  padding: 0 !important;\n  margin: 0 !important;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
+                    {
+                      "type": "entities",
+                      "entities": [
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.temperature",
+                          "state": "{{ states('sensor.temperature') }} {{ state_attr('sensor.temperature', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co_sensor",
+                          "icon": "mdi:molecule-co",
+                          "name": "{{ state_attr('sensor.co_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co_sensor') }} {{ state_attr('sensor.co_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co2_sensor",
+                          "icon": "mdi:molecule-co2",
+                          "name": "{{ state_attr('sensor.co2_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co2_sensor') }} {{ state_attr('sensor.co2_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.gas_sensor",
+                          "state": "{{ states('sensor.gas_sensor') }} {{ state_attr('sensor.gas_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.humid_sensor",
+                          "state": "{{ states('sensor.humid_sensor') }} {{ state_attr('sensor.humid_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.light_sensor",
+                          "state": "{{ states('sensor.light_sensor') }} {{ state_attr('sensor.light_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm10_sensor",
+                          "state": "{{ states('sensor.pm10_sensor') }} {{ state_attr('sensor.pm10_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm2_5_sensor",
+                          "state": "{{ states('sensor.pm2_5_sensor') }} {{ state_attr('sensor.pm2_5_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        }
+                      ],
+                      "show_header_toggle": false,
+                      "card_mod": {
+                        "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #8183B4 !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "stack-in-card": {
+                    "keep": {
+                      "background": true,
+                      "box_shadow": true
+                    }
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  font-family: 'Trebuchet MS', sans-serif;\n  margin: 0 !important;\n  height: px\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm10_sensor",
+                  "name": "PM 10",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 500,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 55,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 155,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 255,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "top",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm2_5_sensor",
+                  "name": "PM 2.5",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 200,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 12.1,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 35.5,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 55.5,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "top",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                }
+              ],
+              "column_span": 1
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "thermostat",
+                  "entity": "climate.bedroom_room_conditioner_1_2",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 5
+                  }
+                },
+                {
+                  "type": "humidifier",
+                  "entity": "humidifier.bedroom_humidifier_1",
+                  "features": [
+                    {
+                      "type": "humidifier-toggle"
+                    }
+                  ],
+                  "show_current_as_primary": false,
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 6
+                  }
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1_2",
+                  "grid_options": {
+                    "columns": 24,
+                    "rows": 4
+                  }
+                },
+                {
+                  "type": "light",
+                  "entity": "light.bedroom_1_light",
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.5
+                  },
+                  "name": "Light",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #4A4A92; /* Purple background */\n  color: #FFD700;      /* Yellow text */\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFD700;         /* Yellow text */\n  --secondary-text-color: #FFD700;       /* Yellow subtext */\n  --state-icon-color: #FFD700 !important;/* Yellow icon */\n}\n"
+                  }
+                },
+                {
+                  "type": "light",
+                  "entity": "light.bathroom_light_1",
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.5
+                  },
+                  "name": "Bath room",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #4A4A92; /* Purple background */\n  color: #FFD700;      /* Yellow text */\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFD700;         /* Yellow text */\n  --secondary-text-color: #FFD700;       /* Yellow subtext */\n  --state-icon-color: #FFD700 !important;/* Yellow icon */\n}\n"
+                  }
+                },
+                {
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 3.5
+                  }
+                },
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.temperature"
+                    }
+                  ],
+                  "unit": "°C",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 18,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 25,
+                      "color": "#ff6600"
+                    },
+                    {
+                      "value": 31,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 36,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.humid_sensor"
+                    }
+                  ],
+                  "unit": "%",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 0,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 20,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 30,
+                      "color": "#009bff"
+                    },
+                    {
+                      "value": 40,
+                      "color": "#00ff27"
+                    },
+                    {
+                      "value": 60,
+                      "color": "#009bff"
+                    },
+                    {
+                      "value": 70,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 80,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                }
+              ],
+              "column_span": 2
+            }
+          ]
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "title": "Bed Room 2",
+          "path": "bed-room-2",
+          "theme": "My Custom Theme",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
+                    {
+                      "type": "markdown",
+                      "content": "## <span style=\"color: white;\">HO CHI MINH CITY</span>\n",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n  line-height: 1.2;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "clock",
+                      "clock_size": "medium",
+                      "time_format": "12",
+                      "show_seconds": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent;\n  margin: 0 !important;\n  padding: 0 !important;\n  box-shadow: none !important;\n  text-align: center;\n  border: none !important;\n  color: #ffffff !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #8E90E5;\n  color: #ffffff;\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  padding: 0 !important;\n  margin: 0 !important;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:stack-in-card",
+                  "cards": [
+                    {
+                      "type": "entities",
+                      "entities": [
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.temperature",
+                          "state": "{{ states('sensor.temperature') }} {{ state_attr('sensor.temperature', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co_sensor",
+                          "icon": "mdi:molecule-co",
+                          "name": "{{ state_attr('sensor.co_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co_sensor') }} {{ state_attr('sensor.co_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.co2_sensor",
+                          "icon": "mdi:molecule-co2",
+                          "name": "{{ state_attr('sensor.co2_sensor', 'friendly_name') }}\n",
+                          "state": "{{ states('sensor.co2_sensor') }} {{ state_attr('sensor.co2_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.gas_sensor",
+                          "state": "{{ states('sensor.gas_sensor') }} {{ state_attr('sensor.gas_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.humid_sensor",
+                          "state": "{{ states('sensor.humid_sensor') }} {{ state_attr('sensor.humid_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.light_sensor",
+                          "state": "{{ states('sensor.light_sensor') }} {{ state_attr('sensor.light_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm10_sensor",
+                          "state": "{{ states('sensor.pm10_sensor') }} {{ state_attr('sensor.pm10_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "custom:template-entity-row",
+                          "entity": "sensor.pm2_5_sensor",
+                          "state": "{{ states('sensor.pm2_5_sensor') }} {{ state_attr('sensor.pm2_5_sensor', 'unit_of_measurement') }}\n",
+                          "card_mod": {
+                            "style": ":host {\n  --paper-item-icon-color: #5C2E7E;\n}\n.info {\n  font-size: 18px !important;\n  color: #5C2E7E; !important;\n}\n.state {\n  font-size: 18px !important;\n}\n"
+                          }
+                        }
+                      ],
+                      "show_header_toggle": false,
+                      "card_mod": {
+                        "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  margin: 0 !important;\n  color: #8183B4 !important;\n}\n"
+                      }
+                    }
+                  ],
+                  "stack-in-card": {
+                    "keep": {
+                      "background": true,
+                      "box_shadow": true
+                    }
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  background-color: #ffffff !important;\n  border: none !important;\n  box-shadow: none !important;\n  padding: 0 !important;\n  font-family: 'Trebuchet MS', sans-serif;\n  margin: 0 !important;\n  height: px\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm10_sensor",
+                  "name": "PM 10",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 500,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 55,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 155,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 255,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "top",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:modern-circular-gauge",
+                  "entity": "sensor.pm2_5_sensor",
+                  "name": "PM 2.5",
+                  "unit": "µg/m³",
+                  "min": 0,
+                  "max": 200,
+                  "needle": true,
+                  "smooth_segments": true,
+                  "adaptive_icon_color": true,
+                  "icon": "mdi:molecule",
+                  "segments": [
+                    {
+                      "from": 0,
+                      "color": [
+                        0,
+                        255,
+                        162
+                      ]
+                    },
+                    {
+                      "from": 12.1,
+                      "color": [
+                        251,
+                        255,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 35.5,
+                      "color": [
+                        255,
+                        115,
+                        0
+                      ]
+                    },
+                    {
+                      "from": 55.5,
+                      "color": [
+                        255,
+                        0,
+                        0
+                      ]
+                    }
+                  ],
+                  "header_position": "top",
+                  "show_header": true,
+                  "show_state": true,
+                  "show_icon": true,
+                  "adaptive_state_color": false,
+                  "secondary": {},
+                  "tertiary": {},
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  background: #fdfbff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  color: #5C2E7E;\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                }
+              ],
+              "column_span": 1
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "thermostat",
+                  "entity": "climate.bedroom_room_conditioner_1",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 5
+                  }
+                },
+                {
+                  "type": "humidifier",
+                  "entity": "humidifier.bedroom_humidifier_2",
+                  "features": [
+                    {
+                      "type": "humidifier-toggle"
+                    }
+                  ],
+                  "show_current_as_primary": false,
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 6
+                  }
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1_2",
+                  "grid_options": {
+                    "columns": 24,
+                    "rows": 4
+                  }
+                },
+                {
+                  "type": "light",
+                  "entity": "light.bathroom_light_2",
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.5
+                  },
+                  "name": "Light",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #4A4A92; /* Purple background */\n  color: #FFD700;      /* Yellow text */\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFD700;         /* Yellow text */\n  --secondary-text-color: #FFD700;       /* Yellow subtext */\n  --state-icon-color: #FFD700 !important;/* Yellow icon */\n}\n"
+                  }
+                },
+                {
+                  "type": "light",
+                  "entity": "light.bathroom_light_2",
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3.5
+                  },
+                  "name": "Bath room",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: #4A4A92; /* Purple background */\n  color: #FFD700;      /* Yellow text */\n  font-family: 'Trebuchet MS', sans-serif;\n  border-radius: 12px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  --primary-text-color: #FFD700;         /* Yellow text */\n  --secondary-text-color: #FFD700;       /* Yellow subtext */\n  --state-icon-color: #FFD700 !important;/* Yellow icon */\n}\n"
+                  }
+                },
+                {
+                  "show_state": true,
+                  "show_name": true,
+                  "camera_view": "auto",
+                  "type": "picture-entity",
+                  "entity": "camera.172_27_192_1",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 3.5
+                  }
+                },
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.temperature"
+                    }
+                  ],
+                  "unit": "°C",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 18,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 25,
+                      "color": "#ff6600"
+                    },
+                    {
+                      "value": 31,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 36,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                },
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    {
+                      "entity": "sensor.humid_sensor"
+                    }
+                  ],
+                  "unit": "%",
+                  "hours_to_show": 5,
+                  "points_per_hour": 3,
+                  "height": 194,
+                  "color_thresholds": [
+                    {
+                      "value": 0,
+                      "color": "#ff0000"
+                    },
+                    {
+                      "value": 20,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 30,
+                      "color": "#009bff"
+                    },
+                    {
+                      "value": 40,
+                      "color": "#00ff27"
+                    },
+                    {
+                      "value": 60,
+                      "color": "#009bff"
+                    },
+                    {
+                      "value": 70,
+                      "color": "#ffb200"
+                    },
+                    {
+                      "value": 80,
+                      "color": "#ff0000"
+                    }
+                  ],
+                  "card_mod": {
+                    "style": "ha-card {\n  border-radius: 16px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n  font-family: \"Trebuchet MS\", sans-serif;\n  padding: 12px;\n}\n"
+                  }
+                }
+              ],
+              "column_span": 2
+            }
+          ]
         }
       ]
     }

@@ -4,288 +4,288 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.localhost","state":"unknown","attributes":{"editable":true,"id":"localhost","device_trackers":[],"user_id":"9e94dd3fca87425695fd42f6424a91e5","friendly_name":"localhost"},"last_changed":"2025-06-04T04:30:37.053194+00:00","last_reported":"2025-06-04T04:30:39.815913+00:00","last_updated":"2025-06-04T04:30:39.815913+00:00","context":{"id":"01JWWK9867FTD4ZAEFFF2ZB202","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.localhost","state":"unknown","attributes":{"editable":true,"id":"localhost","device_trackers":[],"source":"person.localhost","user_id":"9e94dd3fca87425695fd42f6424a91e5","friendly_name":"localhost"},"last_changed":"2025-06-04T10:26:43.447265+00:00","last_reported":"2025-06-04T10:26:43.447265+00:00","last_updated":"2025-06-04T10:26:43.447265+00:00","context":{"id":"01JWX7N73QVMTBQ9JD6HKV9C62","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"2025-05-30T03:25:34.376549+00:00","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-06-04T04:30:38.043118+00:00","last_reported":"2025-06-04T04:30:38.043118+00:00","last_updated":"2025-06-04T04:30:38.043118+00:00","context":{"id":"01JWWK96EVSKCP4NJ7CQSHW9KV","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"2025-05-30T03:25:34.376549+00:00","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-06-04T10:26:45.521820+00:00","last_reported":"2025-06-04T10:26:45.521820+00:00","last_updated":"2025-06-04T10:26:45.521820+00:00","context":{"id":"01JWX7N94HN23XC54C07N03KM2","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"script.new_script","state":"off","attributes":{"last_triggered":"2025-06-03T13:37:36.173373+00:00","mode":"single","current":0,"friendly_name":"New Script"},"last_changed":"2025-06-04T04:30:38.049576+00:00","last_reported":"2025-06-04T04:30:38.049576+00:00","last_updated":"2025-06-04T04:30:38.049576+00:00","context":{"id":"01JWWK96F1QS8QCNJ0J3Y1069X","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"script.new_script","state":"off","attributes":{"last_triggered":"2025-06-03T13:37:36.173373+00:00","mode":"single","current":0,"friendly_name":"New Script"},"last_changed":"2025-06-04T10:26:45.529757+00:00","last_reported":"2025-06-04T10:26:45.529757+00:00","last_updated":"2025-06-04T10:26:45.529757+00:00","context":{"id":"01JWX7N94SQS438DRARX2Q959A","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-06-04T04:30:39.212529+00:00","last_reported":"2025-06-04T04:30:39.212529+00:00","last_updated":"2025-06-04T04:30:39.212529+00:00","context":{"id":"01JWWK97KCHYE0Q9Y3ZNFVG7Z0","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.mini_graph_card_update","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v0.12.1","in_progress":false,"latest_version":"v0.13.0","release_summary":null,"release_url":"https://github.com/kalkih/mini-graph-card/releases/v0.13.0","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"mini-graph-card update","supported_features":23},"last_changed":"2025-06-04T10:26:50.866665+00:00","last_reported":"2025-06-04T10:26:50.866665+00:00","last_updated":"2025-06-04T10:26:50.866665+00:00","context":{"id":"01JWX7NEBJ5MAHM1GFYB6XN1ED","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"update.webrtc_camera_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v3.6.0","in_progress":false,"latest_version":"v3.6.0","release_summary":null,"release_url":"https://github.com/AlexxIT/WebRTC/releases/v3.6.0","skipped_version":null,"title":null,"update_percentage":null,"entity_picture":"https://brands.home-assistant.io/_/webrtc/icon.png","friendly_name":"WebRTC Camera update","supported_features":23},"last_changed":"2025-06-04T04:30:39.320036+00:00","last_reported":"2025-06-04T04:30:39.320036+00:00","last_updated":"2025-06-04T04:30:39.320036+00:00","context":{"id":"01JWWK97PREYYTT1Y938GDZHAW","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.hacs_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"2.0.5","in_progress":false,"latest_version":"2.0.5","release_summary":null,"release_url":"https://github.com/hacs/integration/releases/2.0.5","skipped_version":null,"title":null,"update_percentage":null,"entity_picture":"https://brands.home-assistant.io/_/hacs/icon.png","friendly_name":"HACS update","supported_features":23},"last_changed":"2025-06-04T10:26:50.867009+00:00","last_reported":"2025-06-04T10:26:50.867009+00:00","last_updated":"2025-06-04T10:26:50.867009+00:00","context":{"id":"01JWX7NEBK6AXF190F47TRV0YZ","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"update.mini_graph_card_update","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v0.12.1","in_progress":false,"latest_version":"v0.13.0","release_summary":null,"release_url":"https://github.com/kalkih/mini-graph-card/releases/v0.13.0","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"mini-graph-card update","supported_features":23},"last_changed":"2025-06-04T04:30:39.320250+00:00","last_reported":"2025-06-04T04:30:39.320250+00:00","last_updated":"2025-06-04T04:30:39.320250+00:00","context":{"id":"01JWWK97PRYAP5YPVK3HG9B36W","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.swipe_card_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v5.0.0","in_progress":false,"latest_version":"v5.0.0","release_summary":null,"release_url":"https://github.com/bramkragten/swipe-card/releases/v5.0.0","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"Swipe Card update","supported_features":23},"last_changed":"2025-06-04T10:26:50.867266+00:00","last_reported":"2025-06-04T10:26:50.867266+00:00","last_updated":"2025-06-04T10:26:50.867266+00:00","context":{"id":"01JWX7NEBKHYPKXZ1QSPGPA588","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"update.card_mod_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v3.4.4","in_progress":false,"latest_version":"v3.4.4","release_summary":null,"release_url":"https://github.com/thomasloven/lovelace-card-mod/releases/v3.4.4","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"card-mod update","supported_features":23},"last_changed":"2025-06-04T04:30:39.320343+00:00","last_reported":"2025-06-04T04:30:39.320343+00:00","last_updated":"2025-06-04T04:30:39.320343+00:00","context":{"id":"01JWWK97PR61HAW8XTGFQKG27V","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.webrtc_camera_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v3.6.0","in_progress":false,"latest_version":"v3.6.0","release_summary":null,"release_url":"https://github.com/AlexxIT/WebRTC/releases/v3.6.0","skipped_version":null,"title":null,"update_percentage":null,"entity_picture":"https://brands.home-assistant.io/_/webrtc/icon.png","friendly_name":"WebRTC Camera update","supported_features":23},"last_changed":"2025-06-04T10:26:50.868241+00:00","last_reported":"2025-06-04T10:26:50.868241+00:00","last_updated":"2025-06-04T10:26:50.868241+00:00","context":{"id":"01JWX7NEBM3V4S5CKVKMZ82SV5","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"update.swipe_card_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v5.0.0","in_progress":false,"latest_version":"v5.0.0","release_summary":null,"release_url":"https://github.com/bramkragten/swipe-card/releases/v5.0.0","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"Swipe Card update","supported_features":23},"last_changed":"2025-06-04T04:30:39.320454+00:00","last_reported":"2025-06-04T04:30:39.320454+00:00","last_updated":"2025-06-04T04:30:39.320454+00:00","context":{"id":"01JWWK97PRSN10GGSB6QTJJD51","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.button_card_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v4.1.2","in_progress":false,"latest_version":"v4.1.2","release_summary":null,"release_url":"https://github.com/custom-cards/button-card/releases/v4.1.2","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"button-card update","supported_features":23},"last_changed":"2025-06-04T10:26:50.868566+00:00","last_reported":"2025-06-04T10:26:50.868566+00:00","last_updated":"2025-06-04T10:26:50.868566+00:00","context":{"id":"01JWX7NEBMY5S1T79J7PAK06G5","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"update.stack_in_card_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.2.0","in_progress":false,"latest_version":"0.2.0","release_summary":null,"release_url":"https://github.com/custom-cards/stack-in-card/releases/0.2.0","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"Stack In Card update","supported_features":23},"last_changed":"2025-06-04T04:30:39.320546+00:00","last_reported":"2025-06-04T04:30:39.320546+00:00","last_updated":"2025-06-04T04:30:39.320546+00:00","context":{"id":"01JWWK97PRQDRJ6HKAJXBNGYDG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.stack_in_card_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.2.0","in_progress":false,"latest_version":"0.2.0","release_summary":null,"release_url":"https://github.com/custom-cards/stack-in-card/releases/0.2.0","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"Stack In Card update","supported_features":23},"last_changed":"2025-06-04T10:26:50.868804+00:00","last_reported":"2025-06-04T10:26:50.868804+00:00","last_updated":"2025-06-04T10:26:50.868804+00:00","context":{"id":"01JWX7NEBM5BXZF62EBPZK8RQT","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"update.button_card_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v4.1.2","in_progress":false,"latest_version":"v4.1.2","release_summary":null,"release_url":"https://github.com/custom-cards/button-card/releases/v4.1.2","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"button-card update","supported_features":23},"last_changed":"2025-06-04T04:30:39.320629+00:00","last_reported":"2025-06-04T04:30:39.320629+00:00","last_updated":"2025-06-04T04:30:39.320629+00:00","context":{"id":"01JWWK97PRCK2DX2FQTJKE2BPK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.card_mod_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"v3.4.4","in_progress":false,"latest_version":"v3.4.4","release_summary":null,"release_url":"https://github.com/thomasloven/lovelace-card-mod/releases/v3.4.4","skipped_version":null,"title":null,"update_percentage":null,"friendly_name":"card-mod update","supported_features":23},"last_changed":"2025-06-04T10:26:50.869008+00:00","last_reported":"2025-06-04T10:26:50.869008+00:00","last_updated":"2025-06-04T10:26:50.869008+00:00","context":{"id":"01JWX7NEBN9T7NWW27MAJMWEWD","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"update.hacs_update","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"2.0.5","in_progress":false,"latest_version":"2.0.5","release_summary":null,"release_url":"https://github.com/hacs/integration/releases/2.0.5","skipped_version":null,"title":null,"update_percentage":null,"entity_picture":"https://brands.home-assistant.io/_/hacs/icon.png","friendly_name":"HACS update","supported_features":23},"last_changed":"2025-06-04T04:30:39.320715+00:00","last_reported":"2025-06-04T04:30:39.320715+00:00","last_updated":"2025-06-04T04:30:39.320715+00:00","context":{"id":"01JWWK97PR1RRT14P458Z3E0NM","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-06-04T10:26:50.888438+00:00","last_reported":"2025-06-04T10:26:50.888438+00:00","last_updated":"2025-06-04T10:26:50.888438+00:00","context":{"id":"01JWX7NEC8DHSZEF5YSTWTH6S4","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.turn_on_cooling_mode","state":"on","attributes":{"id":"1745157257921","last_triggered":"2025-04-20T14:09:44.591961+00:00","mode":"single","current":0,"friendly_name":"Turn on cooling mode"},"last_changed":"2025-06-04T04:30:39.375474+00:00","last_reported":"2025-06-04T04:30:39.375474+00:00","last_updated":"2025-06-04T04:30:39.375474+00:00","context":{"id":"01JWWK97RFHT1F34GC66GT73W5","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.turn_on_cooling_mode","state":"on","attributes":{"id":"1745157257921","last_triggered":"2025-04-20T14:09:44.591961+00:00","mode":"single","current":0,"friendly_name":"Turn on cooling mode"},"last_changed":"2025-06-04T10:26:51.042389+00:00","last_reported":"2025-06-04T10:26:51.042389+00:00","last_updated":"2025-06-04T10:26:51.042389+00:00","context":{"id":"01JWX7NEH2TYFQBZ21R5CRZZA5","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.turn_off_devices_while_no_one_home","state":"on","attributes":{"id":"1745158517325","last_triggered":"2025-05-31T08:40:42.885230+00:00","mode":"single","current":0,"friendly_name":"Turn off devices while no one home"},"last_changed":"2025-06-04T04:30:39.375582+00:00","last_reported":"2025-06-04T04:30:39.375582+00:00","last_updated":"2025-06-04T04:30:39.375582+00:00","context":{"id":"01JWWK97RFYGRDH4VYJY0F8AH9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.turn_off_devices_while_no_one_home","state":"on","attributes":{"id":"1745158517325","last_triggered":"2025-05-31T08:40:42.885230+00:00","mode":"single","current":0,"friendly_name":"Turn off devices while no one home"},"last_changed":"2025-06-04T10:26:51.042527+00:00","last_reported":"2025-06-04T10:26:51.042527+00:00","last_updated":"2025-06-04T10:26:51.042527+00:00","context":{"id":"01JWX7NEH25FDM4F760RY63XHF","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.get_home_member","state":"on","attributes":{"id":"1745158830677","last_triggered":"2025-05-31T08:34:45.394920+00:00","mode":"single","current":0,"friendly_name":"Get Home member"},"last_changed":"2025-06-04T04:30:39.375652+00:00","last_reported":"2025-06-04T04:30:39.375652+00:00","last_updated":"2025-06-04T04:30:39.375652+00:00","context":{"id":"01JWWK97RF8ZKNH68X2FRFWMZF","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.get_home_member","state":"on","attributes":{"id":"1745158830677","last_triggered":"2025-05-31T08:34:45.394920+00:00","mode":"single","current":0,"friendly_name":"Get Home member"},"last_changed":"2025-06-04T10:26:51.042604+00:00","last_reported":"2025-06-04T10:26:51.042604+00:00","last_updated":"2025-06-04T10:26:51.042604+00:00","context":{"id":"01JWX7NEH2AS4QBABGQW9DQQZD","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.camera_notification","state":"on","attributes":{"id":"1748614849274","last_triggered":"2025-05-31T15:28:07.495425+00:00","mode":"single","current":0,"friendly_name":"camera notification"},"last_changed":"2025-06-04T04:30:39.375715+00:00","last_reported":"2025-06-04T04:30:39.375715+00:00","last_updated":"2025-06-04T04:30:39.375715+00:00","context":{"id":"01JWWK97RF0JZNE5ZHH3JCVPQQ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.camera_notification","state":"on","attributes":{"id":"1748614849274","last_triggered":"2025-05-31T15:28:07.495425+00:00","mode":"single","current":0,"friendly_name":"camera notification"},"last_changed":"2025-06-04T10:26:51.042673+00:00","last_reported":"2025-06-04T10:26:51.042673+00:00","last_updated":"2025-06-04T10:26:51.042673+00:00","context":{"id":"01JWX7NEH2KF449FHRWQ7XKKE6","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.stove_open_warning","state":"on","attributes":{"id":"1748681697677","last_triggered":"2025-06-04T09:45:23.316350+00:00","mode":"single","current":0,"friendly_name":"Stove open warning"},"last_changed":"2025-06-04T04:30:39.375777+00:00","last_reported":"2025-06-04T09:45:23.317834+00:00","last_updated":"2025-06-04T09:45:23.317834+00:00","context":{"id":"01JWX59H3KAH62TAG8RNFNG62B","parent_id":"01JWX58PRVRAK0ABHRKYERTJ3Z","user_id":null}},
+      "state": {"entity_id":"automation.stove_open_warning","state":"on","attributes":{"id":"1748681697677","last_triggered":"2025-06-04T09:45:23.316350+00:00","mode":"single","current":0,"friendly_name":"Stove open warning"},"last_changed":"2025-06-04T10:26:51.042738+00:00","last_reported":"2025-06-04T10:26:51.042738+00:00","last_updated":"2025-06-04T10:26:51.042738+00:00","context":{"id":"01JWX7NEH2TKHPDYTS4CF467VP","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.clear_empty_notification","state":"on","attributes":{"id":"1748704185401","last_triggered":"2025-05-31T15:28:07.497271+00:00","mode":"single","current":0,"friendly_name":"Clear empty notification"},"last_changed":"2025-06-04T04:30:39.375836+00:00","last_reported":"2025-06-04T04:30:39.375836+00:00","last_updated":"2025-06-04T04:30:39.375836+00:00","context":{"id":"01JWWK97RFE0FG1VDVYRPCWTSG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.clear_empty_notification","state":"on","attributes":{"id":"1748704185401","last_triggered":"2025-05-31T15:28:07.497271+00:00","mode":"single","current":0,"friendly_name":"Clear empty notification"},"last_changed":"2025-06-04T10:26:51.042797+00:00","last_reported":"2025-06-04T10:26:51.042797+00:00","last_updated":"2025-06-04T10:26:51.042797+00:00","context":{"id":"01JWX7NEH21PF549QRS1M8PE4X","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.high_temperature_warning","state":"on","attributes":{"id":"1748932858082","last_triggered":"2025-06-04T09:51:28.454244+00:00","mode":"single","current":0,"friendly_name":"High temperature warning"},"last_changed":"2025-06-04T04:30:39.375894+00:00","last_reported":"2025-06-04T09:51:28.464781+00:00","last_updated":"2025-06-04T09:51:28.464781+00:00","context":{"id":"01JWX5MNP5FFVEZN8PTTEVZ886","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.high_temperature_warning","state":"on","attributes":{"id":"1748932858082","last_triggered":"2025-06-04T09:51:28.454244+00:00","mode":"single","current":0,"friendly_name":"High temperature warning"},"last_changed":"2025-06-04T10:26:51.042853+00:00","last_reported":"2025-06-04T10:26:51.042853+00:00","last_updated":"2025-06-04T10:26:51.042853+00:00","context":{"id":"01JWX7NEH23YEV1XB2HXPK3EBA","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.humidity_warning","state":"on","attributes":{"id":"1748934631877","last_triggered":"2025-06-04T09:51:28.457626+00:00","mode":"single","current":0,"friendly_name":"Humidity warning"},"last_changed":"2025-06-04T04:30:39.375950+00:00","last_reported":"2025-06-04T09:51:28.457983+00:00","last_updated":"2025-06-04T09:51:28.457983+00:00","context":{"id":"01JWX5MNP9CRB91E9GX5SD0GA4","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.humidity_warning","state":"on","attributes":{"id":"1748934631877","last_triggered":"2025-06-04T09:51:28.457626+00:00","mode":"single","current":0,"friendly_name":"Humidity warning"},"last_changed":"2025-06-04T10:26:51.042908+00:00","last_reported":"2025-06-04T10:26:51.042908+00:00","last_updated":"2025-06-04T10:26:51.042908+00:00","context":{"id":"01JWX7NEH2B0X23P6BZ0JQCCJ6","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.gas_leaking_warning","state":"on","attributes":{"id":"1748948977924","last_triggered":"2025-06-04T09:51:28.458523+00:00","mode":"single","current":0,"friendly_name":"Gas leaking warning"},"last_changed":"2025-06-04T04:30:39.376006+00:00","last_reported":"2025-06-04T09:51:28.458719+00:00","last_updated":"2025-06-04T09:51:28.458719+00:00","context":{"id":"01JWX5MNPAXCRYDAS5NBKCDY7B","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.gas_leaking_warning","state":"on","attributes":{"id":"1748948977924","last_triggered":"2025-06-04T09:51:28.458523+00:00","mode":"single","current":0,"friendly_name":"Gas leaking warning"},"last_changed":"2025-06-04T10:26:51.042963+00:00","last_reported":"2025-06-04T10:26:51.042963+00:00","last_updated":"2025-06-04T10:26:51.042963+00:00","context":{"id":"01JWX7NEH2J52NNTYJDXY2KVW3","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.pm2_5_warning","state":"on","attributes":{"id":"1748949370424","last_triggered":"2025-06-04T09:51:28.458942+00:00","mode":"single","current":0,"friendly_name":"PM2.5 warning"},"last_changed":"2025-06-04T04:30:39.376063+00:00","last_reported":"2025-06-04T09:51:28.459181+00:00","last_updated":"2025-06-04T09:51:28.459181+00:00","context":{"id":"01JWX5MNPA7FFR0NVZ4TPX0MJ6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.pm2_5_warning","state":"on","attributes":{"id":"1748949370424","last_triggered":"2025-06-04T09:51:28.458942+00:00","mode":"single","current":0,"friendly_name":"PM2.5 warning"},"last_changed":"2025-06-04T10:26:51.043021+00:00","last_reported":"2025-06-04T10:26:51.043021+00:00","last_updated":"2025-06-04T10:26:51.043021+00:00","context":{"id":"01JWX7NEH3XBMJ3Y0HKNAS42NM","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.pm10","state":"on","attributes":{"id":"1748949556532","last_triggered":"2025-06-04T09:51:28.459530+00:00","mode":"single","current":0,"friendly_name":"PM10"},"last_changed":"2025-06-04T04:30:39.376122+00:00","last_reported":"2025-06-04T09:51:28.459750+00:00","last_updated":"2025-06-04T09:51:28.459750+00:00","context":{"id":"01JWX5MNPBF20A9HMMNDTYP780","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.pm10","state":"on","attributes":{"id":"1748949556532","last_triggered":"2025-06-04T09:51:28.459530+00:00","mode":"single","current":0,"friendly_name":"PM10"},"last_changed":"2025-06-04T10:26:51.043077+00:00","last_reported":"2025-06-04T10:26:51.043077+00:00","last_updated":"2025-06-04T10:26:51.043077+00:00","context":{"id":"01JWX7NEH3SWNJRJ4WSE63CBCQ","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.co2_warning","state":"on","attributes":{"id":"1748949758398","last_triggered":"2025-06-04T09:51:28.459996+00:00","mode":"single","current":0,"friendly_name":"CO2 warning"},"last_changed":"2025-06-04T04:30:39.376181+00:00","last_reported":"2025-06-04T09:51:28.460257+00:00","last_updated":"2025-06-04T09:51:28.460257+00:00","context":{"id":"01JWX5MNPBQNVGYFDJ57MRK7G0","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.co2_warning","state":"on","attributes":{"id":"1748949758398","last_triggered":"2025-06-04T09:51:28.459996+00:00","mode":"single","current":0,"friendly_name":"CO2 warning"},"last_changed":"2025-06-04T10:26:51.043134+00:00","last_reported":"2025-06-04T10:26:51.043134+00:00","last_updated":"2025-06-04T10:26:51.043134+00:00","context":{"id":"01JWX7NEH31R7PQFDK2KVEZDQF","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.co_warning","state":"on","attributes":{"id":"1748949853195","last_triggered":"2025-06-04T09:51:28.461357+00:00","mode":"single","current":0,"friendly_name":"CO warning"},"last_changed":"2025-06-04T04:30:39.376241+00:00","last_reported":"2025-06-04T09:51:28.461635+00:00","last_updated":"2025-06-04T09:51:28.461635+00:00","context":{"id":"01JWX5MNPDZ4VFDMRFWHXCMFER","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.co_warning","state":"on","attributes":{"id":"1748949853195","last_triggered":"2025-06-04T09:51:28.461357+00:00","mode":"single","current":0,"friendly_name":"CO warning"},"last_changed":"2025-06-04T10:26:51.043187+00:00","last_reported":"2025-06-04T10:26:51.043187+00:00","last_updated":"2025-06-04T10:26:51.043187+00:00","context":{"id":"01JWX7NEH38Q31ZKZ5F1NTDB6T","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.fall_detection","state":"on","attributes":{"id":"1748859184225","last_triggered":null,"mode":"single","current":0,"friendly_name":"Fall detection"},"last_changed":"2025-06-04T04:30:39.376298+00:00","last_reported":"2025-06-04T04:30:39.376298+00:00","last_updated":"2025-06-04T04:30:39.376298+00:00","context":{"id":"01JWWK97RG95PJAFCPNWVJ9R4X","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.fall_detection","state":"on","attributes":{"id":"1748859184225","last_triggered":null,"mode":"single","current":0,"friendly_name":"Fall detection"},"last_changed":"2025-06-04T10:26:51.043243+00:00","last_reported":"2025-06-04T10:26:51.043243+00:00","last_updated":"2025-06-04T10:26:51.043243+00:00","context":{"id":"01JWX7NEH39WDT8D6ANZTMV102","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_humid_humidifying","state":"on","attributes":{"id":"1748956648036","last_triggered":"2025-06-04T09:51:03.451563+00:00","mode":"single","current":0,"friendly_name":"set humid humidifying"},"last_changed":"2025-06-04T04:30:39.376354+00:00","last_reported":"2025-06-04T09:51:03.461240+00:00","last_updated":"2025-06-04T09:51:03.461240+00:00","context":{"id":"01JWX5KX8VBZHWM66MSTY4ECN9","parent_id":"01JWX5KX8TE9HC71RC7Y38J2TM","user_id":null}},
+      "state": {"entity_id":"automation.set_humid_humidifying","state":"on","attributes":{"id":"1748956648036","last_triggered":"2025-06-04T09:51:03.451563+00:00","mode":"single","current":0,"friendly_name":"set humid humidifying"},"last_changed":"2025-06-04T10:26:51.043298+00:00","last_reported":"2025-06-04T10:26:51.043298+00:00","last_updated":"2025-06-04T10:26:51.043298+00:00","context":{"id":"01JWX7NEH3VGG0ATTA6BFQXJHR","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_humid_drying","state":"on","attributes":{"id":"1748957956807","last_triggered":"2025-06-04T09:51:13.453869+00:00","mode":"single","current":0,"friendly_name":"set humid drying"},"last_changed":"2025-06-04T04:30:39.376412+00:00","last_reported":"2025-06-04T09:51:13.459813+00:00","last_updated":"2025-06-04T09:51:13.459813+00:00","context":{"id":"01JWX5M71DXR7XYJXKJMFG169Y","parent_id":"01JWX5M71CY32W9GCEDJPSS9B4","user_id":null}},
+      "state": {"entity_id":"automation.set_humid_drying","state":"on","attributes":{"id":"1748957956807","last_triggered":"2025-06-04T09:51:13.453869+00:00","mode":"single","current":0,"friendly_name":"set humid drying"},"last_changed":"2025-06-04T10:26:51.043352+00:00","last_reported":"2025-06-04T10:26:51.043352+00:00","last_updated":"2025-06-04T10:26:51.043352+00:00","context":{"id":"01JWX7NEH3XJPR4S52T30MRH4X","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_drying_bedroom_1","state":"on","attributes":{"id":"1748958953795","last_triggered":"2025-06-04T09:51:13.454132+00:00","mode":"single","current":0,"friendly_name":"set drying bedroom 1"},"last_changed":"2025-06-04T04:30:39.376470+00:00","last_reported":"2025-06-04T09:51:13.459874+00:00","last_updated":"2025-06-04T09:51:13.459874+00:00","context":{"id":"01JWX5M71EY7GM9NH8B7DET9TX","parent_id":"01JWX5M71CGK43CDAW8AXWM8A4","user_id":null}},
+      "state": {"entity_id":"automation.set_drying_bedroom_1","state":"on","attributes":{"id":"1748958953795","last_triggered":"2025-06-04T09:51:13.454132+00:00","mode":"single","current":0,"friendly_name":"set drying bedroom 1"},"last_changed":"2025-06-04T10:26:51.043405+00:00","last_reported":"2025-06-04T10:26:51.043405+00:00","last_updated":"2025-06-04T10:26:51.043405+00:00","context":{"id":"01JWX7NEH327XY9G5GF43VCAC1","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_humidifying_bedroom_1","state":"on","attributes":{"id":"1748959014888","last_triggered":"2025-06-04T09:51:03.451825+00:00","mode":"single","current":0,"friendly_name":"set humidifying bedroom 1"},"last_changed":"2025-06-04T04:30:39.376529+00:00","last_reported":"2025-06-04T09:51:03.461334+00:00","last_updated":"2025-06-04T09:51:03.461334+00:00","context":{"id":"01JWX5KX8VRD3MS9CQQ7J885ZG","parent_id":"01JWX5KX8T7R6SMMDE0DQWR09R","user_id":null}},
+      "state": {"entity_id":"automation.set_humidifying_bedroom_1","state":"on","attributes":{"id":"1748959014888","last_triggered":"2025-06-04T09:51:03.451825+00:00","mode":"single","current":0,"friendly_name":"set humidifying bedroom 1"},"last_changed":"2025-06-04T10:26:51.043468+00:00","last_reported":"2025-06-04T10:26:51.043468+00:00","last_updated":"2025-06-04T10:26:51.043468+00:00","context":{"id":"01JWX7NEH36N6N25QMHJMRMAG3","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_drying_bedroom_2","state":"on","attributes":{"id":"1748959058628","last_triggered":"2025-06-04T09:51:13.454367+00:00","mode":"single","current":0,"friendly_name":"set drying bedroom 2"},"last_changed":"2025-06-04T04:30:39.376588+00:00","last_reported":"2025-06-04T09:51:13.459911+00:00","last_updated":"2025-06-04T09:51:13.459911+00:00","context":{"id":"01JWX5M71EHE3H5HJD96C9ZV0G","parent_id":"01JWX5M71CEEJVHXRAX75KQC3M","user_id":null}},
+      "state": {"entity_id":"automation.set_drying_bedroom_2","state":"on","attributes":{"id":"1748959058628","last_triggered":"2025-06-04T09:51:13.454367+00:00","mode":"single","current":0,"friendly_name":"set drying bedroom 2"},"last_changed":"2025-06-04T10:26:51.043562+00:00","last_reported":"2025-06-04T10:26:51.043562+00:00","last_updated":"2025-06-04T10:26:51.043562+00:00","context":{"id":"01JWX7NEH3H8P834Y6R1K958EM","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_humidifying_bedroom_2","state":"on","attributes":{"id":"1748959088933","last_triggered":"2025-06-04T09:51:03.452051+00:00","mode":"single","current":0,"friendly_name":"set humidifying bedroom 2"},"last_changed":"2025-06-04T04:30:39.376647+00:00","last_reported":"2025-06-04T09:51:03.461388+00:00","last_updated":"2025-06-04T09:51:03.461388+00:00","context":{"id":"01JWX5KX8VX6ETYV83TC72FG00","parent_id":"01JWX5KX8T1QG4815MH25X20TG","user_id":null}},
+      "state": {"entity_id":"automation.set_humidifying_bedroom_2","state":"on","attributes":{"id":"1748959088933","last_triggered":"2025-06-04T09:51:03.452051+00:00","mode":"single","current":0,"friendly_name":"set humidifying bedroom 2"},"last_changed":"2025-06-04T10:26:51.043622+00:00","last_reported":"2025-06-04T10:26:51.043622+00:00","last_updated":"2025-06-04T10:26:51.043622+00:00","context":{"id":"01JWX7NEH3B41VGR5HEGX0QR0J","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"automation.adjust_humidity","state":"on","attributes":{"id":"1748959317369","last_triggered":"2025-06-04T09:51:28.456993+00:00","mode":"single","current":0,"friendly_name":"adjust humidity"},"last_changed":"2025-06-04T04:30:39.376968+00:00","last_reported":"2025-06-04T09:51:28.457453+00:00","last_updated":"2025-06-04T09:51:28.457453+00:00","context":{"id":"01JWX5MNP829S5057PVGJ3M8QS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.adjust_humidity","state":"on","attributes":{"id":"1748959317369","last_triggered":"2025-06-04T09:51:28.456993+00:00","mode":"single","current":0,"friendly_name":"adjust humidity"},"last_changed":"2025-06-04T10:26:51.043722+00:00","last_reported":"2025-06-04T10:26:51.043722+00:00","last_updated":"2025-06-04T10:26:51.043722+00:00","context":{"id":"01JWX7NEH3QR43CK23N485M92N","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"light.bathroom_light_1","state":"off","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Bath room","supported_features":40},"last_changed":"2025-06-04T09:44:56.346656+00:00","last_reported":"2025-06-04T09:44:56.346656+00:00","last_updated":"2025-06-04T09:44:56.346656+00:00","context":{"id":"01JWX58PRTFXT6WPZFD26VPNQF","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"light.bathroom_light_2","state":"on","attributes":{"supported_color_modes":["brightness"],"color_mode":"unknown","brightness":null,"friendly_name":"Bath room","supported_features":40},"last_changed":"2025-06-04T09:44:56.346950+00:00","last_reported":"2025-06-04T09:44:56.346950+00:00","last_updated":"2025-06-04T09:44:56.346950+00:00","context":{"id":"01JWX58PRT9MQ2KDQDMFVCGENA","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"light.bedroom_1_light","state":"off","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Bedroom 1 Light","supported_features":40},"last_changed":"2025-06-04T09:44:56.347042+00:00","last_reported":"2025-06-04T09:44:56.347042+00:00","last_updated":"2025-06-04T09:44:56.347042+00:00","context":{"id":"01JWX58PRVPYHFJNG9CSKFX09A","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"light.bedroom_2_light","state":"on","attributes":{"supported_color_modes":["brightness"],"color_mode":"unknown","brightness":null,"friendly_name":"Bedroom 2 Light","supported_features":40},"last_changed":"2025-06-04T09:44:56.347105+00:00","last_reported":"2025-06-04T09:44:56.347105+00:00","last_updated":"2025-06-04T09:44:56.347105+00:00","context":{"id":"01JWX58PRV4Q43DKAMM2QB5GCC","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"light.living_room_light","state":"off","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Living Room Light","supported_features":40},"last_changed":"2025-06-04T09:44:56.347170+00:00","last_reported":"2025-06-04T09:44:56.347170+00:00","last_updated":"2025-06-04T09:44:56.347170+00:00","context":{"id":"01JWX58PRVWHG6GNW2D7EW3EZA","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"light.kitchen_light","state":"off","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Kitchen Light","supported_features":40},"last_changed":"2025-06-04T09:44:56.347267+00:00","last_reported":"2025-06-04T09:44:56.347267+00:00","last_updated":"2025-06-04T09:44:56.347267+00:00","context":{"id":"01JWX58PRVNYPVSPFEZJYKXK9Y","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"notify.door_notification","state":"unknown","attributes":{"friendly_name":"Door notification","supported_features":0},"last_changed":"2025-06-04T09:44:56.347410+00:00","last_reported":"2025-06-04T09:44:56.347410+00:00","last_updated":"2025-06-04T09:44:56.347410+00:00","context":{"id":"01JWX58PRV75N8AYC7RCY9N68X","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"binary_sensor.people_detection","state":"off","attributes":{"device_class":"presence","friendly_name":"Presence Check"},"last_changed":"2025-06-04T09:44:56.347624+00:00","last_reported":"2025-06-04T09:44:56.347624+00:00","last_updated":"2025-06-04T09:44:56.347624+00:00","context":{"id":"01JWX58PRVRAK0ABHRKYERTJ3Z","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"binary_sensor.fall_detection","state":"off","attributes":{"device_class":"occupancy","friendly_name":"Fall Detection"},"last_changed":"2025-06-04T09:44:56.347698+00:00","last_reported":"2025-06-04T09:44:56.347698+00:00","last_updated":"2025-06-04T09:44:56.347698+00:00","context":{"id":"01JWX58PRVRQ60Y6B3XNG08EVM","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"switch.gas_stove_left","state":"off","attributes":{"icon":"mdi:toggle-switch-variant","friendly_name":"Gas Stove Left"},"last_changed":"2025-06-04T09:44:56.347977+00:00","last_reported":"2025-06-04T09:44:56.347977+00:00","last_updated":"2025-06-04T09:44:56.347977+00:00","context":{"id":"01JWX58PRVAAPX50Y1G2GGBAYV","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"switch.gas_stove_mid","state":"on","attributes":{"friendly_name":"Gas Stove Mid"},"last_changed":"2025-06-04T09:44:56.348028+00:00","last_reported":"2025-06-04T09:44:56.348028+00:00","last_updated":"2025-06-04T09:44:56.348028+00:00","context":{"id":"01JWX58PRWMN7GT7GM030NZZG9","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"switch.gas_stove_right","state":"off","attributes":{"friendly_name":"Gas Stove Right"},"last_changed":"2025-06-04T09:44:56.348065+00:00","last_reported":"2025-06-04T09:44:56.348065+00:00","last_updated":"2025-06-04T09:44:56.348065+00:00","context":{"id":"01JWX58PRWZX8ZNGVNXA9WX59S","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.humid_sensor","state":"35.9","attributes":{"unit_of_measurement":"%","device_class":"humidity","friendly_name":"Humid Sensor"},"last_changed":"2025-06-04T09:51:28.458135+00:00","last_reported":"2025-06-04T09:51:28.458135+00:00","last_updated":"2025-06-04T09:51:28.458135+00:00","context":{"id":"01JWX5MNPAV53F5T9ME283RD6Q","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.humid_sensor","state":"unknown","attributes":{"unit_of_measurement":"%","device_class":"humidity","friendly_name":"Humid Sensor"},"last_changed":"2025-06-04T10:26:51.091181+00:00","last_reported":"2025-06-04T10:26:51.091181+00:00","last_updated":"2025-06-04T10:26:51.091181+00:00","context":{"id":"01JWX7NEJKHF7EW7BYNYS3QCFJ","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "35.9",
+        "native_value": null,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"sensor.light_sensor","state":"225.0","attributes":{"unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Light Sensor"},"last_changed":"2025-06-04T09:51:28.462194+00:00","last_reported":"2025-06-04T09:51:28.462194+00:00","last_updated":"2025-06-04T09:51:28.462194+00:00","context":{"id":"01JWX5MNPEKY4HQJ2WJY9MZA1R","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.light_sensor","state":"unknown","attributes":{"unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Light Sensor"},"last_changed":"2025-06-04T10:26:51.091240+00:00","last_reported":"2025-06-04T10:26:51.091240+00:00","last_updated":"2025-06-04T10:26:51.091240+00:00","context":{"id":"01JWX7NEJK7302H1W7P85HD45J","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "225.0",
+        "native_value": null,
         "native_unit_of_measurement": "lx"
       },
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"sensor.pm2_5_sensor","state":"19.4","attributes":{"unit_of_measurement":"µg/m³","device_class":"pm25","friendly_name":"PM2.5 Sensor"},"last_changed":"2025-06-04T09:51:28.459250+00:00","last_reported":"2025-06-04T09:51:28.459250+00:00","last_updated":"2025-06-04T09:51:28.459250+00:00","context":{"id":"01JWX5MNPBY1N3KQ4XYR394BXP","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.pm2_5_sensor","state":"unknown","attributes":{"unit_of_measurement":"µg/m³","device_class":"pm25","friendly_name":"PM2.5 Sensor"},"last_changed":"2025-06-04T10:26:51.091274+00:00","last_reported":"2025-06-04T10:26:51.091274+00:00","last_updated":"2025-06-04T10:26:51.091274+00:00","context":{"id":"01JWX7NEJKTX0SGFFX113MQ0Q9","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "19.4",
+        "native_value": null,
         "native_unit_of_measurement": "µg/m³"
       },
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"sensor.pm10_sensor","state":"125.9","attributes":{"unit_of_measurement":"µg/m³","device_class":"pm10","friendly_name":"PM10 Sensor"},"last_changed":"2025-06-04T09:51:28.459785+00:00","last_reported":"2025-06-04T09:51:28.459785+00:00","last_updated":"2025-06-04T09:51:28.459785+00:00","context":{"id":"01JWX5MNPB2JM6H07HDD9TPNXD","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.pm10_sensor","state":"unknown","attributes":{"unit_of_measurement":"µg/m³","device_class":"pm10","friendly_name":"PM10 Sensor"},"last_changed":"2025-06-04T10:26:51.091302+00:00","last_reported":"2025-06-04T10:26:51.091302+00:00","last_updated":"2025-06-04T10:26:51.091302+00:00","context":{"id":"01JWX7NEJKGE0SGTZQM2QZ90BJ","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "125.9",
+        "native_value": null,
         "native_unit_of_measurement": "µg/m³"
       },
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"sensor.temperature","state":"32.88","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Temperature"},"last_changed":"2025-06-04T09:51:28.456265+00:00","last_reported":"2025-06-04T09:51:28.456265+00:00","last_updated":"2025-06-04T09:51:28.456265+00:00","context":{"id":"01JWX5MNP81ZGDZJJD4BQBX91B","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.temperature","state":"unknown","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Temperature"},"last_changed":"2025-06-04T10:26:51.091330+00:00","last_reported":"2025-06-04T10:26:51.091330+00:00","last_updated":"2025-06-04T10:26:51.091330+00:00","context":{"id":"01JWX7NEJKQH4HVSY6NR4NHQZG","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "32.88",
+        "native_value": null,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"sensor.gas_sensor","state":"79.0","attributes":{"unit_of_measurement":"ppm","friendly_name":"Gas Sensor"},"last_changed":"2025-06-04T09:51:28.458761+00:00","last_reported":"2025-06-04T09:51:28.458761+00:00","last_updated":"2025-06-04T09:51:28.458761+00:00","context":{"id":"01JWX5MNPAN9SGEPF2PKGZH3E5","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.gas_sensor","state":"unknown","attributes":{"unit_of_measurement":"ppm","friendly_name":"Gas Sensor"},"last_changed":"2025-06-04T10:26:51.091367+00:00","last_reported":"2025-06-04T10:26:51.091367+00:00","last_updated":"2025-06-04T10:26:51.091367+00:00","context":{"id":"01JWX7NEJKFTSJKCK5YCP6HQJD","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "79.0",
+        "native_value": null,
         "native_unit_of_measurement": "ppm"
       },
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"sensor.co2_sensor","state":"869.1","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"CO2 Sensor"},"last_changed":"2025-06-04T09:51:28.460295+00:00","last_reported":"2025-06-04T09:51:28.460295+00:00","last_updated":"2025-06-04T09:51:28.460295+00:00","context":{"id":"01JWX5MNPCR67WS5FA484KP8MW","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.co2_sensor","state":"unknown","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_dioxide","friendly_name":"CO2 Sensor"},"last_changed":"2025-06-04T10:26:51.091393+00:00","last_reported":"2025-06-04T10:26:51.091393+00:00","last_updated":"2025-06-04T10:26:51.091393+00:00","context":{"id":"01JWX7NEJKSM2VK8XDMQZVNNH9","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "869.1",
+        "native_value": null,
         "native_unit_of_measurement": "ppm"
       },
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
-      "state": {"entity_id":"sensor.co_sensor","state":"14.3","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_monoxide","friendly_name":"CO Sensor"},"last_changed":"2025-06-04T09:51:28.461684+00:00","last_reported":"2025-06-04T09:51:28.461684+00:00","last_updated":"2025-06-04T09:51:28.461684+00:00","context":{"id":"01JWX5MNPD3Y4GK9G9CV7DX9H3","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.co_sensor","state":"unknown","attributes":{"unit_of_measurement":"ppm","device_class":"carbon_monoxide","friendly_name":"CO Sensor"},"last_changed":"2025-06-04T10:26:51.091417+00:00","last_reported":"2025-06-04T10:26:51.091417+00:00","last_updated":"2025-06-04T10:26:51.091417+00:00","context":{"id":"01JWX7NEJKAYGCC3C9G7Q0E9CB","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "14.3",
+        "native_value": null,
         "native_unit_of_measurement": "ppm"
       },
-      "last_seen": "2025-06-04T09:51:32.573723+00:00"
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"light.bathroom_light_1","state":"unknown","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Bath room","supported_features":40},"last_changed":"2025-06-04T10:26:51.091468+00:00","last_reported":"2025-06-04T10:26:51.091468+00:00","last_updated":"2025-06-04T10:26:51.091468+00:00","context":{"id":"01JWX7NEJK4JH9BWSK5BBHM1CT","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"light.bathroom_light_2","state":"unknown","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Bath room","supported_features":40},"last_changed":"2025-06-04T10:26:51.091567+00:00","last_reported":"2025-06-04T10:26:51.091567+00:00","last_updated":"2025-06-04T10:26:51.091567+00:00","context":{"id":"01JWX7NEJK1MWX60QQVCX2XN0P","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"light.bedroom_1_light","state":"unknown","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Bedroom 1 Light","supported_features":40},"last_changed":"2025-06-04T10:26:51.091612+00:00","last_reported":"2025-06-04T10:26:51.091612+00:00","last_updated":"2025-06-04T10:26:51.091612+00:00","context":{"id":"01JWX7NEJKG85WDHN8F8VC90G1","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"light.bedroom_2_light","state":"unknown","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Bedroom 2 Light","supported_features":40},"last_changed":"2025-06-04T10:26:51.091664+00:00","last_reported":"2025-06-04T10:26:51.091664+00:00","last_updated":"2025-06-04T10:26:51.091664+00:00","context":{"id":"01JWX7NEJKN3DHW11A9PZH7E0M","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"light.living_room_light","state":"unknown","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Living Room Light","supported_features":40},"last_changed":"2025-06-04T10:26:51.091700+00:00","last_reported":"2025-06-04T10:26:51.091700+00:00","last_updated":"2025-06-04T10:26:51.091700+00:00","context":{"id":"01JWX7NEJK7CB87CMNK5E7VMR3","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"light.kitchen_light","state":"unknown","attributes":{"supported_color_modes":["brightness"],"color_mode":null,"brightness":null,"friendly_name":"Kitchen Light","supported_features":40},"last_changed":"2025-06-04T10:26:51.091731+00:00","last_reported":"2025-06-04T10:26:51.091731+00:00","last_updated":"2025-06-04T10:26:51.091731+00:00","context":{"id":"01JWX7NEJK5Q3VB1G8K02K3M08","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.gas_stove_left","state":"unknown","attributes":{"icon":"mdi:toggle-switch-variant","friendly_name":"Gas Stove Left"},"last_changed":"2025-06-04T10:26:51.091963+00:00","last_reported":"2025-06-04T10:26:51.091963+00:00","last_updated":"2025-06-04T10:26:51.091963+00:00","context":{"id":"01JWX7NEJKBWTV3V2M40CBJC4P","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.gas_stove_mid","state":"unknown","attributes":{"friendly_name":"Gas Stove Mid"},"last_changed":"2025-06-04T10:26:51.091984+00:00","last_reported":"2025-06-04T10:26:51.091984+00:00","last_updated":"2025-06-04T10:26:51.091984+00:00","context":{"id":"01JWX7NEJKPYGGQZ5DKA03ZQ4V","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.gas_stove_right","state":"unknown","attributes":{"friendly_name":"Gas Stove Right"},"last_changed":"2025-06-04T10:26:51.092004+00:00","last_reported":"2025-06-04T10:26:51.092004+00:00","last_updated":"2025-06-04T10:26:51.092004+00:00","context":{"id":"01JWX7NEJMEGK2D9PFBAX9ZA9M","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.people_detection","state":"unknown","attributes":{"device_class":"presence","friendly_name":"Presence Check"},"last_changed":"2025-06-04T10:26:51.092031+00:00","last_reported":"2025-06-04T10:26:51.092031+00:00","last_updated":"2025-06-04T10:26:51.092031+00:00","context":{"id":"01JWX7NEJM7QVK9TMYW9W64JVV","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.fall_detection","state":"unknown","attributes":{"device_class":"occupancy","friendly_name":"Fall Detection"},"last_changed":"2025-06-04T10:26:51.092050+00:00","last_reported":"2025-06-04T10:26:51.092050+00:00","last_updated":"2025-06-04T10:26:51.092050+00:00","context":{"id":"01JWX7NEJMPQSFZW5R621HQP7V","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
+    },
+    {
+      "state": {"entity_id":"notify.door_notification","state":"unknown","attributes":{"friendly_name":"Door notification","supported_features":0},"last_changed":"2025-06-04T10:26:51.092167+00:00","last_reported":"2025-06-04T10:26:51.092167+00:00","last_updated":"2025-06-04T10:26:51.092167+00:00","context":{"id":"01JWX7NEJM9NH0CRQZNB90RR42","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-04T10:26:51.101138+00:00"
     },
     {
       "state": {"entity_id":"automation.set_action_to_humidifier","state":"on","attributes":{"id":"1748956648036","last_triggered":"2025-06-03T13:40:13.054536+00:00","mode":"single","current":0,"friendly_name":"set action to humidifier"},"last_changed":"2025-06-03T13:39:05.029996+00:00","last_reported":"2025-06-03T13:40:13.100517+00:00","last_updated":"2025-06-03T13:40:13.100517+00:00","context":{"id":"01JWV0ASKYX9ZTBGZPTKN4SQFC","parent_id":null,"user_id":null}},
