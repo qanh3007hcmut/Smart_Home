@@ -3,15 +3,16 @@
   device_class: "humidifier"
   
   current_humidity_topic: "home/sensor/humidity"
+
   command_topic: "home/bedroom/1/humidity/set"
+  state_topic: "home/bedroom/1/humidity/state"
 
-  target_humidity_command_topic: "home/bedroom/1/humidity/set"
-  target_humidity_state_topic: "home/bedroom/1/humidity/state"
+  target_humidity_command_topic: "home/bedroom/1/humidity/target/set"
+  target_humidity_state_topic: "home/bedroom/1/humidity/target/state"
 
-  mode_command_topic: "home/bedroom/1/preset/preset_mode"
+  mode_command_topic: "home/bedroom/1/humidity/preset/preset_mode"
   mode_state_topic: "home/bedroom/1/humidity/mode/state"
 
-  state_topic: "home/bedroom/1/humidity/state"
   action_topic: "home/bedroom/1/humidity/action" # off, humidifying, drying, idle
   
   modes:

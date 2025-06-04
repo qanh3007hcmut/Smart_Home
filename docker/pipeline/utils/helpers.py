@@ -79,7 +79,7 @@ def initialzize_entities(mqtt, entities : List[List]):
     
     def initialize_humidifier(hvacs : List[HumidifierConfig]):
         for ele in hvacs:
-            ele.publish_state(mqtt, field = "command", value = "ON")
+            ele.publish_state(mqtt, field = "state", value = "ON")
             ele.publish_state(mqtt, field = "mode", value = "auto")
             ele.publish_state(mqtt, field = "humidity", value = 50)
             ele.subscribe_command(mqtt)

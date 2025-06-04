@@ -87,6 +87,13 @@
         "domain": "camera",
         "is_persistent": false,
         "issue_id": "legacy_webrtc_provider_rtsp_to_webrtc"
+      },
+      {
+        "created": "2025-06-04T01:15:18.436315+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "config_entry_reauth_hacs_01JS6NVTA8RX2ZWY76XDK5TP0K"
       }
     ]
   }

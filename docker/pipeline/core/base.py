@@ -302,6 +302,7 @@ class HumidifierConfig(Component):
     ):
         self._type = _type
         self.command_topics = {
+            "command": command_topic,
             "mode": mode_command_topic,
             "humidity": target_humidity_command_topic,
         }
@@ -309,7 +310,7 @@ class HumidifierConfig(Component):
         # State topics
         self.state_topics = {
             # "action": action_topic,
-            "command": command_topic,
+            "state": state_topic,
             "mode": mode_state_topic,
             "humidity": target_humidity_state_topic,
         }
