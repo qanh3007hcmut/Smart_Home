@@ -1,5 +1,3 @@
-[Download this file](https://drive.google.com/file/d/1ZNJyJVqp4I8Yr-kwvNTcv-dThagLKM6Q/view?usp=sharing)
-## Then put it in ```Facenet_testing/models```
 ## Run terminal at ```Facenet_testing```
 ## Install requirement
 ```bash
