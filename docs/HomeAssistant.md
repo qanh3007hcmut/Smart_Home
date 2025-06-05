@@ -24,11 +24,11 @@ Home Assistant is an open-source home automation platform that allows you to con
     - The default port for Home Assistant is `8123`.
 
 4. **Sign In**:
-    - Username: iot12345
-    - Password: IOT12345
+    - Username: localhost
+    - Password: localhost
 
 5. **Stop the Home Assistant Container**:
-    - Run the following command to start the container:
+    - Run the following command to stop the container:
       ```bash
       docker-compose -f docker/docker-compose.yml stop
       ```

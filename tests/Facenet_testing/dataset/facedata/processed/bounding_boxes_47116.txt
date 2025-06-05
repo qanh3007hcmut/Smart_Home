@@ -1,9 +1,0 @@
-dataset/facedata/processed\Quoc_Anh\z6649881237277_90cb4dd9c7e4bc7c262390a5cc1bbb44.png 213 262 721 926
-dataset/facedata/processed\Quoc_Anh\z6649858678827_6158bbe96438b02954de80131d50fa15.png 179 2 367 243
-dataset/facedata/processed\Quoc_Anh\z6649860925357_b5ac84a624e38810b1d50f4f469a4e4d.png 47 20 169 174
-dataset/facedata/processed\Quoc_Anh\z6649881272719_72c677f574106f2f0c6e928930cb7a42.png 233 621 651 1137
-dataset/facedata/processed\Quoc_Anh\z6649881290503_574c0f5a8aad5ecf50eff586ca22470d.png 104 437 683 1181
-dataset/facedata/processed\Quoc_Anh\z6649881259447_99821c061029f53217e74853c8775ab2.png 231 224 768 897
-dataset/facedata/processed\Quoc_Anh\z6649881263203_03406d259319533a6e60f4c9b65e4d8d.png
-dataset/facedata/processed\Quoc_Anh\z6649881320748_1b366ff6075b59365df05f63732a35e6.png 295 242 771 874
-dataset/facedata/processed\Quoc_Anh\z6649860109444_0434a8eff3057dec87fb09bea54e9bb6.png 90 48 229 218

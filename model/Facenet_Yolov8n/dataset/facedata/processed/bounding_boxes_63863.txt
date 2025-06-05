@@ -1,0 +1,12 @@
+dataset/facedata/processed\Jason_Staham\15.png 42 60 195 228
+dataset/facedata/processed\Jason_Staham\16.png 89 89 239 274
+dataset/facedata/processed\Jason_Staham\17.png 148 114 450 522
+dataset/facedata/processed\Jason_Staham\18.png 87 62 171 163
+dataset/facedata/processed\Jason_Staham\19.png 113 43 250 217
+dataset/facedata/processed\Jason_Staham\20.png 90 81 237 266
+dataset/facedata/processed\Dwayne_Johnson\15.png 66 0 162 110
+dataset/facedata/processed\Dwayne_Johnson\16.png 113 0 248 164
+dataset/facedata/processed\Dwayne_Johnson\17.png 29 10 79 67
+dataset/facedata/processed\Dwayne_Johnson\18.png 32 12 100 96
+dataset/facedata/processed\Dwayne_Johnson\19.png 71 28 152 123
+dataset/facedata/processed\Dwayne_Johnson\20.png 94 35 179 137

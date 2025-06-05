@@ -1,8 +1,0 @@
-dataset/facedata/processed\Dwayne_Johnson\11.png 123 0 186 65
-dataset/facedata/processed\Dwayne_Johnson\12.png 52 1 159 139
-dataset/facedata/processed\Dwayne_Johnson\13.png 100 8 173 97
-dataset/facedata/processed\Dwayne_Johnson\14.png 87 0 158 72
-dataset/facedata/processed\Jason_Staham\11.png 110 4 209 121
-dataset/facedata/processed\Jason_Staham\12.png 8 0 192 225
-dataset/facedata/processed\Jason_Staham\13.png 81 4 168 122
-dataset/facedata/processed\Jason_Staham\14.png 108 16 214 141
